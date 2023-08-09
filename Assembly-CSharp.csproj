@@ -98,8 +98,15 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Scripts\DataPersistance\GameData.cs" />
+    <Compile Include="Assets\Scripts\DataPersistance\DataPersistanceManager.cs" />
+    <Compile Include="Assets\Scripts\DataPersistance\IDataPersistance.cs" />
+    <Compile Include="Assets\Scripts\DataPersistance\FileDataHandler.cs" />
+    <Compile Include="Assets\Scripts\World\TerrainSwitcher.cs" />
+    <Compile Include="Assets\Scripts\DataPersistance\SerializableTypes\SerializableDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDataPersistance
 {
     [SerializeField] private float playerSpeed = 2.0f;
     [SerializeField] private float gravityValue = -9.81f;
@@ -9,10 +9,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private InputManager inputManager;
-    private bool prevInteractPressed = true;
 
     public Transform cameraTransform;
-    public bool interactPressed { get; private set; }
 
     private void Start()
     {
@@ -22,7 +20,7 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
     }
 
-    void Update()
+    private void Update()
     {
         Vector2 movement;
 
@@ -46,15 +44,16 @@ public class PlayerController : MonoBehaviour
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
 
-        if (inputManager.Interact() && !prevInteractPressed)
-        {
-            interactPressed = true;
-        }
-        else
-        {
-            interactPressed = false;
-        }
+        
+    }
 
-        prevInteractPressed = inputManager.Interact();
+    public void LoadData(GameData data)
+    {
+        this.transform.position = data.playerPos;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.playerPos = this.transform.position;
     }
 }

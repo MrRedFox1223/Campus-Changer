@@ -24,14 +24,56 @@ MonoBehaviour:
     masterInkAssets: []
     localIncludePaths: []
     includes: []
-  - inkAsset: {fileID: 102900000, guid: d82cb1462fcce58498a7438629dd563f, type: 3}
+  - inkAsset: {fileID: 102900000, guid: b13cf856b0b31734582e4365c0732414, type: 3}
     jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 4900000, guid: 17786530b05c4f34e813a9878c735aac, type: 3}
+    jsonAsset: {fileID: 4900000, guid: 2bb103d5e7e04784da93d269ce0d37e7, type: 3}
+    unhandledCompileErrors: []
+    recursiveIncludeErrorPaths: []
+    errors: []
+    warnings: []
+    todos: []
+    masterInkAssets:
+    - {fileID: 102900000, guid: 70614f46fb5f3644d82e41fe72e7313f, type: 3}
+    - {fileID: 102900000, guid: 1b5e1be3876463043b44067e293775c4, type: 3}
+    - {fileID: 102900000, guid: ca19603f151df3f4b84c7744e8edb27c, type: 3}
+    localIncludePaths: []
+    includes: []
+  - inkAsset: {fileID: 102900000, guid: 70614f46fb5f3644d82e41fe72e7313f, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: b912895b99105de4b9b0a1998584698c, type: 3}
     unhandledCompileErrors: []
     recursiveIncludeErrorPaths: []
     errors: []
     warnings: []
     todos: []
     masterInkAssets: []
-    localIncludePaths: []
-    includes: []
+    localIncludePaths:
+    - Globals.ink
+    includes:
+    - {fileID: 102900000, guid: b13cf856b0b31734582e4365c0732414, type: 3}
+  - inkAsset: {fileID: 102900000, guid: 1b5e1be3876463043b44067e293775c4, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 7a2627a5161ee8b42b7e14ed6726f517, type: 3}
+    unhandledCompileErrors: []
+    recursiveIncludeErrorPaths: []
+    errors: []
+    warnings: []
+    todos: []
+    masterInkAssets: []
+    localIncludePaths:
+    - Globals.ink
+    includes:
+    - {fileID: 102900000, guid: b13cf856b0b31734582e4365c0732414, type: 3}
+  - inkAsset: {fileID: 102900000, guid: ca19603f151df3f4b84c7744e8edb27c, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 33fe1d8c14f14a34482411001aa0e1bd, type: 3}
+    unhandledCompileErrors: []
+    recursiveIncludeErrorPaths: []
+    errors: []
+    warnings: []
+    todos: []
+    masterInkAssets: []
+    localIncludePaths:
+    - Globals.ink
+    includes:
+    - {fileID: 102900000, guid: b13cf856b0b31734582e4365c0732414, type: 3}

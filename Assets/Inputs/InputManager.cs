@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
     private PlayerControls playerControls;
-
     private static InputManager _instance;
+
+    private bool interactPressed = false;
 
     public static InputManager Instance
     {
@@ -48,9 +50,23 @@ public class InputManager : MonoBehaviour
         return playerControls.Player.Look.ReadValue<Vector2>();
     }
 
-    public bool Interact()
+    public void InteractPressed(InputAction.CallbackContext context)
     {
-        return playerControls.Player.Interact.IsPressed();
+        if (context.performed)
+        {
+            interactPressed = true;
+        }
+        else if (context.canceled)
+        {
+            interactPressed = false;
+        }
+    }
+
+    public bool GetInteractPressed()
+    {
+        bool result = interactPressed;
+        interactPressed = false;
+        return result;
     }
 
 }

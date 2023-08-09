@@ -5,7 +5,6 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] PlayerController playerController;
 
     private GameObject NPC;
-    private bool interactPressed;
 
     public bool NPCInRange;
 
@@ -13,15 +12,13 @@ public class DialogueTrigger : MonoBehaviour
     {
         NPCInRange = false;
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
-        
     }
 
     private void Update()
     {
         if (NPCInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            interactPressed = playerController.interactPressed;
-            if (interactPressed)
+            if (InputManager.Instance.GetInteractPressed())
             {
                 DialogueManager.GetInstance().EnterDialogueMode(NPC.transform.Find("Dialogue").GetComponent<DialogueHolder>().inkJSON);
             }
