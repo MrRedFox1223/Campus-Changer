@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour, IDataPersistance
 {
+    [Header("Physics values")]
     [SerializeField] private float playerSpeed = 2.0f;
     [SerializeField] private float gravityValue = -9.81f;
 
@@ -22,6 +24,16 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
     private void Update()
     {
+        // Temporary return to Menu implementation
+        // TODO: Change to show pause menu and add options to return to menu there
+        if (inputManager.GetExitPressed())
+        {
+            // Save the game anytime before loading a new scene
+            DataPersistanceManager.instance.SaveGame();
+            // Load the main menu scene
+            SceneManager.LoadScene("MainMenu");
+        }
+
         Vector2 movement;
 
         if (DialogueManager.GetInstance().dialogueIsPlaying)
@@ -43,8 +55,6 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
-
-        
     }
 
     public void LoadData(GameData data)
@@ -52,7 +62,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         this.transform.position = data.playerPos;
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(GameData data)
     {
         data.playerPos = this.transform.position;
     }

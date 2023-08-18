@@ -2,47 +2,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 
-public class DialogueVariables: IDataPersistance
+public class DialogueVariables
 {
+    public Story globalVariablesStoryToUpdate;
     private Story globalVariablesStory;
-    private const string saveVariablesKey = "INK_VARIABLES";
-
-    
 
     public Dictionary<string, Ink.Runtime.Object> variables { get; private set; }
 
     public DialogueVariables(TextAsset loadGlobalsJSON)
     {
-        // create the story
+        // Create the story and story to load future data to updater
         globalVariablesStory = new Story(loadGlobalsJSON.text);
+        globalVariablesStoryToUpdate = new Story(loadGlobalsJSON.text);
 
-        // if we have saved data, load it
-        if(PlayerPrefs.HasKey(saveVariablesKey))
-        {
-            string jsonState = PlayerPrefs.GetString(saveVariablesKey);
-            globalVariablesStory.state.LoadJson(jsonState);
-        }
-
-        // initialize the dictionary
-        variables = new Dictionary<string, Ink.Runtime.Object>();
-        
-        foreach (string name in globalVariablesStory.variablesState)
-        {
-            Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
-            variables.Add(name, value);
-        }
+        InitializeDictionary();
     }
 
-    public void SaveVariables()
+    public void Updater()
     {
+        globalVariablesStory = globalVariablesStoryToUpdate;
+
+        // Reinitialize the dictionary
+        InitializeDictionary();
+    }
+
+    public string SaveVariables()
+    {
+        string globalVariablesStoryJSON = "";
+
         if (globalVariablesStory != null)
         {
-            // LOADING HERE
-            //Load the current state of all of our variables to the globals story
+            // Load the current state of all of our variables to the globals story
             VariablesToStory(globalVariablesStory);
-            //TODO: Replace it with proper save system
-            PlayerPrefs.SetString(saveVariablesKey, globalVariablesStory.state.ToJson());
+            // Convert globalVariablesStory to JSON to be able to save it in GameData
+            globalVariablesStoryJSON = globalVariablesStory.state.ToJson();
         }
+
+        return globalVariablesStoryJSON;
     }
 
     public void StartListening(Story story)
@@ -74,13 +70,13 @@ public class DialogueVariables: IDataPersistance
         }
     }
 
-    public void LoadData(GameData data)
+    private void InitializeDictionary()
     {
-
-    }
-
-    public void SaveData(ref GameData data)
-    {
-
+        variables = new Dictionary<string, Ink.Runtime.Object>();
+        foreach (string name in globalVariablesStory.variablesState)
+        {
+            Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
+            variables.Add(name, value);
+        }
     }
 }

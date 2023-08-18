@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
     private static InputManager _instance;
 
     private bool interactPressed = false;
+    private bool exitPressed = false;
 
     public static InputManager Instance
     {
@@ -69,4 +70,22 @@ public class InputManager : MonoBehaviour
         return result;
     }
 
+    public void ExitPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            exitPressed = true;
+        }
+        else if (context.canceled)
+        {
+            exitPressed = false;
+        }
+    }
+
+    public bool GetExitPressed()
+    {
+        bool result = exitPressed;
+        exitPressed = false;
+        return result;
+    }
 }

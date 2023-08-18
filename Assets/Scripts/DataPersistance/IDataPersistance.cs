@@ -7,6 +7,6 @@ public interface IDataPersistance
     void LoadData(GameData data);
 
     // Using ref becouse saving only need to read data
-    void SaveData(ref GameData data);
+    void SaveData(GameData data);
 
 }

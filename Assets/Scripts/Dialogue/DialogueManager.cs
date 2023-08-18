@@ -5,13 +5,12 @@ using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using System.Collections;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour, IDataPersistance
 {
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.02f;
 
     [Header("References")]
-    [SerializeField] private PlayerController playerController;
     [SerializeField] private DialogueTrigger dialogueTrigger;
 
     [Header("Globals JSON File")]
@@ -55,7 +54,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         instance = this;
-        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+
         dialoguePanel = GameObject.Find("DialoguePanel");
         dialogueText = GameObject.Find("DialogueText").GetComponent<TextMeshProUGUI>();
         dialogueTrigger = GameObject.Find("Player").gameObject.transform.Find("Trigger").GetComponent<DialogueTrigger>();
@@ -105,7 +104,7 @@ public class DialogueManager : MonoBehaviour
 
         dialogueVariables.StartListening(currentStory);
 
-        //reset tags
+        // Reset tags
         displayNameText.text = "???";
         portraitAnimator.Play("default");
         layoutAnimator.Play("right");
@@ -143,7 +142,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator DisplayLine(string line)
     {
-        //set the text to the full line, but set visible characters to 0
+        // Set the text to the full line, but set visible characters to 0
         dialogueText.text = line;
         dialogueText.maxVisibleCharacters = 0;
 
@@ -166,7 +165,7 @@ public class DialogueManager : MonoBehaviour
 
         continueIcon.SetActive(true);
 
-        //display chices, if any, for this dialogue line
+        // Display choices, if any, for this dialogue line
         DisplayChoices();
 
         canContinueToNextLine = true;
@@ -254,12 +253,18 @@ public class DialogueManager : MonoBehaviour
         return variableValue;
     }
 
-    //TODO: Replace it with proper saving mechanism 
-    public void OnApplicationQuit()
+    public void LoadData(GameData data)
     {
-        if (dialogueVariables != null)
-            dialogueVariables.SaveVariables();
-        else
-            Debug.LogWarning("Dialogues variables object doesn't exist yet");
+        // Safety check to make sure that there is data to load
+        if (data.globalVariablesStoryJson.Length > 1)
+        {
+            dialogueVariables.globalVariablesStoryToUpdate.state.LoadJson(data.globalVariablesStoryJson);
+            dialogueVariables.Updater();
+        }     
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.globalVariablesStoryJson = dialogueVariables.SaveVariables();
     }
 }

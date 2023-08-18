@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    [SerializeField] PlayerController playerController;
-
     private GameObject NPC;
 
     public bool NPCInRange;
@@ -11,7 +9,6 @@ public class DialogueTrigger : MonoBehaviour
     private void Awake()
     {
         NPCInRange = false;
-        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     private void Update()
