@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,11 +6,14 @@ public class MainMenu : Menu
 {
     [Header("Menu Navigation")]
     [SerializeField] private SaveSlotsMenu saveSlotsMenu;
+    [SerializeField] private SettingsMenu settingsMenu;
 
     [Header("Menu Buttons")]
     [SerializeField] private Button newGameButton;
     [SerializeField] private Button continueGameButton;
     [SerializeField] private Button loadGameButton;
+    [SerializeField] private Button settingsButton;
+    [SerializeField] private Button quitGameButton;
 
     public void Start()
     {
@@ -47,6 +48,17 @@ public class MainMenu : Menu
         DataPersistanceManager.instance.SaveGame();
         // Load the next scene - load the game becouse of OnSceneLoaded() in the DataPersistanceManager
         SceneManager.LoadScene("Laboratory");
+    }
+
+    public void OnSettingsClicked()
+    {
+        settingsMenu.ActivateMenu();
+        this.DeactivateMenu();
+    }
+
+    public void OnQuitGameClicked()
+    {
+        Application.Quit();
     }
 
     private void DisableMenuButtons()

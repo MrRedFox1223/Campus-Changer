@@ -200,9 +200,9 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Util\GraphUtil.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Generation\Descriptors\StencilDescriptor.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Nodes\Input\Scene\CameraNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Drawing\SearchWindowProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Legacy\UnlitMasterNode1.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Generation\Contexts\TargetPropertyGUIContext.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Drawing\SearchWindowProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Drawing\Inspector\PropertyDrawers\SampleVirtualTextureNodePropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Generation\Collections\IncludeCollection.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Generation\Attributes\GenerateBlocksAttribute.cs" />
@@ -550,8 +550,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Importers\ShaderGraphAssetPostProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Util\SlotValueTypeUtil.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Graphs\DynamicVectorMaterialSlot.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Generation\Processors\ShaderSpliceUtil.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Nodes\Math\Interpolation\LerpNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Generation\Processors\ShaderSpliceUtil.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\ContextData.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Nodes\Artistic\Normal\NormalFromTextureNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Nodes\Math\Round\RoundNode.cs" />
@@ -947,6 +947,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -955,9 +958,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.18\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.9.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>

@@ -60,7 +60,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\DataPersistance\DataPersistanceManager.cs" />
+    <Compile Include="Assets\Scripts\Audio\AmbienceChangeTrigger.cs" />
     <Compile Include="Assets\Scripts\DataPersistance\GameData.cs" />
+    <Compile Include="Assets\Scripts\Audio\FMODEvents.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -90,9 +92,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SaveSlot.cs" />
+    <Compile Include="Assets\Scripts\Audio\IdleSFXEmmiter.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\MainMenu\Menu.cs" />
@@ -112,6 +116,10 @@
     <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Scripts\Audio\MusicArea.cs" />
+    <Compile Include="Assets\Scripts\Audio\MusicChangeTrigger.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\SettingsMenu.cs" />
+    <Compile Include="Assets\Scripts\Audio\VolumeSlider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -752,6 +760,10 @@
       <Project>{0336F39F-BDCE-99E1-D2CE-C665964A668A}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
+      <Project>{1F275FA0-2A9C-8CAA-7438-5D85AC9E69CF}</Project>
+      <Name>FMODUnityResonanceEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{E785C747-D76D-4658-7CFD-9A25D710A7B3}</Project>
       <Name>UnityEditor.UI</Name>
@@ -804,17 +816,29 @@
       <Project>{1FE41EBB-E2AC-851C-B13C-4311C062724E}</Project>
       <Name>Unity.RenderPipeline.Universal.ShaderLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj">
-      <Project>{66A821E0-99D5-EBDB-892A-7B75AB8C37EA}</Project>
-      <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
+    <ProjectReference Include="FMODUnity.csproj">
+      <Project>{C74AADD6-BE55-342B-E1DC-E3BC48F0A170}</Project>
+      <Name>FMODUnity</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
       <Project>{885F61BE-985B-DA42-061D-F7601EBB294F}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj">
+      <Project>{66A821E0-99D5-EBDB-892A-7B75AB8C37EA}</Project>
+      <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Editor.csproj">
       <Project>{6BB4700E-0FCC-F129-DAB3-8676984ADA02}</Project>
       <Name>Unity.Mathematics.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnityEditor.csproj">
+      <Project>{96B45F5C-6AC6-EB3B-4C68-1620D257ECD1}</Project>
+      <Name>FMODUnityEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnityResonance.csproj">
+      <Project>{EF8B8BFF-D4AE-2397-96D8-F974D2231AC3}</Project>
+      <Name>FMODUnityResonance</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
       <Project>{00576ECB-47FA-1953-FE51-BC323BDC2B5C}</Project>

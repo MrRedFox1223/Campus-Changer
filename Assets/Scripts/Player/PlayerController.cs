@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour, IDataPersistance
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private CharacterController controller;
     private Vector3 playerVelocity;
     private InputManager inputManager;
+    private EventInstance playerFootsteps;
 
     public Transform cameraTransform;
 
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         inputManager = InputManager.Instance;
         cameraTransform = GameObject.Find("Main camera").transform;
         Cursor.visible = false;
+        playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
     }
 
     private void Update()
@@ -51,7 +54,10 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         if (move != Vector3.zero)
         {
             gameObject.transform.forward = move;
+            PlaySound();
         }
+        else
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
@@ -65,5 +71,15 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     public void SaveData(GameData data)
     {
         data.playerPos = this.transform.position;
+    }
+
+    private void PlaySound()
+    {
+        // Get the playback state
+        PLAYBACK_STATE playbackState;
+        playerFootsteps.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
+        playerFootsteps.getPlaybackState(out playbackState);
+        if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            playerFootsteps.start();
     }
 }
