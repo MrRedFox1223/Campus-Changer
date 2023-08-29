@@ -10,9 +10,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.02f;
 
-    [Header("References")]
-    [SerializeField] private DialogueTrigger dialogueTrigger;
-
     [Header("Globals JSON File")]
     [SerializeField] private TextAsset loadGlobalsJSON;
 
@@ -25,7 +22,12 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
     [SerializeField] private GameObject continueIcon;
-    
+
+    [Header("Interactor UI")]
+    [SerializeField] private GameObject crosshair;
+    [SerializeField] private GameObject interactPopup;
+
+
     private InputManager inputManager;
     private Story currentStory;
     private static DialogueManager instance;
@@ -57,17 +59,17 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
 
         dialoguePanel = GameObject.Find("DialoguePanel");
         dialogueText = GameObject.Find("DialogueText").GetComponent<TextMeshProUGUI>();
-        dialogueTrigger = GameObject.Find("Player").gameObject.transform.Find("Trigger").GetComponent<DialogueTrigger>();
         continueIcon = GameObject.Find("ContinueIcon");
         displayNameText = GameObject.Find("DisplayNameText").GetComponent<TextMeshProUGUI>();
         portraitAnimator = GameObject.Find("PortraitImage").GetComponent<Animator>();
         layoutAnimator = dialoguePanel.GetComponent<Animator>();
         dialogueVariables = new DialogueVariables(loadGlobalsJSON);
+        crosshair = GameObject.Find("Crosshair");
     }
 
     private void Start()
     {
-        inputManager = inputManager = InputManager.Instance;
+        inputManager = inputManager = InputManager.instance;
 
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
@@ -100,7 +102,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
-        dialogueTrigger.NPCInRange = false;
+        crosshair.SetActive(false);
+        interactPopup.SetActive(false);
 
         dialogueVariables.StartListening(currentStory);
 
@@ -116,8 +119,10 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     {
         dialogueVariables.StopListening(currentStory);
 
+        crosshair.SetActive(true);
+        interactPopup.SetActive(true);
+
         dialogueIsPlaying = false;
-        dialogueTrigger.NPCInRange = true;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
     }

@@ -19,24 +19,14 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void Start()
     {
         controller = GetComponent<CharacterController>();
-        inputManager = InputManager.Instance;
-        cameraTransform = GameObject.Find("Main camera").transform;
+        inputManager = InputManager.instance;
+        cameraTransform = GameObject.Find("MainCamera").transform;
         Cursor.visible = false;
         playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
     }
 
     private void Update()
     {
-        // Temporary return to Menu implementation
-        // TODO: Change to show pause menu and add options to return to menu there
-        if (inputManager.GetExitPressed())
-        {
-            // Save the game anytime before loading a new scene
-            DataPersistanceManager.instance.SaveGame();
-            // Load the main menu scene
-            SceneManager.LoadScene("MainMenu");
-        }
-
         Vector2 movement;
 
         if (DialogueManager.GetInstance().dialogueIsPlaying)
@@ -54,7 +44,8 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         if (move != Vector3.zero)
         {
             gameObject.transform.forward = move;
-            PlaySound();
+            if (Time.timeScale != 0)
+                PlaySound();
         }
         else
             playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);

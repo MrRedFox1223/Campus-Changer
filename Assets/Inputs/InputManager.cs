@@ -9,7 +9,7 @@ public class InputManager : MonoBehaviour
     private bool interactPressed = false;
     private bool exitPressed = false;
 
-    public static InputManager Instance
+    public static InputManager instance
     {
         get
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -22,7 +23,6 @@ public class AudioManager : MonoBehaviour
     public MusicArea defaultMusic;
 
     [Header("Volume")]
-
     [Range(0, 1)] public float masterVolume = 1;
     [Range(0, 1)] public float musicVolume = 1;
     [Range(0, 1)] public float ambienceVolume = 1;
@@ -53,6 +53,11 @@ public class AudioManager : MonoBehaviour
         musicBus = RuntimeManager.GetBus("bus:/Music");
         ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
+
+        masterVolume = PlayerPrefs.GetFloat("masterVolume");
+        musicVolume = PlayerPrefs.GetFloat("musicVolume");
+        ambienceVolume = PlayerPrefs.GetFloat("ambienceVolume");
+        sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
     }
 
     private void Start()
@@ -67,7 +72,7 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         // In the MainMenuScene Player doesn't exist and set3DAttributes() must be set to a diferent object in range of sound
-        if (GameObject.Find("PLayer") != null)
+        if (SceneManager.GetActiveScene().name != "MainMenu")
         {
             // There is need to update player position to the sound source every frame
             ambienceEventInstance.set3DAttributes(RuntimeUtils.To3DAttributes(GameObject.Find("Player").transform));
@@ -79,6 +84,7 @@ public class AudioManager : MonoBehaviour
             musicEventInstance.set3DAttributes(RuntimeUtils.To3DAttributes(GameObject.Find("AudioManager").transform));
         }
 
+        // Set volume accordingly to the sliders in the inspector
         masterBus.setVolume(masterVolume);
         musicBus.setVolume(musicVolume);
         ambienceBus.setVolume(ambienceVolume);

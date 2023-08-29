@@ -223,6 +223,7 @@ MonoBehaviour:
   noDataContent: {fileID: 0}
   hasDataContent: {fileID: 0}
   currentLocationText: {fileID: 87289733299765308}
+  clearButton: {fileID: 0}
 --- !u!1 &87289733063260601
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,19 +49,32 @@ public class VolumeSlider : MonoBehaviour
         {
             case VolumeType.MASTER:
                 AudioManager.instance.masterVolume = volumeSlider.value;
+                SaveVolumeSettings();
+                Debug.Log("");
                 break;
             case VolumeType.MUSIC:
                 AudioManager.instance.musicVolume = volumeSlider.value;
+                SaveVolumeSettings();
                 break;
             case VolumeType.AMBIENCE:
                 AudioManager.instance.ambienceVolume = volumeSlider.value;
+                SaveVolumeSettings();
                 break;
             case VolumeType.SFX:
                 AudioManager.instance.sfxVolume = volumeSlider.value;
+                SaveVolumeSettings();
                 break;
             default:
                 Debug.LogWarning("Volume type not supporeted: " + volumeType);
                 break;
         }
+    }
+
+    private void SaveVolumeSettings()
+    {
+        PlayerPrefs.SetFloat("masterVolume", AudioManager.instance.masterVolume);
+        PlayerPrefs.SetFloat("musicVolume", AudioManager.instance.musicVolume);
+        PlayerPrefs.SetFloat("ambienceVolume", AudioManager.instance.ambienceVolume);
+        PlayerPrefs.SetFloat("sfxVolume", AudioManager.instance.sfxVolume);
     }
 }

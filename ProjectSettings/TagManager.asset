@@ -6,6 +6,8 @@ TagManager:
   tags:
   - NPC
   - DialogueNPC
+  - InteractableObject
+  - SwitchableTerrain
   layers:
   - Default
   - TransparentFX
