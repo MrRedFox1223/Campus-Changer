@@ -44,6 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
-  interactPopup: {fileID: 0}
   actionText: {fileID: 0}
   interactRange: 2.5

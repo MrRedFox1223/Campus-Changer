@@ -7,34 +7,41 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 {
     [Header("Physics values")]
     [SerializeField] private float playerSpeed = 2.0f;
-    [SerializeField] private float gravityValue = -9.81f;
+
+    public Transform cameraTransform;
 
     private CharacterController controller;
     private Vector3 playerVelocity;
-    private InputManager inputManager;
     private EventInstance playerFootsteps;
-
-    public Transform cameraTransform;
+    private bool movementDisabled = false;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
-        inputManager = InputManager.instance;
         cameraTransform = GameObject.Find("MainCamera").transform;
         Cursor.visible = false;
         playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
+
+        GameEventsManager.instance.inputEvents.onMovePressed += MovePressed;
+        GameEventsManager.instance.playerEvents.onDisablePlayerMovement += DisablePlayerMovement;
+        GameEventsManager.instance.playerEvents.onEnablePlayerMovement += EnablePlayerMovement;
+    }
+
+    private void OnDestroy()
+    {
+        GameEventsManager.instance.inputEvents.onMovePressed -= MovePressed;
+        GameEventsManager.instance.playerEvents.onDisablePlayerMovement -= DisablePlayerMovement;
+        GameEventsManager.instance.playerEvents.onEnablePlayerMovement -= EnablePlayerMovement;
     }
 
     private void Update()
     {
-        Vector2 movement;
-
         if (DialogueManager.GetInstance().dialogueIsPlaying)
-            movement = new Vector2(0, 0);
+            DisablePlayerMovement();
         else
-            movement = inputManager.GetPlayerMovement();
+            EnablePlayerMovement();
 
-        Vector3 move = new Vector3(movement.x, 0f, movement.y);
+        Vector3 move = new Vector3(playerVelocity.x, 0f, playerVelocity.y);
         move = cameraTransform.forward * move.z + cameraTransform.right * move.x;
         move.y = 0f;
         move = move.normalized;
@@ -50,8 +57,28 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         else
             playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
 
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        //TODO: Add gravity force
+    }
+
+    private void MovePressed(Vector2 moveDir)
+    {
+        playerVelocity = moveDir;
+
+        if (movementDisabled)
+        {
+            playerVelocity = Vector2.zero;
+        }
+    }
+
+    private void EnablePlayerMovement()
+    {
+        movementDisabled = false;
+    }
+
+    private void DisablePlayerMovement()
+    {
+        movementDisabled = true;
+        playerVelocity = new Vector3(0f,0f,0f);
     }
 
     public void LoadData(GameData data)

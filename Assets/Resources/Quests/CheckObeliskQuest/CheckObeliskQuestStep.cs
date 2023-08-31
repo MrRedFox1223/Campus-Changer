@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class CheckObeliskQuestStep : QuestStep
 {
-    private bool obeliskInteracted = false;
+    public int obelisksToComplete = 3;
+    private Dictionary<string, bool> obelisksActivated;
 
-    private void ObeliskInspected()
+    private void Start()
     {
-        if (obeliskInteracted)
-            FinishQuestStep();
+        obelisksActivated = new Dictionary<string, bool>();
     }
+
+    
 }

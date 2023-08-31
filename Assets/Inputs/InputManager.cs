@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
     private PlayerControls playerControls;
     private static InputManager _instance;
 
-    private bool interactPressed = false;
     private bool exitPressed = false;
 
     public static InputManager instance
@@ -41,9 +41,12 @@ public class InputManager : MonoBehaviour
         playerControls.Disable();
     }
 
-    public Vector2 GetPlayerMovement()
+    public void PlayerMovePressed(InputAction.CallbackContext context)
     {
-        return playerControls.Player.Move.ReadValue<Vector2>();
+        if (context.performed || context.canceled)
+        {
+            GameEventsManager.instance.inputEvents.MovePressed(context.ReadValue<Vector2>());
+        }
     }
 
     public Vector2 GetMouseDelta()
@@ -53,39 +56,17 @@ public class InputManager : MonoBehaviour
 
     public void InteractPressed(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
-            interactPressed = true;
+            GameEventsManager.instance.inputEvents.InteractPressed();
         }
-        else if (context.canceled)
-        {
-            interactPressed = false;
-        }
-    }
-
-    public bool GetInteractPressed()
-    {
-        bool result = interactPressed;
-        interactPressed = false;
-        return result;
     }
 
     public void ExitPressed(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
-            exitPressed = true;
+            GameEventsManager.instance.inputEvents.ExitPressed();
         }
-        else if (context.canceled)
-        {
-            exitPressed = false;
-        }
-    }
-
-    public bool GetExitPressed()
-    {
-        bool result = exitPressed;
-        exitPressed = false;
-        return result;
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PauseMenu : Menu
 {
@@ -7,10 +8,33 @@ public class PauseMenu : Menu
     [SerializeField] private SettingsMenu settingsMenu;
     [SerializeField] private GameObject pauseScreen;
 
-    private void Update()
+    [Header("References")]
+    [SerializeField] private GameObject actionText;
+
+    public bool isActive { get; private set; }
+    
+    private void Start()
     {
-        // Listening for activation input
-        if (InputManager.instance.GetExitPressed())
+        isActive = false;
+
+        actionText = GameObject.Find("ActionText");
+
+        GameEventsManager.instance.inputEvents.onExitPressed += ExitPressed;
+    }
+
+    private void OnDisable()
+    {
+        GameEventsManager.instance.inputEvents.onExitPressed -= ExitPressed;
+    }
+
+    private void ExitPressed()
+    {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            DialogueManager.GetInstance().ExitDialogueMode();
+        }
+            
+        else
             ActivateMenu();
     }
 
@@ -18,14 +42,19 @@ public class PauseMenu : Menu
     {
         pauseScreen.SetActive(true);
         Time.timeScale = 0f;
+        actionText.SetActive(false);
         Cursor.visible = true;
+        isActive = true;
+        
     }
 
     public void OnResumeClicked()
     {
         this.DeactivateMenu();
-        Time.timeScale = 1f;
         Cursor.visible = false;
+        Time.timeScale = 1f;
+        isActive = false;
+        actionText.SetActive(true);
     }
 
     public void OnSettingsClicked()
@@ -49,6 +78,6 @@ public class PauseMenu : Menu
 
     public void DeactivateMenu()
     {
-        pauseScreen.SetActive(false);
+        pauseScreen.SetActive(false); 
     }
 }
