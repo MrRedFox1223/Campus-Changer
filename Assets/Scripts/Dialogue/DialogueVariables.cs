@@ -54,7 +54,7 @@ public class DialogueVariables
 
    private void VariableChanged(string name, Ink.Runtime.Object value)
     {
-        // only maintain variables that were initialized from the global ink file
+        // Only maintain variables that were initialized from the global ink file
         if (variables.ContainsKey(name))
         {
             variables.Remove(name);

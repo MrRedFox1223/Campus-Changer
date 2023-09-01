@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class VolumeSlider : MonoBehaviour
 {
+    [Header("Type")]
+    [SerializeField] private VolumeType volumeType;
+
     private enum VolumeType
     {
         MASTER,
@@ -10,9 +13,6 @@ public class VolumeSlider : MonoBehaviour
         AMBIENCE,
         SFX
     }
-
-    [Header("Type")]
-    [SerializeField] private VolumeType volumeType;
 
     private Slider volumeSlider;
 

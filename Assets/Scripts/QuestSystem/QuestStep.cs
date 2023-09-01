@@ -1,5 +1,3 @@
- using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class QuestStep : MonoBehaviour
@@ -11,6 +9,7 @@ public abstract class QuestStep : MonoBehaviour
         if (!isFinished)
         {
             isFinished = true;
+            Debug.Log("Finished");
 
             //TODO - Advence the quest forward when the step is finished
 

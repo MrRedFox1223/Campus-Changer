@@ -19,13 +19,13 @@ public class DataPersistanceManager : MonoBehaviour
     [Header("Auto Saving Configuration")]
     [SerializeField] private float autoSaveTimeSeconds = 180f;
 
+    public static DataPersistanceManager instance { get; private set; }
+
     private GameData gameData;
     private List<IDataPersistance> dataPersistanceObjects;
     private FileDataHandler dataHandler;
     private string selecterProfileId = "";
     private Coroutine autoSaveCoroutine;
-
-    public static DataPersistanceManager instance { get; private set; }
 
     private void Awake()
     {
@@ -37,6 +37,7 @@ public class DataPersistanceManager : MonoBehaviour
         }
             
         instance = this;
+
         DontDestroyOnLoad(this.gameObject);
 
         if (disableDataPersistance)
@@ -103,7 +104,7 @@ public class DataPersistanceManager : MonoBehaviour
 
     public void LoadGame()
     {
-        // return if data persistance is disabled
+        // Return if data persistance is disabled
         if (disableDataPersistance)
             return;
 
@@ -128,7 +129,7 @@ public class DataPersistanceManager : MonoBehaviour
 
     public void SaveGame()
     {
-        // return if data persistance is disabled
+        // Return if data persistance is disabled
         if (disableDataPersistance)
             return;
 

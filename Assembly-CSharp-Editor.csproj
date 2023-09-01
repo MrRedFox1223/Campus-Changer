@@ -56,8 +56,10 @@
     <Analyzer Include="D:\Program Files\Visual Studio\IDE\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editor\AutoSaveConfig.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\Editor\BasicInkExampleEditor.cs" />
+    <Compile Include="Assets\Editor\TarodevAutoSave.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

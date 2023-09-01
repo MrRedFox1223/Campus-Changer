@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class GameEventsManager : MonoBehaviour
@@ -7,17 +6,18 @@ public class GameEventsManager : MonoBehaviour
 
     public InputEvents inputEvents;
     public PlayerEvents playerEvents;
+    public MiscEvents miscEvents;
 
     private void Awake()
     {
         if (instance != null)
-        {
             Debug.LogError("Found more than one Game Events Manager in the scene.");
-        }
+
         instance = this;
 
         // Initialize all events
         inputEvents = new InputEvents();
         playerEvents = new PlayerEvents();
+        miscEvents = new MiscEvents();
     }
 }

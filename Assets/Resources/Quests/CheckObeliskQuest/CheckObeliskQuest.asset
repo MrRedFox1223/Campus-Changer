@@ -15,5 +15,6 @@ MonoBehaviour:
   <id>k__BackingField: CheckObeliskQuest
   displayName: Check Obelisk
   questPrerequisites: []
-  questStepPrefabs: []
+  questStepPrefabs:
+  - {fileID: 6846192802134584936, guid: 0130d8c30315b5441aae96f0e9c2b315, type: 3}
   wisdomReward: 100

@@ -21,12 +21,12 @@ public class InteractionManager : MonoBehaviour
         actionText = GameObject.Find("ActionText").GetComponent<TextMeshProUGUI>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         GameEventsManager.instance.inputEvents.onInteractPressed += InteractPressed;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         GameEventsManager.instance.inputEvents.onInteractPressed -= InteractPressed;
     }
@@ -36,9 +36,7 @@ public class InteractionManager : MonoBehaviour
         // Cast ray searching for GameObjects with specific tags
         Ray r = new Ray(mainCamera.position, mainCamera.forward);
         if (Physics.Raycast(r, out hitInfo, interactRange))
-        {
             SetActionText();
-        }
         else
             actionText.text = "";
     }
@@ -90,18 +88,16 @@ public class InteractionManager : MonoBehaviour
                 }
                 break;
             case OBJECT_TAG:
-                // Temporary functions to implement Quest System
-                // TODO: Create abstract Interactable Object and call its functions here
-                if (!hitInfo.collider.gameObject.GetComponent<Obelisk>().active)
-                    hitInfo.collider.gameObject.GetComponent<Obelisk>().ActivateObelisk();
+                if (!hitInfo.collider.gameObject.GetComponent<IInteractableObject>().CheckState())
+                    hitInfo.collider.gameObject.GetComponent<IInteractableObject>().Activate();
                 else
-                    hitInfo.collider.gameObject.GetComponent<Obelisk>().DeactivateObelisk();
+                    hitInfo.collider.gameObject.GetComponent<IInteractableObject>().Deactivate();
                 break;
             case TERRAIN_TAG:
-                // TODO - Pass information to abstract SwitchableTerrain
+                // TODO - Pass information to interface SwitchableTerrain
                 break;
             case ITEM_TAG:
-                // TODO - Pass information to abstract Item
+                // TODO - Pass information to interface Item
                 break;
         }
     }

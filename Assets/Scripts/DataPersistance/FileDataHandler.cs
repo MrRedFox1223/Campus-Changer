@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -42,7 +41,7 @@ public class FileDataHandler
                         dataToLoad = reader.ReadToEnd();
                 }
 
-                // optionally dencrypt the data
+                // Optionally dencrypt the data
                 if (useEncryption)
                     dataToLoad = EncryptDecrypt(dataToLoad);
 

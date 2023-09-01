@@ -7,8 +7,6 @@ public class InputManager : MonoBehaviour
     private PlayerControls playerControls;
     private static InputManager _instance;
 
-    private bool exitPressed = false;
-
     public static InputManager instance
     {
         get

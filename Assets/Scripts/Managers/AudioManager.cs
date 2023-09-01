@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
@@ -7,14 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    private List<EventInstance> eventInstances;
-    private List<StudioEventEmitter> eventEmitters;
-
-    private Bus masterBus;
-    private Bus musicBus;
-    private Bus ambienceBus;
-    private Bus sfxBus;
-
     [Header("Ambience Parameters")]
     public List<string> defaultAmbienceParametersNames;
     public List<float> defaultAmbienceParametersValues;
@@ -31,6 +22,14 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance { get; private set; }
     public EventInstance ambienceEventInstance;
     public EventInstance musicEventInstance;
+
+    private List<EventInstance> eventInstances;
+    private List<StudioEventEmitter> eventEmitters;
+
+    private Bus masterBus;
+    private Bus musicBus;
+    private Bus ambienceBus;
+    private Bus sfxBus;
 
     private void Awake()
     {

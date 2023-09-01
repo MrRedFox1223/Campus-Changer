@@ -28,6 +28,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     [SerializeField] private TextMeshProUGUI actionText;
 
     public bool interactPressed = false;
+    public bool dialogueIsPlaying { get; private set; }
 
     private Story currentStory;
     private static DialogueManager instance;
@@ -39,9 +40,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
-    private const string LAYOUT_TAG = "layout";
-
-    public bool dialogueIsPlaying { get; private set; }
+    private const string LAYOUT_TAG = "layout"; 
 
     public static DialogueManager GetInstance()
     {
@@ -51,9 +50,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     private void Awake()
     {
         if (instance != null)
-        {
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
-        }
 
         instance = this;
 
@@ -68,10 +65,13 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         actionText = GameObject.Find("ActionText").GetComponent<TextMeshProUGUI>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         GameEventsManager.instance.inputEvents.onInteractPressed += InteractPressed;
+    }
 
+    private void Start()
+    {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
@@ -85,7 +85,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         }
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         GameEventsManager.instance.inputEvents.onInteractPressed -= InteractPressed;
     }
@@ -93,9 +93,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     private void Update()
     {
         if (!dialogueIsPlaying)
-        {
             return;
-        }
+
         if (canContinueToNextLine && interactPressed)
         {
             interactPressed = false;
@@ -147,9 +146,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
             HandleTags(currentStory.currentTags);
         }
         else
-        {
             ExitDialogueMode();
-        }
     }
 
     private IEnumerator DisplayLine(string line)
@@ -216,11 +213,9 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     {
         List<Choice> currentChoices = currentStory.currentChoices;
 
-        //defensive check to make sure UI can support the number of choices coming in
+        // Defensive check to make sure UI can support the number of choices coming in
         if (currentChoices.Count > choices.Length)
-        {
             Debug.LogError("More choices were given than the UI can support. Number of choices given:" + currentChoices.Count);
-        }
 
         int index = 0;
         foreach(Choice choice in currentChoices)
@@ -232,9 +227,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         }
 
         for (int i = index; i <choices.Length; i++)
-        {
             choices[i].gameObject.SetActive(false);
-        }
 
         StartCoroutine(SelectFirstChoice());
     }

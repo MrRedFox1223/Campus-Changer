@@ -6,6 +6,7 @@ public class IdleSFXEmmiter : MonoBehaviour
 {
     [SerializeField] private bool useCustomSFX;
     [SerializeField] private EventReference customSFX;
+
     private StudioEventEmitter emitter;
 
     private void Start()

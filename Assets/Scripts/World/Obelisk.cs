@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 
-public class Obelisk : MonoBehaviour
+public class Obelisk : MonoBehaviour, IInteractableObject
 {
     [Header("Gameplay")]
     public string id;
@@ -32,18 +30,28 @@ public class Obelisk : MonoBehaviour
         emitter = AudioManager.instance.InitializeEventEmitter(customSFX, this.gameObject);
     }
 
-    public void ActivateObelisk()
+    public void Activate()
     {
         emitter.Play();
         active = true;
         this.gameObject.GetComponent<MeshRenderer>().material = activeMaterial;
+        GameEventsManager.instance.miscEvents.ObeliskActivated();
     }
 
-    public void DeactivateObelisk()
+    public void Deactivate()
     {
         emitter.Stop();
         active = false;
         this.gameObject.GetComponent<MeshRenderer>().material = deactiveMaterial;
+        GameEventsManager.instance.miscEvents.ObeliskDeactivated();
+    }
+
+    public bool CheckState()
+    {
+        if (active)
+            return true;
+
+        return false;
     }
 
     private void OnDisable()

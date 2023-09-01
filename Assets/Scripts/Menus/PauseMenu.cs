@@ -22,7 +22,7 @@ public class PauseMenu : Menu
         GameEventsManager.instance.inputEvents.onExitPressed += ExitPressed;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         GameEventsManager.instance.inputEvents.onExitPressed -= ExitPressed;
     }
@@ -30,10 +30,7 @@ public class PauseMenu : Menu
     private void ExitPressed()
     {
         if (DialogueManager.GetInstance().dialogueIsPlaying)
-        {
-            DialogueManager.GetInstance().ExitDialogueMode();
-        }
-            
+            DialogueManager.GetInstance().ExitDialogueMode();    
         else
             ActivateMenu();
     }
@@ -44,8 +41,7 @@ public class PauseMenu : Menu
         Time.timeScale = 0f;
         actionText.SetActive(false);
         Cursor.visible = true;
-        isActive = true;
-        
+        isActive = true;  
     }
 
     public void OnResumeClicked()

@@ -17,9 +17,9 @@ public class SaveSlot : MonoBehaviour
     [Header("Clear Data Button")]
     [SerializeField] private Button clearButton;
 
-    private Button saveSlotButton;
-
     public bool hasData { get; private set; } = false;
+
+    private Button saveSlotButton;
 
     public void Awake()
     {

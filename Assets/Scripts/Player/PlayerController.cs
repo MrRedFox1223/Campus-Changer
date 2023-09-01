@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using FMOD.Studio;
 
 [RequireComponent(typeof(CharacterController))]
@@ -21,13 +20,16 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         cameraTransform = GameObject.Find("MainCamera").transform;
         Cursor.visible = false;
         playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
+    }
 
+    private void OnEnable()
+    {
         GameEventsManager.instance.inputEvents.onMovePressed += MovePressed;
         GameEventsManager.instance.playerEvents.onDisablePlayerMovement += DisablePlayerMovement;
         GameEventsManager.instance.playerEvents.onEnablePlayerMovement += EnablePlayerMovement;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         GameEventsManager.instance.inputEvents.onMovePressed -= MovePressed;
         GameEventsManager.instance.playerEvents.onDisablePlayerMovement -= DisablePlayerMovement;
@@ -65,9 +67,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         playerVelocity = moveDir;
 
         if (movementDisabled)
-        {
             playerVelocity = Vector2.zero;
-        }
     }
 
     private void EnablePlayerMovement()

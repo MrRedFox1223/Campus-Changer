@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class SettingsMenu : Menu
 {
@@ -13,9 +12,7 @@ public class SettingsMenu : Menu
         if (SceneManager.GetActiveScene().name == "MainMenu")
             mainMenu.ActivateMenu();
         else
-        {
             pauseMenu.ActivateMenu();
-        }
 
         this.DeactivateMenu();
     }
