@@ -50,7 +50,6 @@ public class VolumeSlider : MonoBehaviour
             case VolumeType.MASTER:
                 AudioManager.instance.masterVolume = volumeSlider.value;
                 SaveVolumeSettings();
-                Debug.Log("");
                 break;
             case VolumeType.MUSIC:
                 AudioManager.instance.musicVolume = volumeSlider.value;

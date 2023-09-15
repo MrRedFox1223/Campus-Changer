@@ -1,7 +1,8 @@
 using UnityEngine;
 using FMODUnity;
+using System;
 
-public class Obelisk : MonoBehaviour, IInteractableObject
+public class Obelisk : MonoBehaviour, IInteractableObject, IDataPersistance
 {
     [Header("Gameplay")]
     public string id;
@@ -22,7 +23,7 @@ public class Obelisk : MonoBehaviour, IInteractableObject
         id = System.Guid.NewGuid().ToString();
     }
 
-    private void Start()
+    private void Awake()
     {
         if (!useCustomSFX)
             customSFX = FMODEvents.instance.itemIdle;
@@ -57,5 +58,30 @@ public class Obelisk : MonoBehaviour, IInteractableObject
     private void OnDisable()
     {
         emitter.Stop();
+    }
+
+    public void LoadData(GameData data)
+    {
+        try
+        {
+            active = data.interactableObjectsState[id];
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
+        }
+
+        if (active)
+            Activate();
+        else
+            Deactivate();
+    }
+
+    public void SaveData(GameData data)
+    {
+        if (data.interactableObjectsState.ContainsKey(id))
+            data.interactableObjectsState.Remove(id);
+
+        data.interactableObjectsState.Add(id, active);
     }
 }

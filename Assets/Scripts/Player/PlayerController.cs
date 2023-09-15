@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 {
     [Header("Physics values")]
     [SerializeField] private float playerSpeed = 2.0f;
+    [SerializeField] private float gravity = -9.81f;
 
     public Transform cameraTransform;
 
@@ -45,12 +46,19 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
         Vector3 move = new Vector3(playerVelocity.x, 0f, playerVelocity.y);
         move = cameraTransform.forward * move.z + cameraTransform.right * move.x;
-        move.y = 0f;
+
+        if (controller.isGrounded)
+            move.y = 0f;
+        else
+            move.y = gravity;
+
         move = move.normalized;
 
-        controller.Move(move * Time.deltaTime * playerSpeed);
+        float moveFactor = Time.deltaTime * playerSpeed;
 
-        if (move != Vector3.zero)
+        controller.Move(new Vector3(move.x * moveFactor, move.y * Time.deltaTime, move.z * moveFactor));
+
+        if (move.x != 0 || move.z != 0)
         {
             gameObject.transform.forward = move;
             if (Time.timeScale != 0)
@@ -59,7 +67,9 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         else
             playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
 
-        //TODO: Add gravity force
+        // Locks  players x axis rotation to prevent cameras shaking
+        Vector3 eulerAngles = transform.eulerAngles;
+        transform.eulerAngles = new Vector3(0, eulerAngles.y, eulerAngles.z);
     }
 
     private void MovePressed(Vector2 moveDir)

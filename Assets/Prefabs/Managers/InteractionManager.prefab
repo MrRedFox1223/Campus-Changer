@@ -46,3 +46,4 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   actionText: {fileID: 0}
   interactRange: 2.5
+  switchableTerrainMenu: {fileID: 0}

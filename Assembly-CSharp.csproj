@@ -64,24 +64,30 @@
     <Compile Include="Assets\Scripts\Managers\DataPersistanceManager.cs" />
     <Compile Include="Assets\Scripts\Audio\AmbienceChangeTrigger.cs" />
     <Compile Include="Assets\Scripts\DataPersistance\GameData.cs" />
+    <Compile Include="Assets\Scripts\QuestSystem\Quest.cs" />
     <Compile Include="Assets\Scripts\Audio\FMODEvents.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\Scripts\QuestSystem\QuestStepState.cs" />
+    <Compile Include="Assets\Scripts\World\Interfaces\ISwitchableTerrain.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Managers\InteractionManager.cs" />
     <Compile Include="Assets\Scripts\World\Obelisk.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\Scripts\World\SwitchableObject.cs" />
     <Compile Include="Assets\Scripts\Menus\PauseMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\Managers\GameEventsManager.cs" />
     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\BasicInkExample.cs" />
+    <Compile Include="Assets\Scripts\Menus\SwitchableTerrainMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\DataPersistance\IDataPersistance.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\QuitGameOnKeypress.cs" />
+    <Compile Include="Assets\Scripts\QuestSystem\QuestState.cs" />
     <Compile Include="Assets\Scripts\Menus\SaveSlotsMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueHolder.cs" />
@@ -96,7 +102,6 @@
     <Compile Include="Assets\Scripts\DataPersistance\FileDataHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Inputs\PlayerControls.cs" />
-    <Compile Include="Assets\Scripts\World\TerrainSwitcher.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\Audio\MusicArea.cs" />
@@ -106,6 +111,7 @@
     <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Events\QuestEvents.cs" />
     <Compile Include="Assets\Scripts\Menus\SaveSlot.cs" />
     <Compile Include="Assets\Scripts\Audio\IdleSFXEmmiter.cs" />
     <Compile Include="Assets\Scripts\Managers\DialogueManager.cs" />
@@ -116,6 +122,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\Camera\CinemachinePOVExtension.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\Scripts\QuestSystem\QuestData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\InkExternalFuntions.cs" />
+    <Compile Include="Assets\Scripts\QuestSystem\QuestPoint.cs" />
     <Compile Include="Assets\Scripts\Menus\ConfirmationPopupMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\Events\MiscEvents.cs" />
@@ -129,10 +138,11 @@
     <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Audio\VolumeSlider.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\QuestSystem\Quest.cs" />
-    <Compile Include="Assets\Scripts\QuestSystem\QuestState.cs" />
+    <Compile Include="Assets\Resources\Quests\CheckObeliskQuest\CheckObeliskQuestStep2.cs" />
     <Compile Include="Assets\Scripts\Managers\QuestManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Scripts\DataPersistance\SceneIndexes.cs" />
+    <Compile Include="Assets\Scripts\Managers\LevelLoadingManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

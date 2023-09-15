@@ -19,7 +19,11 @@ public class CheckObeliskQuestStep : QuestStep
     {
         // There must be 2 ifs becouse activation of the last obelisk will not trigger FinishQuestStep()
         if (obelisksActivated < obelisksToComplete)
+        {
             obelisksActivated++;
+            UpdateStep();
+        }
+            
         
         if (obelisksActivated >= obelisksToComplete)
             FinishQuestStep();
@@ -28,6 +32,21 @@ public class CheckObeliskQuestStep : QuestStep
     private void ObeliskDeactivated()
     {
         if (obelisksActivated > 0)
+        {
             obelisksActivated--;
+            UpdateStep();
+        }    
+    }
+
+    private void UpdateStep()
+    {
+        string state = obelisksActivated.ToString();
+        ChangeState(state);
+    }
+
+    protected override void SetQuestStepState(string state)
+    {
+        this.obelisksActivated = System.Int32.Parse(state);
+        UpdateStep();
     }
 }

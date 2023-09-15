@@ -1,23 +1,62 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - Tarodev.AutoSaveConfig
     Assembly-CSharp.dll:
+    - AmbienceChangeTrigger
+    - AudioManager
+    - CheckObeliskQuestStep
+    - CheckObeliskQuestStep2
     - CinemachinePOVExtension
+    - ConfirmationPopupMenu
     - DataPersistanceManager
     - DialogueHolder
     - DialogueManager
-    - DialogueTrigger
+    - FMODEvents
+    - GameEventsManager
     - InputManager
+    - InteractionManager
     - MainMenu
+    - Menu
+    - MusicChangeTrigger
+    - Obelisk
+    - PauseMenu
     - PlayerController
+    - QuestInfoSO
+    - QuestManager
+    - QuestPoint
     - SaveSlot
     - SaveSlotsMenu
-    - TerrainSwitcher
+    - SettingsMenu
+    - SwitchableObject
+    - SwitchableTerrainMenu
+    - VolumeSlider
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineHardLockToTarget
     - Cinemachine.CinemachinePOV
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineVirtualCamera
+    FMODUnity.dll:
+    - FMODUnity.PlatformAndroid
+    - FMODUnity.PlatformAppleTV
+    - FMODUnity.PlatformDefault
+    - FMODUnity.PlatformIOS
+    - FMODUnity.PlatformLinux
+    - FMODUnity.PlatformMac
+    - FMODUnity.PlatformMobileHigh
+    - FMODUnity.PlatformMobileLow
+    - FMODUnity.PlatformPlayInEditor
+    - FMODUnity.PlatformWebGL
+    - FMODUnity.PlatformWindows
+    - FMODUnity.Settings
+    - FMODUnity.StudioEventEmitter
+    - FMODUnity.StudioListener
+    FMODUnityEditor.dll:
+    - FMODUnity.EditorBankRef
+    - FMODUnity.EditorEventRef
+    - FMODUnity.EditorParamRef
+    - FMODUnity.EventCache
     InkEditor.dll:
     - Ink.UnityIntegration.InkCompiler
     - Ink.UnityIntegration.InkLibrary
@@ -96,6 +135,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -121,13 +161,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 54
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -140,58 +178,96 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1622}
+      Script: {instanceID: 1742}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 1670}
+      Script: {instanceID: 1792}
     - Class: 114
-      Script: {instanceID: 2290}
+      Script: {instanceID: 1950}
     - Class: 114
-      Script: {instanceID: 2664}
+      Script: {instanceID: 2444}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2540}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 2842}
     - Class: 114
-      Script: {instanceID: 3222}
+      Script: {instanceID: 2916}
     - Class: 114
-      Script: {instanceID: 3298}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3810}
+      Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 4352}
+      Script: {instanceID: 3278}
     - Class: 114
-      Script: {instanceID: 4430}
+      Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 4652}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 5106}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 5356}
+      Script: {instanceID: 3512}
     - Class: 114
-      Script: {instanceID: 5932}
+      Script: {instanceID: 3522}
     - Class: 114
-      Script: {instanceID: 5972}
+      Script: {instanceID: 3722}
     - Class: 114
-      Script: {instanceID: 6128}
+      Script: {instanceID: 3936}
     - Class: 114
-      Script: {instanceID: 6242}
+      Script: {instanceID: 3982}
     - Class: 114
-      Script: {instanceID: 6858}
+      Script: {instanceID: 4056}
     - Class: 114
-      Script: {instanceID: 7040}
+      Script: {instanceID: 4614}
     - Class: 114
-      Script: {instanceID: 7504}
+      Script: {instanceID: 4700}
     - Class: 114
-      Script: {instanceID: 7662}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 7886}
+      Script: {instanceID: 4812}
+    - Class: 114
+      Script: {instanceID: 4932}
+    - Class: 114
+      Script: {instanceID: 5568}
+    - Class: 114
+      Script: {instanceID: 5656}
+    - Class: 114
+      Script: {instanceID: 6250}
+    - Class: 114
+      Script: {instanceID: 6260}
+    - Class: 114
+      Script: {instanceID: 6294}
+    - Class: 114
+      Script: {instanceID: 6458}
+    - Class: 114
+      Script: {instanceID: 6580}
+    - Class: 114
+      Script: {instanceID: 7010}
+    - Class: 114
+      Script: {instanceID: 7220}
+    - Class: 114
+      Script: {instanceID: 7416}
+    - Class: 114
+      Script: {instanceID: 7636}
+    - Class: 114
+      Script: {instanceID: 7860}
+    - Class: 114
+      Script: {instanceID: 7910}
+    - Class: 114
+      Script: {instanceID: 8074}
+    - Class: 114
+      Script: {instanceID: 8568}
+    - Class: 114
+      Script: {instanceID: 8662}
+    - Class: 114
+      Script: {instanceID: 8702}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -226,15 +302,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
     - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -245,113 +325,169 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 1740}
     - Class: 114
-      Script: {instanceID: 1622}
+      Script: {instanceID: 1742}
     - Class: 114
-      Script: {instanceID: 1624}
+      Script: {instanceID: 1744}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 1632}
+      Script: {instanceID: 1754}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 1986}
+      Script: {instanceID: 1950}
     - Class: 114
-      Script: {instanceID: 2228}
+      Script: {instanceID: 2130}
     - Class: 114
-      Script: {instanceID: 2290}
+      Script: {instanceID: 2382}
     - Class: 114
-      Script: {instanceID: 2386}
+      Script: {instanceID: 2444}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2544}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 3222}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 3298}
+      Script: {instanceID: 2842}
     - Class: 114
-      Script: {instanceID: 3364}
+      Script: {instanceID: 2916}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 2986}
     - Class: 114
-      Script: {instanceID: 3580}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 3698}
+      Script: {instanceID: 3378}
     - Class: 114
-      Script: {instanceID: 3810}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 4026}
+      Script: {instanceID: 3512}
     - Class: 114
-      Script: {instanceID: 4148}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 4176}
+      Script: {instanceID: 3606}
     - Class: 114
-      Script: {instanceID: 4280}
+      Script: {instanceID: 3672}
     - Class: 114
-      Script: {instanceID: 4286}
+      Script: {instanceID: 3816}
     - Class: 114
-      Script: {instanceID: 4462}
+      Script: {instanceID: 3938}
     - Class: 114
-      Script: {instanceID: 4556}
+      Script: {instanceID: 3976}
     - Class: 114
-      Script: {instanceID: 5280}
+      Script: {instanceID: 4056}
     - Class: 114
-      Script: {instanceID: 5298}
+      Script: {instanceID: 4278}
     - Class: 114
-      Script: {instanceID: 5356}
+      Script: {instanceID: 4406}
     - Class: 114
-      Script: {instanceID: 5362}
+      Script: {instanceID: 4434}
     - Class: 114
-      Script: {instanceID: 5562}
+      Script: {instanceID: 4540}
     - Class: 114
-      Script: {instanceID: 5564}
+      Script: {instanceID: 4546}
     - Class: 114
-      Script: {instanceID: 5584}
+      Script: {instanceID: 4614}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 4732}
     - Class: 114
-      Script: {instanceID: 5972}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 6116}
+      Script: {instanceID: 4836}
     - Class: 114
-      Script: {instanceID: 6128}
+      Script: {instanceID: 4932}
     - Class: 114
-      Script: {instanceID: 6162}
+      Script: {instanceID: 5568}
     - Class: 114
-      Script: {instanceID: 6196}
+      Script: {instanceID: 5578}
     - Class: 114
-      Script: {instanceID: 6202}
+      Script: {instanceID: 5596}
     - Class: 114
-      Script: {instanceID: 6306}
+      Script: {instanceID: 5604}
     - Class: 114
-      Script: {instanceID: 6344}
+      Script: {instanceID: 5656}
     - Class: 114
-      Script: {instanceID: 6390}
+      Script: {instanceID: 5662}
     - Class: 114
-      Script: {instanceID: 6472}
+      Script: {instanceID: 5870}
     - Class: 114
-      Script: {instanceID: 6582}
+      Script: {instanceID: 5872}
     - Class: 114
-      Script: {instanceID: 6724}
+      Script: {instanceID: 5892}
     - Class: 114
-      Script: {instanceID: 6842}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 6858}
+      Script: {instanceID: 6112}
     - Class: 114
-      Script: {instanceID: 6892}
+      Script: {instanceID: 6164}
     - Class: 114
-      Script: {instanceID: 7504}
+      Script: {instanceID: 6250}
     - Class: 114
-      Script: {instanceID: 7522}
+      Script: {instanceID: 6260}
     - Class: 114
-      Script: {instanceID: 7850}
+      Script: {instanceID: 6294}
     - Class: 114
-      Script: {instanceID: 8118}
+      Script: {instanceID: 6446}
+    - Class: 114
+      Script: {instanceID: 6458}
+    - Class: 114
+      Script: {instanceID: 6496}
+    - Class: 114
+      Script: {instanceID: 6532}
+    - Class: 114
+      Script: {instanceID: 6538}
+    - Class: 114
+      Script: {instanceID: 6648}
+    - Class: 114
+      Script: {instanceID: 6688}
+    - Class: 114
+      Script: {instanceID: 6734}
+    - Class: 114
+      Script: {instanceID: 6820}
+    - Class: 114
+      Script: {instanceID: 6934}
+    - Class: 114
+      Script: {instanceID: 7084}
+    - Class: 114
+      Script: {instanceID: 7204}
+    - Class: 114
+      Script: {instanceID: 7220}
+    - Class: 114
+      Script: {instanceID: 7260}
+    - Class: 114
+      Script: {instanceID: 7416}
+    - Class: 114
+      Script: {instanceID: 7628}
+    - Class: 114
+      Script: {instanceID: 7668}
+    - Class: 114
+      Script: {instanceID: 7860}
+    - Class: 114
+      Script: {instanceID: 7910}
+    - Class: 114
+      Script: {instanceID: 7932}
+    - Class: 114
+      Script: {instanceID: 8268}
+    - Class: 114
+      Script: {instanceID: 8380}
+    - Class: 114
+      Script: {instanceID: 8544}
+    - Class: 114
+      Script: {instanceID: 8640}
+    - Class: 114
+      Script: {instanceID: 8662}
+    - Class: 114
+      Script: {instanceID: 8684}
+    - Class: 114
+      Script: {instanceID: 8712}
+    - Class: 114
+      Script: {instanceID: 8716}
+    - Class: 114
+      Script: {instanceID: 8806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -407,6 +543,12 @@ ScriptsOnlyBuild:
     className: PlayerInput
   - hash:
       serializedVersion: 2
+      Hash: d6bd3e3da428605ac1913dea0926b4a1
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioGlobalParameterTrigger
+  - hash:
+      serializedVersion: 2
       Hash: ca0b8ad3987cd33b3209a508b6e1562e
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering
@@ -441,6 +583,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 9a46639c6b1505e08ab61c1ffcb7a029
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SettingsMenu
   - hash:
       serializedVersion: 2
       Hash: ae20da6493a48ec6a8af7899dcb31507
@@ -497,7 +645,7 @@ ScriptsOnlyBuild:
     className: CinemachineCameraOffset
   - hash:
       serializedVersion: 2
-      Hash: 4b2cb18e9dff5f00113159c0480dad0a
+      Hash: ffd0e6515e526682aed025e5d8a562cd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu
@@ -513,6 +661,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: WhiteBalance
+  - hash:
+      serializedVersion: 2
+      Hash: 8eac8adc610440bd9452016244dbc800
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformGroup
   - hash:
       serializedVersion: 2
       Hash: 6225eb0973ab0af667bc5f9d1b1b18de
@@ -551,7 +705,7 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: f4ad63b6e6ab49d4330f7b41548bf20e
+      Hash: b0dbd18e6de58fb5056965c6821442f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DataPersistanceManager
@@ -561,6 +715,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: a6e4e04de3f8b59cd6496a30dc30c419
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AmbienceChangeTrigger
   - hash:
       serializedVersion: 2
       Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
@@ -591,6 +751,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: XRSystemData
+  - hash:
+      serializedVersion: 2
+      Hash: 0c301dd646cf67b92f071be881841a03
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FMODEvents
   - hash:
       serializedVersion: 2
       Hash: c8f1a224e0a43adc56c91864de822dd3
@@ -629,6 +795,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: ee68e3bff30f0a885ee58541a50a1bf0
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioListener
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -657,6 +829,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformWebGL
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -701,16 +879,28 @@ ScriptsOnlyBuild:
     className: Cinemachine3rdPersonFollow
   - hash:
       serializedVersion: 2
-      Hash: ff3daedb2d1595d96ac96928d74f86d9
+      Hash: a5651feb23e74416c035a671916365c4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: 89bcbc3a5364ae55f27b5ec81b34362e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InteractionManager
   - hash:
       serializedVersion: 2
       Hash: 2cfa0393b5123bd14aa7b550fd8912e4
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Experimental.Rendering.Universal
     className: ShadowCaster2D
+  - hash:
+      serializedVersion: 2
+      Hash: 1939d228e0dba1580628e5facbc1a440
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Obelisk
   - hash:
       serializedVersion: 2
       Hash: 5d5b0c61f3ab6ff5f41b1bbe19764526
@@ -723,6 +913,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: VertexShakeA
+  - hash:
+      serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformAppleTV
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -753,6 +949,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: UniversalAdditionalCameraData
+  - hash:
+      serializedVersion: 2
+      Hash: 83918b03ce6b1024e3c6537ad386490c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwitchableObject
   - hash:
       serializedVersion: 2
       Hash: 8d35f16c5022311c6f4d9432be73bfcf
@@ -789,6 +991,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachinePixelPerfect
+  - hash:
+      serializedVersion: 2
+      Hash: 6c0a06f19b1be866dc857d46d3fb516f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -845,6 +1053,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameEventsManager
+  - hash:
+      serializedVersion: 2
       Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -855,6 +1069,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BasicInkExample
+  - hash:
+      serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformAndroid
+  - hash:
+      serializedVersion: 2
+      Hash: 266ba0c7a92b4f72ea8ac8f9912f7193
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwitchableTerrainMenu
   - hash:
       serializedVersion: 2
       Hash: 6f29b049d6b6b18bee23aaf2fe273e02
@@ -891,6 +1117,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnvMapAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: d04e7f67e2d538deb017e7ab282a80dc
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: FMODEventTrack
   - hash:
       serializedVersion: 2
       Hash: bd3f0ca738703903e759f77536ed74fd
@@ -1013,7 +1245,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 4067637077e5fb554528b4754c1b064a
+      Hash: a830b3ecb146985695604705fbdb707d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SaveSlotsMenu
@@ -1089,6 +1321,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.OnScreen
     className: OnScreenStick
+  - hash:
+      serializedVersion: 2
+      Hash: a378d873db6b3899f275ed1eec4189ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuestInfoSO
+  - hash:
+      serializedVersion: 2
+      Hash: d454849c27750c3b204d5a340b2b0bb9
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: FMODEventPlayable
+  - hash:
+      serializedVersion: 2
+      Hash: 92fa389af8344bb28ab9ccfbbc841d69
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MusicChangeTrigger
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -1235,12 +1485,6 @@ ScriptsOnlyBuild:
     className: CinemachineVolumeSettings
   - hash:
       serializedVersion: 2
-      Hash: babe65a0f4d91938ae27c2ebc32893dc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TerrainSwitcher
-  - hash:
-      serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1281,6 +1525,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerVector3
+  - hash:
+      serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformMobileLow
   - hash:
       serializedVersion: 2
       Hash: e6f0efd0e20669d577e9d21526b3d3f9
@@ -1343,6 +1593,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformIOS
+  - hash:
+      serializedVersion: 2
       Hash: 54d8f12780f7f6df9b0603e66c9a5b3b
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1365,6 +1621,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionEditorWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 2287d555c8f3de05721af1c7f423836f
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: Settings
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1403,6 +1665,12 @@ ScriptsOnlyBuild:
     className: CinemachineBrain
   - hash:
       serializedVersion: 2
+      Hash: ec7ab49b6a4c0c7eca8d7e3811d14041
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1437,6 +1705,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 7d11e17b0323c2d01abce64d39203eb6
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioBankLoader
   - hash:
       serializedVersion: 2
       Hash: 58e68364412c67eae2bdb4954be2dcc2
@@ -1475,13 +1749,19 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerIntField
   - hash:
       serializedVersion: 2
+      Hash: a3e2a553b9cffee3dab7a302c08d079b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IdleSFXEmmiter
+  - hash:
+      serializedVersion: 2
       Hash: 36112b0a16753cab0931521e4de67ef6
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: LiftGammaGain
   - hash:
       serializedVersion: 2
-      Hash: 4c8a03c3440b9de45a5bc23d813b2f7f
+      Hash: 2ac52b1102a26a1eb2ff4f88d43572d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogueManager
@@ -1547,6 +1827,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: DebugUpdater
+  - hash:
+      serializedVersion: 2
       Hash: a66794b62dbf044668a5f102bb7908c2
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1569,6 +1855,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: PlayerInputEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 5a4e871cee6bb9f5c9039cd61425fa44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1613,6 +1905,12 @@ ScriptsOnlyBuild:
     className: FilmGrain
   - hash:
       serializedVersion: 2
+      Hash: 4680db657a09772d677eb34657f979a8
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: FMODRuntimeManagerOnGUIHelper
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1629,6 +1927,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputActionReference
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: RuntimeManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1733,6 +2037,24 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformWindows
+  - hash:
+      serializedVersion: 2
+      Hash: dbed4a99f54395a9efd6bea2eca6be42
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuestPoint
+  - hash:
+      serializedVersion: 2
+      Hash: f8da322eb10690737d9589718af6b39e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ConfirmationPopupMenu
+  - hash:
+      serializedVersion: 2
       Hash: a1ca1237bad0f30ea5ba8f4060929114
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1751,6 +2073,12 @@ ScriptsOnlyBuild:
     className: CinemachineTrackedDolly
   - hash:
       serializedVersion: 2
+      Hash: 5675c23c6654d1b9bee1eef9394b2571
+    assemblyName: FMODUnityResonance.dll
+    namespaceName: FMODUnityResonance
+    className: FmodResonanceAudioRoom
+  - hash:
+      serializedVersion: 2
       Hash: 48982140c520cbca517d0f96b60a0ba9
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -1761,6 +2089,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: UniversalAdditionalLightData
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckObeliskQuestStep
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1805,6 +2139,12 @@ ScriptsOnlyBuild:
     className: PaniniProjection
   - hash:
       serializedVersion: 2
+      Hash: af18424ab4310bab8befde4fcb8b8ca8
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioParameterTrigger
+  - hash:
+      serializedVersion: 2
       Hash: c1f5356fcd27668ddc25078e27f9828d
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.UI
@@ -1829,12 +2169,6 @@ ScriptsOnlyBuild:
     className: DropdownSample
   - hash:
       serializedVersion: 2
-      Hash: 9eedf81f0c13bcba5118c42a6fde04a0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DialogueTrigger
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Experimental.Rendering.Universal
@@ -1857,6 +2191,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: ForwardRendererData
+  - hash:
+      serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformMac
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -1901,16 +2241,58 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerFoldout
   - hash:
       serializedVersion: 2
+      Hash: f383f3de7dd693e39c305afc45144f7e
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: StudioEventEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformPlayInEditor
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: c0e18ed911c887b0351949efd26d5a55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VolumeSlider
+  - hash:
+      serializedVersion: 2
       Hash: 766d1e816bcaf02d44dc1df06af2bf9a
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: PlayerInputManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckObeliskQuestStep2
+  - hash:
+      serializedVersion: 2
+      Hash: 7c1e6658d32e687ff665d02b71650c71
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuestManager
+  - hash:
+      serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformDefault
+  - hash:
+      serializedVersion: 2
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformLinux
   - hash:
       serializedVersion: 2
       Hash: a2113831d3323f931007e1b3812dc814
@@ -1931,10 +2313,10 @@ ScriptsOnlyBuild:
     className: Benchmark01
   - hash:
       serializedVersion: 2
-      Hash: 5a4e871cee6bb9f5c9039cd61425fa44
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Menu
+      Hash: 9c9b7924bcf778b4455ca1e0b5aa2c2c
+    assemblyName: FMODUnity.dll
+    namespaceName: FMODUnity
+    className: PlatformMobileHigh
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

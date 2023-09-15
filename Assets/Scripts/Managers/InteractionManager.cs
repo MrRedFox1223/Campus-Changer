@@ -6,6 +6,7 @@ public class InteractionManager : MonoBehaviour
     [SerializeField] private Transform mainCamera;
     [SerializeField] private TextMeshProUGUI actionText;
     [SerializeField] private float interactRange;
+    [SerializeField] private GameObject switchableTerrainMenu;
     
     private GameObject NPC;
     private RaycastHit hitInfo;
@@ -50,27 +51,27 @@ public class InteractionManager : MonoBehaviour
             case NPC_TAG:
                 if (!DialogueManager.GetInstance().dialogueIsPlaying)
                 {
-                    actionText.text = "<color=#FFFFFF> E </color>  Rozmawiaj";
+                    actionText.text = "<color=#FFFFFF> E </color>  Talk";
                 }
                 else
                     actionText.text = "";
                 break;
             case OBJECT_TAG:
-                actionText.text = "<color=#FFFFFF> E </color>  U¿yj";
+                actionText.text = "<color=#FFFFFF> E </color>  Use";
                 break;
             case TERRAIN_TAG:
-                actionText.text = "<color=#FFFFFF> E </color>  Zmieñ";
+                actionText.text = "<color=#FFFFFF> E </color>  Change";
                 break;
             case ITEM_TAG:
-                actionText.text = "<color=#FFFFFF> E </color>  Podnieœ";
+                actionText.text = "<color=#FFFFFF> E </color>  Pick up";
                 break;
         }
     }
 
     private void InteractPressed()
     {
-        // Prevents from interacting with Game objects when exiting from the pause menu
-        if (GameObject.Find("PauseMenu") != null && GameObject.Find("PauseMenu").GetComponent<PauseMenu>().isActive == true)
+        // Prevents from interacting with Game objects when menu is active
+        if (MenuActive())
             return;
 
         if (hitInfo.collider == null)
@@ -84,7 +85,7 @@ public class InteractionManager : MonoBehaviour
                 if (!DialogueManager.GetInstance().dialogueIsPlaying)
                 {
                     NPC = hitInfo.collider.gameObject.transform.parent.gameObject;
-                    DialogueManager.GetInstance().EnterDialogueMode(NPC.transform.Find("Dialogue").GetComponent<DialogueHolder>().inkJSON);
+                    DialogueManager.GetInstance().EnterDialogueMode(NPC.transform.Find("Dialogue").GetComponent<DialogueHolder>().inkJSON, NPC);
                 }
                 break;
             case OBJECT_TAG:
@@ -94,11 +95,23 @@ public class InteractionManager : MonoBehaviour
                     hitInfo.collider.gameObject.GetComponent<IInteractableObject>().Deactivate();
                 break;
             case TERRAIN_TAG:
-                // TODO - Pass information to interface SwitchableTerrain
+                switchableTerrainMenu.SetActive(true);
+                switchableTerrainMenu.GetComponent<SwitchableTerrainMenu>().Initialize(hitInfo.collider.gameObject.transform.parent.gameObject);
                 break;
             case ITEM_TAG:
                 // TODO - Pass information to interface Item
                 break;
         }
+    }
+
+    private bool MenuActive()
+    {
+        if (GameObject.Find("PauseMenu") != null && GameObject.Find("PauseMenu").GetComponent<PauseMenu>().isActive == true)
+            return true;
+
+        if (GameObject.Find("SwitchableTerrainMenu") != null && GameObject.Find("SwitchableTerrainMenu").GetComponent<SwitchableTerrainMenu>().isActive == true)
+            return true;
+        
+        return false;
     }
 }

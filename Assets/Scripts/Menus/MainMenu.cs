@@ -47,10 +47,12 @@ public class MainMenu : Menu
         // Save game before loading a new scene
         DataPersistanceManager.instance.SaveGame();
         // Load the next scene - load the game becouse of OnSceneLoaded() in the DataPersistanceManager
-        SceneManager.LoadScene("Laboratory");
+        GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.LABORATORY);
 
         Time.timeScale = 1f;
         Cursor.visible = false;
+
+        this.DeactivateMenu();
     }
 
     public void OnSettingsClicked()

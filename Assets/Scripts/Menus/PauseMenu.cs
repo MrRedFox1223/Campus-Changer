@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class PauseMenu : Menu
 {
@@ -10,6 +9,7 @@ public class PauseMenu : Menu
 
     [Header("References")]
     [SerializeField] private GameObject actionText;
+    [SerializeField] private GameObject crosshair;
 
     public bool isActive { get; private set; }
     
@@ -18,6 +18,7 @@ public class PauseMenu : Menu
         isActive = false;
 
         actionText = GameObject.Find("ActionText");
+        crosshair = GameObject.Find("Crosshair");
 
         GameEventsManager.instance.inputEvents.onExitPressed += ExitPressed;
     }
@@ -29,8 +30,12 @@ public class PauseMenu : Menu
 
     private void ExitPressed()
     {
+        GameObject switchableTerrain = GameObject.Find("SwitchableTerrainMenu");
+
         if (DialogueManager.GetInstance().dialogueIsPlaying)
-            DialogueManager.GetInstance().ExitDialogueMode();    
+            DialogueManager.GetInstance().ExitDialogueMode();
+        else if (switchableTerrain != null && switchableTerrain.GetComponent<SwitchableTerrainMenu>().isActive == true)
+            switchableTerrain.GetComponent<SwitchableTerrainMenu>().DeactivateMenu();
         else
             ActivateMenu();
     }
@@ -40,8 +45,9 @@ public class PauseMenu : Menu
         pauseScreen.SetActive(true);
         Time.timeScale = 0f;
         actionText.SetActive(false);
+        crosshair.SetActive(false);
         Cursor.visible = true;
-        isActive = true;  
+        isActive = true;
     }
 
     public void OnResumeClicked()
@@ -51,6 +57,13 @@ public class PauseMenu : Menu
         Time.timeScale = 1f;
         isActive = false;
         actionText.SetActive(true);
+        crosshair.SetActive(true);
+    }
+
+    public void OnSaveGameClicked()
+    {
+        Debug.Log("Game Saved");
+        DataPersistanceManager.instance.SaveGame();
     }
 
     public void OnSettingsClicked()
@@ -63,8 +76,11 @@ public class PauseMenu : Menu
     {
         // Save the game anytime before loading a new scene
         DataPersistanceManager.instance.SaveGame();
+
         // Load the main menu scene
-        SceneManager.LoadScene("MainMenu");
+        GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.MAIN_MENU);
+
+        this.DeactivateMenu();
     }
 
     public void OnQuitGameClicked()

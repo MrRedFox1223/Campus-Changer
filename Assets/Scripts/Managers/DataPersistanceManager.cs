@@ -152,13 +152,6 @@ public class DataPersistanceManager : MonoBehaviour
 
     }
 
-    // TODO: Wymieniæ na zapisywanie z poziomu menu i przy autosave
-
-    private void OnApplicationQuit()
-    {
-        SaveGame();
-    }
-
     private List<IDataPersistance> FindAllDataPersistanceObjects()
     {
         IEnumerable<IDataPersistance> dataPersistanceObjects = FindObjectsOfType<MonoBehaviour>(true)

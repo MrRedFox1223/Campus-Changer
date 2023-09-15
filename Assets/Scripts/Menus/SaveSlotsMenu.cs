@@ -66,10 +66,12 @@ public class SaveSlotsMenu : Menu
         DataPersistanceManager.instance.SaveGame();
 
         // Load the scene - save the game becouse of onSceneUnloaded() in DataPersistanceManager
-        SceneManager.LoadScene("Laboratory");
+        GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.LABORATORY);
 
         Time.timeScale = 1f;
         Cursor.visible = false;
+
+        this.DeactivateMenu();
     }
 
     public void OnClearClicked(SaveSlot saveSlot)

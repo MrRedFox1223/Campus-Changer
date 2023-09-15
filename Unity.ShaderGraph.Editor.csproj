@@ -280,8 +280,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Drawing\Inspector\PropertyDrawers\Vector3PropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Drawing\Inspector\PropertyDrawers\Vector4PropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Importers\ShaderGraphImporter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Nodes\Artistic\Normal\NormalBlendNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Nodes\Math\Vector\TransformNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Nodes\Artistic\Normal\NormalBlendNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Drawing\Colors\IColorProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\Data\Graphs\PreviewMode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.9.0\Editor\AssetCallbacks\CreateShaderSubGraph.cs" />

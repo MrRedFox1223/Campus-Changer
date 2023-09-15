@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518e5d3d92b25ae408f3318fb8166fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
-  gravityValue: 0
+  playerSpeed: 15
+  gravity: -9.81
   cameraTransform: {fileID: 0}
 --- !u!143 &7174244151914309500
 CharacterController:
