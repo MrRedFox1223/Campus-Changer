@@ -1,9 +1,9 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SaveSlotsMenu : Menu
+public class SaveSlotsMenu : Menu, IDataPersistance
 {
     [Header("Menu Navigation")]
     [SerializeField] private MainMenu mainMenu;
@@ -17,6 +17,7 @@ public class SaveSlotsMenu : Menu
     private SaveSlot[] saveSlots;
 
     private bool isLoadingGame = false;
+    private int saveSlotSceneIndex = 0;
 
     private void Awake()
     {
@@ -33,7 +34,7 @@ public class SaveSlotsMenu : Menu
         if (isLoadingGame)
         {
             DataPersistanceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
-            SaveGameAndLoadScene();
+            SaveGameAndLoadScene(isLoadingGame);
         }
         // Case - new game, but the save slot has data
         else if (saveSlot.hasData)
@@ -44,7 +45,7 @@ public class SaveSlotsMenu : Menu
                 {
                     DataPersistanceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
                     DataPersistanceManager.instance.NewGame();
-                    SaveGameAndLoadScene();
+                    SaveGameAndLoadScene(isLoadingGame);
                 },
                 () =>
                 {
@@ -56,17 +57,20 @@ public class SaveSlotsMenu : Menu
         {
             DataPersistanceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
             DataPersistanceManager.instance.NewGame();
-            SaveGameAndLoadScene();
+            SaveGameAndLoadScene(isLoadingGame);
         }
     }
 
-    private void SaveGameAndLoadScene()
+    private void SaveGameAndLoadScene(bool isLoadingGame)
     {
         // Save game before loading a new scene
         DataPersistanceManager.instance.SaveGame();
 
         // Load the scene - save the game becouse of onSceneUnloaded() in DataPersistanceManager
-        GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.LABORATORY);
+        if (isLoadingGame)
+            GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene(saveSlotSceneIndex);
+        else
+            GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.LABORATORY);
 
         Time.timeScale = 1f;
         Cursor.visible = false;
@@ -115,7 +119,17 @@ public class SaveSlotsMenu : Menu
         {
             GameData profileData = null;
             profilesGameData.TryGetValue(saveSlot.GetProfileId(), out profileData);
-            saveSlot.SetData(profileData);
+            
+            // Set location name if profileData for that slot exists
+            try
+            {
+                saveSlot.SetData(profileData, profileData.locationName);
+            }
+            catch
+            {
+                saveSlot.SetData(profileData, "Empty");
+            }         
+
             if (profileData == null && isLoadingGame)
                 saveSlot.SetInteractable(false);
             else
@@ -141,5 +155,16 @@ public class SaveSlotsMenu : Menu
         foreach (SaveSlot saveSlot in saveSlots)
             saveSlot.SetInteractable(false);
         backButton.interactable = false;
+    }
+
+    public void LoadData(GameData data)
+    {
+        saveSlotSceneIndex = data.currentSceneIndex;
+    }
+
+    // Nothing to save
+    public void SaveData(GameData data)
+    {
+        
     }
 }

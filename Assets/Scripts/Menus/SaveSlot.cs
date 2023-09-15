@@ -28,7 +28,7 @@ public class SaveSlot : MonoBehaviour
         saveSlotButton = this.GetComponent<Button>();
     }
 
-    public void SetData(GameData data)
+    public void SetData(GameData data, string locationName)
     {
         // There's no data for this profileID
         if (data == null)
@@ -46,7 +46,7 @@ public class SaveSlot : MonoBehaviour
             hasDataContent.SetActive(true);
             clearButton.gameObject.SetActive(true);
             // TODO: Set current location names when they will be ready to test
-            currentLocationText.text = "LABORATORY";
+            currentLocationText.text = locationName;
         }
     }
 

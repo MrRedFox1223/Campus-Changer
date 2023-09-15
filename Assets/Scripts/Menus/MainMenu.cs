@@ -1,8 +1,7 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenu : Menu
+public class MainMenu : Menu, IDataPersistance
 {
     [Header("Menu Navigation")]
     [SerializeField] private SaveSlotsMenu saveSlotsMenu;
@@ -14,6 +13,8 @@ public class MainMenu : Menu
     [SerializeField] private Button loadGameButton;
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button quitGameButton;
+
+    private int continueSceneIndex = 0;
 
     public void Start()
     {
@@ -47,7 +48,7 @@ public class MainMenu : Menu
         // Save game before loading a new scene
         DataPersistanceManager.instance.SaveGame();
         // Load the next scene - load the game becouse of OnSceneLoaded() in the DataPersistanceManager
-        GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.LABORATORY);
+        GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene(continueSceneIndex);
 
         Time.timeScale = 1f;
         Cursor.visible = false;
@@ -81,5 +82,16 @@ public class MainMenu : Menu
     public void DeactivateMenu()
     {
         this.gameObject.SetActive(false);
+    }
+
+    public void LoadData(GameData data)
+    {
+        continueSceneIndex = data.currentSceneIndex;
+    }
+
+    // Nothing to save
+    public void SaveData(GameData data)
+    {
+
     }
 }

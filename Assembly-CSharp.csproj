@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Managers\GameEventsManager.cs" />
     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\BasicInkExample.cs" />
     <Compile Include="Assets\Scripts\Menus\SwitchableTerrainMenu.cs" />
+    <Compile Include="Assets\Scripts\Managers\LevelLoadingManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\DataPersistance\IDataPersistance.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueHolder.cs" />
     <Compile Include="Assets\Scripts\QuestSystem\QuestInfoSO.cs" />
+    <Compile Include="Assets\Scripts\DataPersistance\SceneIndexes.cs" />
     <Compile Include="Assets\Scripts\Audio\MusicChangeTrigger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -141,8 +143,6 @@
     <Compile Include="Assets\Resources\Quests\CheckObeliskQuest\CheckObeliskQuestStep2.cs" />
     <Compile Include="Assets\Scripts\Managers\QuestManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\DataPersistance\SceneIndexes.cs" />
-    <Compile Include="Assets\Scripts\Managers\LevelLoadingManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using FMOD.Studio;
 
 [RequireComponent(typeof(CharacterController))]
@@ -94,11 +95,20 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     public void LoadData(GameData data)
     {
         this.transform.position = data.playerPos;
+        cameraTransform.localEulerAngles = data.cameraRotation;
+        Debug.Log(cameraTransform.localEulerAngles);
     }
 
     public void SaveData(GameData data)
     {
+        data.currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // TODO - Change for location names when ready
+        data.locationName = SceneManager.GetActiveScene().name;
+
         data.playerPos = this.transform.position;
+
+        data.cameraRotation = cameraTransform.eulerAngles;
     }
 
     private void PlaySound()

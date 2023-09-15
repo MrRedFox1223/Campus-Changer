@@ -3,15 +3,17 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-    // Gameplay data
+    // Player data
     public long lastUpdated;
-    public int currentSceneIndex;
     public Vector3 playerPos;
     public Vector3 cameraRotation;
 
     // World data
+    public int currentSceneIndex;
+    public string locationName;
     public SerializableDictionary<string, int> swichableTerrainsVaraints;
     public SerializableDictionary<string, bool> interactableObjectsState;
+    
 
     // Story data
     public string globalVariablesStoryJson;
@@ -22,9 +24,10 @@ public class GameData
     // The values in this constructor will be the default values the game starts with 
     public GameData()
     {
-        this.currentSceneIndex = 1;
         this.playerPos = new Vector3(0,1,0);
 
+        this.currentSceneIndex = 1;
+        this.locationName = "";
         this.swichableTerrainsVaraints = new SerializableDictionary<string, int>();
         this.interactableObjectsState = new SerializableDictionary<string, bool>();
 

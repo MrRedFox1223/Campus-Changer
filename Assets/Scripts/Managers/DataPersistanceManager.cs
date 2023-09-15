@@ -72,7 +72,7 @@ public class DataPersistanceManager : MonoBehaviour
     {
         // Update the profile to use for saving and loading
         this.selecterProfileId = newProfileId;
-        // Load the game. which will use that profile, updating our game data accordingly
+        // Load the game, which will use that profile, updating our game data accordingly
         LoadGame();
     }
 
