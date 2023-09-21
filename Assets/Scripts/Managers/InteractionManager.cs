@@ -3,23 +3,17 @@ using TMPro;
 
 public class InteractionManager : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private Transform mainCamera;
-    [SerializeField] private TextMeshProUGUI actionText;
     [SerializeField] private float interactRange;
     [SerializeField] private GameObject switchableTerrainMenu;
     
     private GameObject NPC;
     private RaycastHit hitInfo;
 
-    private const string NPC_TAG = "DialogueNPC";
-    private const string OBJECT_TAG = "InteractableObject";
-    private const string TERRAIN_TAG = "SwitchableTerrain";
-    private const string ITEM_TAG = "Item";
-
     private void Awake()
     {
         mainCamera = GameObject.Find("MainCamera").transform;
-        actionText = GameObject.Find("ActionText").GetComponent<TextMeshProUGUI>();
     }
 
     private void OnEnable()
@@ -37,35 +31,11 @@ public class InteractionManager : MonoBehaviour
         // Cast ray searching for GameObjects with specific tags
         Ray r = new Ray(mainCamera.position, mainCamera.forward);
         if (Physics.Raycast(r, out hitInfo, interactRange))
-            SetActionText();
-        else
-            actionText.text = "";
-    }
-
-    private void SetActionText()
-    {
-        string tag = hitInfo.collider.gameObject.tag;
-
-        switch (tag)
         {
-            case NPC_TAG:
-                if (!DialogueManager.GetInstance().dialogueIsPlaying)
-                {
-                    actionText.text = "<color=#FFFFFF> E </color>  Talk";
-                }
-                else
-                    actionText.text = "";
-                break;
-            case OBJECT_TAG:
-                actionText.text = "<color=#FFFFFF> E </color>  Use";
-                break;
-            case TERRAIN_TAG:
-                actionText.text = "<color=#FFFFFF> E </color>  Change";
-                break;
-            case ITEM_TAG:
-                actionText.text = "<color=#FFFFFF> E </color>  Pick up";
-                break;
+            PopupManager.GetInstance().SetActionText(hitInfo.collider.gameObject.tag);
         }
+        else
+            PopupManager.GetInstance().SetActionText(null);
     }
 
     private void InteractPressed()
@@ -81,24 +51,24 @@ public class InteractionManager : MonoBehaviour
 
         switch (tag)
         {
-            case NPC_TAG:
+            case Tags.NPC_TAG:
                 if (!DialogueManager.GetInstance().dialogueIsPlaying)
                 {
                     NPC = hitInfo.collider.gameObject.transform.parent.gameObject;
                     DialogueManager.GetInstance().EnterDialogueMode(NPC.transform.Find("Dialogue").GetComponent<DialogueHolder>().inkJSON, NPC);
                 }
                 break;
-            case OBJECT_TAG:
+            case Tags.OBJECT_TAG:
                 if (!hitInfo.collider.gameObject.GetComponent<IInteractableObject>().CheckState())
                     hitInfo.collider.gameObject.GetComponent<IInteractableObject>().Activate();
                 else
                     hitInfo.collider.gameObject.GetComponent<IInteractableObject>().Deactivate();
                 break;
-            case TERRAIN_TAG:
+            case Tags.TERRAIN_TAG:
                 switchableTerrainMenu.SetActive(true);
                 switchableTerrainMenu.GetComponent<SwitchableTerrainMenu>().Initialize(hitInfo.collider.gameObject.transform.parent.gameObject);
                 break;
-            case ITEM_TAG:
+            case Tags.ITEM_TAG:
                 // TODO - Pass information to interface Item
                 break;
         }

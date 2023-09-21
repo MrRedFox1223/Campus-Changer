@@ -43,6 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0b6c803c49ae54e977399280720ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactableTags:
+  - DialogueNPC
+  - InteractableObject
+  - SwitchableTerrain
+  - Item
   mainCamera: {fileID: 0}
   actionText: {fileID: 0}
   interactRange: 2.5
