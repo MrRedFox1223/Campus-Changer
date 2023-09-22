@@ -48,10 +48,13 @@ MonoBehaviour:
   terrainActionText: <color=#FFFFFF> E </color>  Change
   itemActionText: <color=#FFFFFF> E </color>  Pick up
   startQuestText: 'Started:'
-  finishQuestText: 'Finish:'
+  finishQuestText: 'Finished:'
   switchTerrainText: Terrain switched
   pickUpItemText: picked
   dropItemText: dropped
+  duration: 2
+  typingSpeed: 20
+  advancemntFontSizeDifference: 5
   actionText: {fileID: 0}
   questText: {fileID: 0}
   infoText: {fileID: 0}

@@ -160,7 +160,7 @@ public class QuestManager : MonoBehaviour, IDataPersistance
 
     // This function exists to throw an error if quest that don't exist is trying to be called
     // Use this function to get into questMap instead of accessing it directly
-    private Quest GetQuestById(string id)
+    public Quest GetQuestById(string id)
     {
         Quest quest = questMap[id];
 

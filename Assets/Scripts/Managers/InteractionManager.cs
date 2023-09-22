@@ -32,10 +32,10 @@ public class InteractionManager : MonoBehaviour
         Ray r = new Ray(mainCamera.position, mainCamera.forward);
         if (Physics.Raycast(r, out hitInfo, interactRange))
         {
-            PopupManager.GetInstance().SetActionText(hitInfo.collider.gameObject.tag);
+            PopupManager.GetInstance().ShowActionText(hitInfo.collider.gameObject.tag);
         }
         else
-            PopupManager.GetInstance().SetActionText(null);
+            PopupManager.GetInstance().ShowActionText(null);
     }
 
     private void InteractPressed()

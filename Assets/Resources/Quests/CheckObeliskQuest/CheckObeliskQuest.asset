@@ -17,4 +17,7 @@ MonoBehaviour:
   questPrerequisites: []
   questStepPrefabs:
   - {fileID: 6846192802134584936, guid: 0130d8c30315b5441aae96f0e9c2b315, type: 3}
+  questStepDescriptions:
+  - Activate 3 obelisks
+  - Return to Mr Yellow
   wisdomReward: 100

@@ -61,6 +61,8 @@
     <Compile Include="Assets\Scripts\QuestSystem\QuestStep.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Managers\PopupManager.cs" />
+    <Compile Include="Assets\Scripts\Enums\Tags.cs" />
     <Compile Include="Assets\Scripts\Managers\DataPersistanceManager.cs" />
     <Compile Include="Assets\Scripts\Audio\AmbienceChangeTrigger.cs" />
     <Compile Include="Assets\Scripts\DataPersistance\GameData.cs" />
@@ -141,11 +143,8 @@
     <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Audio\VolumeSlider.cs" />
-    <Compile Include="Assets\Resources\Quests\CheckObeliskQuest\CheckObeliskQuestStep2.cs" />
     <Compile Include="Assets\Scripts\Managers\QuestManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\Managers\PopupManager.cs" />
-    <Compile Include="Assets\Scripts\Enums\Tags.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
