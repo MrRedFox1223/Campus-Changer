@@ -47,9 +47,17 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    public Vector2 GetMouseDelta()
+    /*public Vector2 GetMouseDelta()
     {
         return playerControls.Player.Look.ReadValue<Vector2>();
+    }*/
+
+    public void MouseMoved(InputAction.CallbackContext context)
+    {
+        if (context.performed || context.canceled)
+        {
+            GameEventsManager.instance.inputEvents.MouseMoved(context.ReadValue<Vector2>());
+        }
     }
 
     public void InteractPressed(InputAction.CallbackContext context)

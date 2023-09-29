@@ -3,18 +3,34 @@ using Cinemachine;
 
 public class CinemachinePOVExtension : CinemachineExtension
 {
-    [SerializeField] private float horizontalSens = 70f;
-    [SerializeField] private float verticalSens = 100f;
+    [SerializeField] private float horizontalSens = 80f;
+    [SerializeField] private float verticalSens = 80f;
     [SerializeField] private float clampAngleUp = 90f;
     [SerializeField] private float clampAngleDown = -90f;
 
     private InputManager inputManager;
     private Vector3 startingRotation;
+    private Vector2 deltaInput;
 
     protected override void Awake()
     {
         inputManager = InputManager.instance;
         base.Awake();
+    }
+
+    new private void OnEnable()
+    {
+        GameEventsManager.instance.inputEvents.onMouseMoved += MouseMoved;
+    }
+
+    private void OnDisable()
+    {
+        GameEventsManager.instance.inputEvents.onMouseMoved -= MouseMoved;
+    }
+
+    private void MouseMoved(Vector2 moveDir)
+    {
+        deltaInput = moveDir;
     }
 
     protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam, CinemachineCore.Stage stage, ref CameraState state, float deltaTime)
@@ -23,8 +39,11 @@ public class CinemachinePOVExtension : CinemachineExtension
         {
             if (stage == CinemachineCore.Stage.Aim)
             {
-                if (startingRotation == null) startingRotation = transform.localRotation.eulerAngles;
-                Vector2 deltaInput = inputManager.GetMouseDelta();
+                if (startingRotation == null)
+                    startingRotation = transform.localRotation.eulerAngles;
+                else
+                    Debug.Log("Fire");
+
                 startingRotation.x += deltaInput.x * Time.deltaTime * verticalSens;
                 startingRotation.y += deltaInput.y * Time.deltaTime * horizontalSens;
                 startingRotation.y = Mathf.Clamp(startingRotation.y, clampAngleDown, clampAngleUp);
