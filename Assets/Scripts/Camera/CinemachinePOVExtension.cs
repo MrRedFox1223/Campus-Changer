@@ -8,13 +8,11 @@ public class CinemachinePOVExtension : CinemachineExtension
     [SerializeField] private float clampAngleUp = 90f;
     [SerializeField] private float clampAngleDown = -90f;
 
-    private InputManager inputManager;
     private Vector3 startingRotation;
     private Vector2 deltaInput;
 
     protected override void Awake()
     {
-        inputManager = InputManager.instance;
         base.Awake();
     }
 
