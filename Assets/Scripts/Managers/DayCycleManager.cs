@@ -1,25 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
 
 public class DayCycleManager : MonoBehaviour
 {
-    [Range (0, 24)]
-    [SerializeField] private float timeOfDay = 9f;
-    [SerializeField] private float timeScale = 1.0f;
+    [Header("References")]
     [SerializeField] private Light sun;
     [SerializeField] private Light moon;
-    [SerializeField] private bool isNight;
+    [SerializeField] private Volume skyVolume;
+
+    [Header("How many min in game is one min in RL")]
+    [SerializeField] private float timeScale;
+    [Range(0, 24)]
+    [SerializeField] private float timeOfDay = 9f;
+
+    [Header("Night skybox options")]
+    [SerializeField] AnimationCurve starsCurve;
+    [SerializeField] private float starsValueMultiplayer;
+
+    private bool isNight;
+    private PhysicallyBasedSky sky;
 
     private void Awake()
     {
         sun = GameObject.Find("Sun").GetComponent<Light>();
         moon = GameObject.Find("Moon").GetComponent<Light>();
+        skyVolume = GameObject.Find("SkyAndFogVolume").GetComponent<Volume>();
+
+        skyVolume.profile.TryGet(out sky);
     }
 
     private void Update()
     {
-        timeOfDay += Time.deltaTime * timeScale;
+        timeOfDay += Time.deltaTime * timeScale / 3600;
         if (timeOfDay > 24)
             timeOfDay = 0;
 
@@ -35,6 +48,8 @@ public class DayCycleManager : MonoBehaviour
 
         sun.transform.rotation = Quaternion.Euler(sunRotation, -30f, 0);
         moon.transform.rotation = Quaternion.Euler(moonRotation, -30f, 0);
+
+        sky.spaceEmissionMultiplier.value = starsCurve.Evaluate(alpha) * starsValueMultiplayer;
 
         CheckNightDayTransition();
     }
