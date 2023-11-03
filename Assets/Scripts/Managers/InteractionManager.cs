@@ -77,11 +77,16 @@ public class InteractionManager : MonoBehaviour
     private bool MenuActive()
     {
         if (GameObject.Find("PauseMenu") != null && GameObject.Find("PauseMenu").GetComponent<PauseMenu>().isActive == true)
+        {
             return true;
+        }
+            
 
         if (GameObject.Find("SwitchableTerrainMenu") != null && GameObject.Find("SwitchableTerrainMenu").GetComponent<SwitchableTerrainMenu>().isActive == true)
+        {
             return true;
-        
+        }
+
         return false;
     }
 }

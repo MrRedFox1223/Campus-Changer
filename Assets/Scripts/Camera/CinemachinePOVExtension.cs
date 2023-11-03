@@ -3,18 +3,16 @@ using Cinemachine;
 
 public class CinemachinePOVExtension : CinemachineExtension
 {
-    [SerializeField] private float horizontalSens = 80f;
-    [SerializeField] private float verticalSens = 80f;
+    [SerializeField] private float horizontalSens = 0.6f;
+    [SerializeField] private float verticalSens = 0.6f;
     [SerializeField] private float clampAngleUp = 90f;
     [SerializeField] private float clampAngleDown = -90f;
 
-    private InputManager inputManager;
     private Vector3 startingRotation;
     private Vector2 deltaInput;
 
     protected override void Awake()
     {
-        inputManager = InputManager.instance;
         base.Awake();
     }
 
@@ -44,8 +42,8 @@ public class CinemachinePOVExtension : CinemachineExtension
                 else
                     Debug.Log("Fire");
 
-                startingRotation.x += deltaInput.x * Time.deltaTime * verticalSens;
-                startingRotation.y += deltaInput.y * Time.deltaTime * horizontalSens;
+                startingRotation.x += deltaInput.x * verticalSens;
+                startingRotation.y += deltaInput.y * horizontalSens;
                 startingRotation.y = Mathf.Clamp(startingRotation.y, clampAngleDown, clampAngleUp);
                 state.RawOrientation = Quaternion.Euler(-startingRotation.y, startingRotation.x, 0f);
             }

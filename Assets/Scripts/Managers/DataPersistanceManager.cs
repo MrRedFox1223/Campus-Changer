@@ -29,6 +29,10 @@ public class DataPersistanceManager : MonoBehaviour
 
     private void Awake()
     {
+        // Temporary FPS limit
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
+
         if (instance != null)
         {
             Debug.Log("Found more the one Data Persistance Manager in the scene. Destroying the newest one");
