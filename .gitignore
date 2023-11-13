@@ -71,6 +71,3 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 .vsconfig
-Assets/Resources/Models/Packed FBX/Fizyka.fbx
-Assets/Resources/Models/Buildings/Packed FBX/Fizyka.fbx
-*/Fizyka.fbx
