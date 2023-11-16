@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4287.907, g: 2768.7773, b: 2084.4023, a: 1}
+  m_IndirectSpecularColor: {r: 4278.327, g: 2762.2207, b: 2081.0625, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2341,7 +2341,7 @@ Transform:
   - {fileID: 543450651772218329}
   - {fileID: 543450652705303685}
   - {fileID: 2836830639781280654}
-  - {fileID: 543450651887024615}
+  - {fileID: 8492883049077826252}
   m_Father: {fileID: 255934731}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3556,11 +3556,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8064176364856426930, guid: c915ac6d964eb5e41b4ca64e84d5aef4, type: 3}
   m_PrefabInstance: {fileID: 7521869892724206187}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &543450651887024615 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8238897224807242540, guid: 202ef45fcd42710409b0cfea9dab914f, type: 3}
-  m_PrefabInstance: {fileID: 8492883049077826251}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &543450652705303685 stripped
 Transform:
@@ -5977,6 +5972,22 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 2469874225819617853, guid: 202ef45fcd42710409b0cfea9dab914f, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469874225819617853, guid: 202ef45fcd42710409b0cfea9dab914f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469874225819617853, guid: 202ef45fcd42710409b0cfea9dab914f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2469874225819617853, guid: 202ef45fcd42710409b0cfea9dab914f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 3095029904191428709, guid: 202ef45fcd42710409b0cfea9dab914f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 18
@@ -6115,6 +6126,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202ef45fcd42710409b0cfea9dab914f, type: 3}
+--- !u!4 &8492883049077826252 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2469874225819617853, guid: 202ef45fcd42710409b0cfea9dab914f, type: 3}
+  m_PrefabInstance: {fileID: 8492883049077826251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8506201335516098697
 PrefabInstance:
   m_ObjectHideFlags: 0
