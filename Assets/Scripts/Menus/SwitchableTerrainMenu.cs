@@ -1,16 +1,26 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Threading.Tasks;
 
 public class SwitchableTerrainMenu : Menu
 {
+    [Header("Fade options")]
+    [Range(0, 0.1f)]
+    [SerializeField] private float fadeFactor = 0.05f;
+    [Range(0, 1)]
+    [SerializeField] private float fadePauseTime = 0.5f;
+
     [Header("References")]
     [SerializeField] private GameObject actionText;
     [SerializeField] private GameObject crosshair;
+    [SerializeField] private GameObject background;
+    [SerializeField] private GameObject buttons;
     [SerializeField] private TextMeshProUGUI firstTerrainText;
     [SerializeField] private TextMeshProUGUI secondTerrainText;
     [SerializeField] private TextMeshProUGUI thirdTerrainText;
     [SerializeField] private Button selectedButton;
+    [SerializeField] private CanvasGroup fadeCanvasGroup;
 
     private GameObject switchableObject;
 
@@ -20,6 +30,9 @@ public class SwitchableTerrainMenu : Menu
     {
         actionText = GameObject.Find("ActionText");
         crosshair = GameObject.Find("Crosshair");
+        background = GameObject.Find("Background");
+        buttons = GameObject.Find("Buttons");
+        fadeCanvasGroup = GameObject.Find("Fade").GetComponent<CanvasGroup>();
     }
 
     public void Initialize(GameObject parent)
@@ -38,26 +51,34 @@ public class SwitchableTerrainMenu : Menu
         Time.timeScale = 0f;
         actionText.SetActive(false);
         crosshair.SetActive(false);
+        background.SetActive(true);
+        buttons.SetActive(true);
         Cursor.visible = true;
         isActive = true;
     }
 
-    public void OnFirstOptionClicked()
+    public async void OnFirstOptionClicked()
     {
+        await FadeOut();
         switchableObject.GetComponent<SwitchableObject>().SwitchVariant(0);
-        DeactivateMenu();
+        await FadePause();
+        await FadeIn();
     }
 
-    public void OnSecondOptionClicked()
+    public async void OnSecondOptionClicked()
     {
+        await FadeOut();
         switchableObject.GetComponent<SwitchableObject>().SwitchVariant(1);
-        DeactivateMenu();
+        await FadePause();
+        await FadeIn();
     }
 
-    public void OnThirdOptionClicked()
+    public async void OnThirdOptionClicked()
     {
+        await FadeOut();
         switchableObject.GetComponent<SwitchableObject>().SwitchVariant(2);
-        DeactivateMenu();
+        await FadePause();
+        await FadeIn();
     }
 
     public void OnCancelClicked()
@@ -80,4 +101,39 @@ public class SwitchableTerrainMenu : Menu
         selectedButton.Select();
         this.gameObject.SetActive(false);
     }
+
+    private async Task FadeOut()
+    {
+        buttons.SetActive(false);
+        while (fadeCanvasGroup.alpha < 1)
+        {
+            fadeCanvasGroup.alpha += fadeFactor;
+            await Task.Yield();
+        }
+    }
+
+    private async Task FadePause()
+    {
+        background.SetActive(false);
+
+        float t = 0;
+        while (t < fadePauseTime)
+        {
+            t += fadeFactor;
+            await Task.Yield();
+        }
+    }
+
+    private async Task FadeIn()
+    {
+        while (fadeCanvasGroup.alpha > 0)
+        {
+            fadeCanvasGroup.alpha -= fadeFactor;
+            await Task.Yield();
+        }
+
+        DeactivateMenu();
+    }
+
+    
 }

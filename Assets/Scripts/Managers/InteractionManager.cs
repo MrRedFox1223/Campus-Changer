@@ -68,24 +68,16 @@ public class InteractionManager : MonoBehaviour
                 switchableTerrainMenu.SetActive(true);
                 switchableTerrainMenu.GetComponent<SwitchableTerrainMenu>().Initialize(hitInfo.collider.gameObject.transform.parent.gameObject);
                 break;
-            case Tags.ITEM_TAG:
-                // TODO - Pass information to interface Item
-                break;
         }
     }
 
     private bool MenuActive()
     {
         if (GameObject.Find("PauseMenu") != null && GameObject.Find("PauseMenu").GetComponent<PauseMenu>().isActive == true)
-        {
             return true;
-        }
             
-
         if (GameObject.Find("SwitchableTerrainMenu") != null && GameObject.Find("SwitchableTerrainMenu").GetComponent<SwitchableTerrainMenu>().isActive == true)
-        {
             return true;
-        }
 
         return false;
     }
