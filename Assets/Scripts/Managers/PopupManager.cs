@@ -80,9 +80,6 @@ public class PopupManager : MonoBehaviour
             case Tags.TERRAIN_TAG:
                 actionText.text = terrainActionText;
                 break;
-            case Tags.ITEM_TAG:
-                actionText.text = itemActionText;
-                break;
             case null:
                 actionText.text = "";
                 break;
@@ -122,11 +119,6 @@ public class PopupManager : MonoBehaviour
         Quest quest = QuestManager.GetInstance().GetQuestById(id);
         string line = finishQuestText + " " + quest.info.displayName;
         await ShowNotification(line, questText);
-    }
-
-    private async void ShowInfoText()
-    {
-        //TODO: Add item info when inventory system is ready
     }
 
     private async Task ShowNotification(string line, TextMeshProUGUI TMPtext)

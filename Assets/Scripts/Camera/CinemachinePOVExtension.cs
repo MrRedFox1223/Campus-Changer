@@ -31,6 +31,22 @@ public class CinemachinePOVExtension : CinemachineExtension
         deltaInput = moveDir;
     }
 
+    private void Continue()
+    {
+        return;
+    }
+
+    private bool MenuActive()
+    {
+        if (GameObject.Find("PauseMenu") != null && GameObject.Find("PauseMenu").GetComponent<PauseMenu>().isActive == true)
+            return true;
+
+        if (GameObject.Find("SwitchableTerrainMenu") != null && GameObject.Find("SwitchableTerrainMenu").GetComponent<SwitchableTerrainMenu>().isActive == true)
+            return true;
+
+        return false;
+    }
+
     protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam, CinemachineCore.Stage stage, ref CameraState state, float deltaTime)
     {
         if (vcam.Follow)
@@ -40,7 +56,12 @@ public class CinemachinePOVExtension : CinemachineExtension
                 if (startingRotation == null)
                     startingRotation = transform.localRotation.eulerAngles;
                 else
-                    Debug.Log("Fire");
+                    // Prevents calling blank errors to console in edit mode 
+                    Continue();
+
+                // Prevents camera movement when menu is active
+                if (MenuActive())
+                    deltaInput = new Vector2(0f, 0f);
 
                 startingRotation.x += deltaInput.x * verticalSens;
                 startingRotation.y += deltaInput.y * horizontalSens;
@@ -50,3 +71,5 @@ public class CinemachinePOVExtension : CinemachineExtension
         }
     }
 }
+
+
