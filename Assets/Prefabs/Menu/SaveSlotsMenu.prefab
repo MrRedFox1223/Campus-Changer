@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.24313727, g: 0.75294125, b: 0.75294125, a: 0.7529412}
+  m_Color: {r: 0.24313727, g: 0.75294125, b: 0.75294125, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -466,7 +466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2499815264514794004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1073,6 +1073,14 @@ PrefabInstance:
       value: SaveSlot (2)
       objectReference: {fileID: 0}
     - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7db7fecbc565f304e99ab6929ae24ba2, type: 3}
+    - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2499815264514794005}
@@ -1083,7 +1091,7 @@ PrefabInstance:
     - target: {fileID: 87289732427549567, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fd19143bc7e7cd04cb8b50ced03648e6, type: 3}
+      objectReference: {fileID: 21300000, guid: a17051383c7c5784b8130bb18fcef5a7, type: 3}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_fontSize
       value: 35
@@ -1620,6 +1628,14 @@ PrefabInstance:
       value: SaveSlot (1)
       objectReference: {fileID: 0}
     - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7db7fecbc565f304e99ab6929ae24ba2, type: 3}
+    - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2499815264514794005}
@@ -1630,7 +1646,7 @@ PrefabInstance:
     - target: {fileID: 87289732427549567, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fd19143bc7e7cd04cb8b50ced03648e6, type: 3}
+      objectReference: {fileID: 21300000, guid: a17051383c7c5784b8130bb18fcef5a7, type: 3}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_fontSize
       value: 35
@@ -1789,6 +1805,14 @@ PrefabInstance:
       value: SaveSlot (3)
       objectReference: {fileID: 0}
     - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7db7fecbc565f304e99ab6929ae24ba2, type: 3}
+    - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2499815264514794005}
@@ -1799,7 +1823,7 @@ PrefabInstance:
     - target: {fileID: 87289732427549567, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fd19143bc7e7cd04cb8b50ced03648e6, type: 3}
+      objectReference: {fileID: 21300000, guid: a17051383c7c5784b8130bb18fcef5a7, type: 3}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_fontSize
       value: 35
@@ -2147,6 +2171,14 @@ PrefabInstance:
       value: SaveSlot
       objectReference: {fileID: 0}
     - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7db7fecbc565f304e99ab6929ae24ba2, type: 3}
+    - target: {fileID: 87289732427549566, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2499815264514794005}
@@ -2157,7 +2189,7 @@ PrefabInstance:
     - target: {fileID: 87289732427549567, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fd19143bc7e7cd04cb8b50ced03648e6, type: 3}
+      objectReference: {fileID: 21300000, guid: a17051383c7c5784b8130bb18fcef5a7, type: 3}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_fontSize
       value: 35

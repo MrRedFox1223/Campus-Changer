@@ -39,7 +39,7 @@ public class SaveSlotsMenu : Menu, IDataPersistance
         else if (saveSlot.hasData)
         {
             confirmationPopupMenu.ActivateMenu(
-                "Starting a New Game with this slot will ovverride the currently saved data. Are you sure?",
+                "OVERRIDE THE CURRENTLY SAVED DATA?",
                 () =>
                 {
                     DataPersistanceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
@@ -82,7 +82,7 @@ public class SaveSlotsMenu : Menu, IDataPersistance
         DisableMenuButtons();
 
         confirmationPopupMenu.ActivateMenu(
-                "Are you sure you want to delete this saved data?",
+                "ARE YOU SURE YOU WANT TO DELETE THIS SAVE?",
                 () =>
                 {
                     DataPersistanceManager.instance.DeleteProfileData(saveSlot.GetProfileId());
