@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/UI/Fonts/Assets.meta
 guid: 3bac17fc28c00124dad3f65be0a093f7
 folderAsset: yes
+========
+guid: d654312833a7c1747812813ee09f4c5b
+>>>>>>>> Ania:Assets/Numena/Plants/Lemon/Plants Documentation Unity.pdf.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
