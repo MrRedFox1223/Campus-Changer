@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.Services.CloudSave;
 using UnityEngine;
 
 public class SwitchableObject : MonoBehaviour, ISwitchableTerrain, IDataPersistance
@@ -58,6 +59,10 @@ public class SwitchableObject : MonoBehaviour, ISwitchableTerrain, IDataPersista
         if (data.swichableTerrainsVaraints.ContainsKey(id))
             data.swichableTerrainsVaraints.Remove(id);
 
-        data.swichableTerrainsVaraints.Add(id, activeVariantId);   
+        data.swichableTerrainsVaraints.Add(id, activeVariantId);
+
+        var client = CloudSaveService.Instance.Data;
+        var cloudData = new Dictionary<string, object> { { data.saveID + "_SwitchableObject", data.swichableTerrainsVaraints } };
+        client.ForceSaveAsync(cloudData);
     }
 }

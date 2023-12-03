@@ -738,8 +738,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2971197045794504036, guid: 0a887f448ea062c46a522761f9c77cd7, type: 3}
       propertyPath: m_Name
-      value: CM vcam1 (1)
+      value: CM vcam1
       objectReference: {fileID: 0}
+    - target: {fileID: 2971197045794504037, guid: 0a887f448ea062c46a522761f9c77cd7, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1997716147}
     - target: {fileID: 2971197045794504058, guid: 0a887f448ea062c46a522761f9c77cd7, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -784,8 +788,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2971197047296387297, guid: 0a887f448ea062c46a522761f9c77cd7, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a887f448ea062c46a522761f9c77cd7, type: 3}
 --- !u!114 &1119011480 stripped
 MonoBehaviour:
@@ -1074,6 +1077,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1997716147 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1193046780329881238, guid: 6b56a9575f69a0d4681becb8589993f5, type: 3}
+  m_PrefabInstance: {fileID: 304781360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2001438539 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1971452428510998927, guid: 6af79edb7d58588418c2c6a50ba074b8, type: 3}

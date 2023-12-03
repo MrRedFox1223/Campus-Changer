@@ -109,6 +109,8 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         data.playerPos = this.transform.position;
 
         data.cameraRotation = cameraTransform.eulerAngles;
+
+        Debug.Log(data.saveID);
     }
 
     private void PlaySound()

@@ -3,6 +3,9 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
+    // Save data
+    public string saveID;
+
     // Player data
     public long lastUpdated;
     public Vector3 playerPos;
@@ -14,7 +17,6 @@ public class GameData
     public SerializableDictionary<string, int> swichableTerrainsVaraints;
     public SerializableDictionary<string, bool> interactableObjectsState;
     
-
     // Story data
     public string globalVariablesStoryJson;
 
