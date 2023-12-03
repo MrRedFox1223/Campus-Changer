@@ -104,6 +104,7 @@ public class DataPersistanceManager : MonoBehaviour
     public void NewGame()
     {
         this.gameData = new GameData();
+        this.gameData.saveID = GenerateSaveID();
     }
 
     public void LoadGame()
@@ -182,5 +183,18 @@ public class DataPersistanceManager : MonoBehaviour
             SaveGame();
             Debug.Log("Performed Auto Save");
         }
+    }
+
+    private string GenerateSaveID()
+    {
+        string id = "";
+        const string glyphs = "abcdefghijklmnopqrstuvwxyz0123456789";
+        for (int i = 0; i < 30; i++)
+        {
+            id += glyphs[Random.Range(0, glyphs.Length)];
+        }
+
+        Debug.Log(id);
+        return id;
     }
 }

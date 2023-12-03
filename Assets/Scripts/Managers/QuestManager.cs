@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Services.CloudSave;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour, IDataPersistance
@@ -192,5 +193,9 @@ public class QuestManager : MonoBehaviour, IDataPersistance
 
             data.questDataJson.Add(quest.info.id, serializedData);
         }
+
+        var client = CloudSaveService.Instance.Data;
+        var cloudData = new Dictionary<string, object> { { data.saveID + "_Quest", data.questDataJson } };
+        client.ForceSaveAsync(cloudData);
     }
 }

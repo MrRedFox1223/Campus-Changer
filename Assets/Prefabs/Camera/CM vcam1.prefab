@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2971197045794504036}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5619999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 2971197047296387296}
   - component: {fileID: 2971197047296387303}
   - component: {fileID: 2971197047296387302}
-  - component: {fileID: 2971197047296387297}
+  - component: {fileID: 2553630230000157838}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -212,7 +212,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_ApplyBeforeBody: 0
---- !u!114 &2971197047296387297
+--- !u!114 &2553630230000157838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

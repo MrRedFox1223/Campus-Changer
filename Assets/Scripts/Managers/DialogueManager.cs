@@ -4,6 +4,7 @@ using Ink.Runtime;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using System.Collections;
+using Unity.Services.CloudSave;
 
 public class DialogueManager : MonoBehaviour, IDataPersistance
 {
@@ -286,5 +287,9 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     public void SaveData(GameData data)
     {
         data.globalVariablesStoryJson = dialogueVariables.SaveVariables();
-    }  
+
+        var client = CloudSaveService.Instance.Data;
+        var cloudData = new Dictionary<string, object> { { data.saveID + "_SwitchableObject", data.swichableTerrainsVaraints } };
+        client.ForceSaveAsync(cloudData);
+    } 
 }
