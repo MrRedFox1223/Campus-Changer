@@ -1,20 +1,17 @@
 using System;
 using Unity.Services.Core;
-using Unity.Services.Core.Environments;
+using Unity.Services.Authentication;
 using UnityEngine;
 
 public class InitializeUnityServices : MonoBehaviour
 {
-    public string environment = "production";
-
     async void Awake()
     {
         try
         {
-            var options = new InitializationOptions()
-                .SetEnvironmentName(environment);
-
-            await UnityServices.InitializeAsync(options);
+            await UnityServices.InitializeAsync();
+            await AuthenticationService.Instance.SignInAnonymouslyAsync();
+            Debug.Log("Initialization done");
         }
         catch (Exception e)
         {

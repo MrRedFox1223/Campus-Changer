@@ -1109,6 +1109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConfirmationPopupMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1971452428510998926, guid: 6af79edb7d58588418c2c6a50ba074b8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1971452428510998927, guid: 6af79edb7d58588418c2c6a50ba074b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1304,7 +1308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499815265025714779, guid: 39fb5725d7881c0409b4813068f6c039, type: 3}
       propertyPath: m_text
-      value: COFNIJ
+      value: BACK
       objectReference: {fileID: 0}
     - target: {fileID: 2499815265430464515, guid: 39fb5725d7881c0409b4813068f6c039, type: 3}
       propertyPath: m_SizeDelta.x

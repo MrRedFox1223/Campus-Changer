@@ -289,7 +289,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         data.globalVariablesStoryJson = dialogueVariables.SaveVariables();
 
         var client = CloudSaveService.Instance.Data;
-        var cloudData = new Dictionary<string, object> { { data.saveID + "_SwitchableObject", data.swichableTerrainsVaraints } };
+        var cloudData = new Dictionary<string, object> { { data.saveID + "_DialogueVariables", data.globalVariablesStoryJson } };
         client.ForceSaveAsync(cloudData);
     } 
 }

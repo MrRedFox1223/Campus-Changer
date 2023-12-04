@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1335181266513343700}
   - component: {fileID: 99279377590827174}
+  - component: {fileID: 5301557524794432253}
   m_Layer: 0
   m_Name: DataPersistanceManager
   m_TagString: Untagged
@@ -50,3 +51,15 @@ MonoBehaviour:
   fileName: data.game
   useEncryption: 0
   autoSaveTimeSeconds: 180
+--- !u!114 &5301557524794432253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6007779361249292244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515e460c949b9ab4680b28c1085e63a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
