@@ -17,12 +17,10 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private TextMeshProUGUI displayNameText;
     [SerializeField] private Animator portraitAnimator;
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
-    [SerializeField] private GameObject continueIcon;
 
     [Header("Interactor UI")]
     [SerializeField] private GameObject crosshair;
@@ -40,7 +38,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     private DialogueVariables dialogueVariables;
     private InkExternalFuntions inkExternalFuntions;
     
-    private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout"; 
 
@@ -58,8 +55,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
 
         dialoguePanel = GameObject.Find("DialoguePanel");
         dialogueText = GameObject.Find("DialogueText").GetComponent<TextMeshProUGUI>();
-        continueIcon = GameObject.Find("ContinueIcon");
-        displayNameText = GameObject.Find("DisplayNameText").GetComponent<TextMeshProUGUI>();
         portraitAnimator = GameObject.Find("PortraitImage").GetComponent<Animator>();
         layoutAnimator = dialoguePanel.GetComponent<Animator>();
         dialogueVariables = new DialogueVariables(loadGlobalsJSON);
@@ -122,7 +117,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         inkExternalFuntions.Bind(currentStory, NPC);
 
         // Reset tags
-        displayNameText.text = "???";
         portraitAnimator.Play("default");
         layoutAnimator.Play("right");
     }
@@ -143,7 +137,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     {
         if (currentStory.canContinue)
         {
-            continueIcon.SetActive(true);
             // Set text for the current dialogue line
             if (displayLineCoroutnie != null)
                 StopCoroutine(displayLineCoroutnie);
@@ -170,7 +163,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         dialogueText.text = line;
         dialogueText.maxVisibleCharacters = 0;
 
-        continueIcon.SetActive(false);
         canContinueToNextLine = false;
 
         HideChoices();
@@ -187,8 +179,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
             dialogueText.maxVisibleCharacters++;
             yield return new WaitForSeconds(typingSpeed);
         }
-
-        continueIcon.SetActive(true);
 
         // Display choices, if any, for this dialogue line
         DisplayChoices();
@@ -208,9 +198,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
 
             switch (tagKey)
             {
-                case SPEAKER_TAG:
-                    displayNameText.text = tagValue;
-                    break;
                 case PORTRAIT_TAG:
                     portraitAnimator.Play(tagValue);
                     break;
@@ -235,7 +222,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         int index = 0;
         foreach(Choice choice in currentChoices)
         {
-            continueIcon.SetActive(false);
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
             index++;

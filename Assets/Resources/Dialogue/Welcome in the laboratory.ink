@@ -3,17 +3,17 @@ INCLUDE Globals.ink
 { playerRole == "": -> Greating | -> RoleChosen}
 
 == Greating == 
-Hello, there! Glad to meet you!  #speaker:??? #portrait:Capsule_happy #layout:left
+Hello, there! Glad to meet you! #portrait:Student
 Welcome to this project laboratory!
-My name is CAPSULE. #speaker:CAPSULE
+My name is CAPSULE.
 People affectionately refer to me as the NPC.
 This world...
 ... is inhabitetd far and wide by creatures called BUGS.
 For some people, BUGS are issues. Others use them for entertainment.
 As for myself...
-...they are my only companions here. #portrait:Capsule_neutral
+...they are my only companions here.
 ...
-But first, tell me a little about yourself. #portrait:Capsule_happy
+But first, tell me a little about yourself.
 Now tell me. 
 
 -> DevOrTester
@@ -36,12 +36,12 @@ Right... So you're {role}, good luck with hunting BUGS!
 -> Psst
 
 == Psst ==
-Psst... #speaker:??? #portrait:default #layout:right
+Psst...
 Hey, You...
 On your right...
 Come here...
 -> END
 
 == RoleChosen ==
-Hello again! Do you encountered any BUGS? #speaker:CAPSULE #portrait:Capsule_happy #layout:left
+Hello again! Do you encountered any BUGS?
 -> END
