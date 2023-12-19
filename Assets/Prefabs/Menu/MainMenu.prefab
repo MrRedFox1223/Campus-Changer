@@ -449,8 +449,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 5276279250623417730}
   - component: {fileID: 5276279250623417733}
   - component: {fileID: 5276279250623417732}
+  - component: {fileID: 332986376}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -643,6 +644,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &332986376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276279250623417734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4976711b3ab2694c96ef23627432356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 5276279251118254542}
+  optionalText: {fileID: 0}
+  image: {fileID: 728174214}
+  newColor:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
+    m_PressedColor: {r: 0.15294118, g: 0.30588236, b: 0.30588236, a: 1}
+    m_SelectedColor: {r: 0.98823535, g: 1, b: 0.47058827, a: 1}
+    m_DisabledColor: {r: 0.61960787, g: 0.61960787, b: 0.61960787, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
 --- !u!1 &5276279250772166505
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,8 +741,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -789,6 +813,7 @@ GameObject:
   - component: {fileID: 5276279250800451039}
   - component: {fileID: 5276279250800451038}
   - component: {fileID: 5276279250800451025}
+  - component: {fileID: 1725120062}
   m_Layer: 5
   m_Name: LoadGameButton
   m_TagString: Untagged
@@ -911,6 +936,41 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ButtonTextColorExtension, Assembly-CSharp
+        m_MethodName: OnMenuChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1725120062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276279250800451027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4976711b3ab2694c96ef23627432356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 5276279251563724419}
+  optionalText: {fileID: 0}
+  image: {fileID: 308129571}
+  newColor:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
+    m_PressedColor: {r: 0.15294118, g: 0.30588236, b: 0.30588236, a: 1}
+    m_SelectedColor: {r: 0.98823535, g: 1, b: 0.47058827, a: 1}
+    m_DisabledColor: {r: 0.61960787, g: 0.61960787, b: 0.61960787, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
 --- !u!1 &5276279250887110593
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,7 +987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5276279250887110607
 RectTransform:
   m_ObjectHideFlags: 0
@@ -985,6 +1045,7 @@ GameObject:
   - component: {fileID: 5276279251070124451}
   - component: {fileID: 5276279251070124450}
   - component: {fileID: 5276279251070124453}
+  - component: {fileID: 1235070195}
   m_Layer: 5
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -1107,6 +1168,41 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ButtonTextColorExtension, Assembly-CSharp
+        m_MethodName: OnMenuChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1235070195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276279251070124452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4976711b3ab2694c96ef23627432356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 5276279250772166423}
+  optionalText: {fileID: 0}
+  image: {fileID: 126629133}
+  newColor:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
+    m_PressedColor: {r: 0.15294118, g: 0.30588236, b: 0.30588236, a: 1}
+    m_SelectedColor: {r: 0.98823535, g: 1, b: 0.47058827, a: 1}
+    m_DisabledColor: {r: 0.61960787, g: 0.61960787, b: 0.61960787, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
 --- !u!1 &5276279251118254528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,8 +1277,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1315,8 +1411,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1449,8 +1545,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1521,6 +1617,7 @@ GameObject:
   - component: {fileID: 5276279251699833922}
   - component: {fileID: 5276279251699833925}
   - component: {fileID: 5276279251699833924}
+  - component: {fileID: 1014986565}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -1643,6 +1740,41 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ButtonTextColorExtension, Assembly-CSharp
+        m_MethodName: OnMenuChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1014986565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276279251699833926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4976711b3ab2694c96ef23627432356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 5276279251466203932}
+  optionalText: {fileID: 0}
+  image: {fileID: 1270563331}
+  newColor:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
+    m_PressedColor: {r: 0.15294118, g: 0.30588236, b: 0.30588236, a: 1}
+    m_SelectedColor: {r: 0.98823535, g: 1, b: 0.47058827, a: 1}
+    m_DisabledColor: {r: 0.61960787, g: 0.61960787, b: 0.61960787, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
 --- !u!1 &5276279252013772385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,6 +1787,7 @@ GameObject:
   - component: {fileID: 5276279252013772397}
   - component: {fileID: 5276279252013772396}
   - component: {fileID: 5276279252013772399}
+  - component: {fileID: 740405497}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1777,6 +1910,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &740405497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276279252013772385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4976711b3ab2694c96ef23627432356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 5276279250542823119}
+  optionalText: {fileID: 0}
+  image: {fileID: 1103152086}
+  newColor:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
+    m_PressedColor: {r: 0.15294118, g: 0.30588236, b: 0.30588236, a: 1}
+    m_SelectedColor: {r: 0.98823535, g: 1, b: 0.47058827, a: 1}
+    m_DisabledColor: {r: 0.61960787, g: 0.61960787, b: 0.61960787, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
 --- !u!1 &7632777116159100693
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class MainMenu : Menu, IDataPersistance
     public void Start()
     {
         DisableButtonsDependingOnData();
+        newGameButton.GetComponent<ButtonTextColorExtension>().OnMenuChange();
     }
 
     private void DisableButtonsDependingOnData()

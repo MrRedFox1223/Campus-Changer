@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : Menu
 {
@@ -9,6 +10,8 @@ public class PauseMenu : Menu
     [Header("References")]
     [SerializeField] private GameObject actionText;
     [SerializeField] private GameObject crosshair;
+    [SerializeField] private Button firstButtonSelected;
+    
 
     public bool isActive { get; private set; }
     
@@ -26,7 +29,7 @@ public class PauseMenu : Menu
     {
         GameEventsManager.instance.inputEvents.onExitPressed -= ExitPressed;
     }
-
+    
     private void ExitPressed()
     {
         GameObject switchableTerrain = GameObject.Find("SwitchableTerrainMenu");
@@ -35,6 +38,11 @@ public class PauseMenu : Menu
             DialogueManager.GetInstance().ExitDialogueMode();
         else if (switchableTerrain != null && switchableTerrain.GetComponent<SwitchableTerrainMenu>().isActive == true)
             switchableTerrain.GetComponent<SwitchableTerrainMenu>().DeactivateMenu();
+        else if (isActive)
+        {
+            settingsMenu.OnBackClicked();
+            OnResumeClicked();
+        }
         else
             ActivateMenu();
     }
@@ -42,6 +50,7 @@ public class PauseMenu : Menu
     public void ActivateMenu()
     {
         pauseScreen.SetActive(true);
+        firstButtonSelected.GetComponent<ButtonTextColorExtension>().OnMenuChange();
         Time.timeScale = 0f;
         actionText.SetActive(false);
         crosshair.SetActive(false);

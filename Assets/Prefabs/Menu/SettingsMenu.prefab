@@ -225,7 +225,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1286,6 +1286,7 @@ GameObject:
   - component: {fileID: 6329743789876076780}
   - component: {fileID: 6329743789876076787}
   - component: {fileID: 6329743789876076786}
+  - component: {fileID: 1639439970}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -1408,6 +1409,41 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ButtonTextColorExtension, Assembly-CSharp
+        m_MethodName: OnMenuChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1639439970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329743789876076784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4976711b3ab2694c96ef23627432356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1424199874}
+  optionalText: {fileID: 0}
+  image: {fileID: 1697140061}
+  newColor:
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
+    m_PressedColor: {r: 0.15294118, g: 0.30588236, b: 0.30588236, a: 1}
+    m_SelectedColor: {r: 0.98823535, g: 1, b: 0.47058827, a: 1}
+    m_DisabledColor: {r: 0.61960787, g: 0.61960787, b: 0.61960787, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
 --- !u!1 &6329743789968749193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1684,7 @@ RectTransform:
   m_GameObject: {fileID: 6329743790656300760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4166685, y: 0.4166685, z: 0.4166685}
   m_Children:
   - {fileID: 8390323535520377051}
   - {fileID: 236210945920733185}
@@ -1799,7 +1835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455062, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_Color.b
@@ -1815,7 +1851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
@@ -1949,7 +1985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455062, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_Color.b
@@ -1965,10 +2001,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+--- !u!224 &4602867766199108025 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7509593671950765642, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+  m_PrefabInstance: {fileID: 6329743789028102131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4602867766199108024 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7509593671950765643, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
@@ -1980,11 +2021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &4602867766199108025 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7509593671950765642, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
-  m_PrefabInstance: {fileID: 6329743789028102131}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6329743789175107236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2110,7 +2146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455062, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_Color.b
@@ -2126,7 +2162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
@@ -2260,7 +2296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455062, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_Color.b
@@ -2276,7 +2312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
