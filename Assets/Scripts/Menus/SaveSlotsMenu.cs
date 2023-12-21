@@ -39,7 +39,7 @@ public class SaveSlotsMenu : Menu, IDataPersistance
         else if (saveSlot.hasData)
         {
             confirmationPopupMenu.ActivateMenu(
-                "OVERRIDE THE CURRENTLY SAVED DATA?",
+                "NADPISAÆ AKTUALNY ZAPIS?",
                 () =>
                 {
                     DataPersistanceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
@@ -82,7 +82,7 @@ public class SaveSlotsMenu : Menu, IDataPersistance
         DisableMenuButtons();
 
         confirmationPopupMenu.ActivateMenu(
-                "ARE YOU SURE YOU WANT TO DELETE THIS SAVE?",
+                "JESTEŒ PEWNY, ¯E CHCESZ USUN¥Æ TEN ZAPIS?",
                 () =>
                 {
                     DataPersistanceManager.instance.DeleteProfileData(saveSlot.GetProfileId());

@@ -43,15 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c404f1422e2d94ba02cf887573602b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcActionText: <color=#FFFFFF> E </color>  Talk
-  objectActionText: <color=#FFFFFF> E </color>  Use
-  terrainActionText: <color=#FFFFFF> E </color>  Change
-  itemActionText: <color=#FFFFFF> E </color>  Pick up
-  startQuestText: 'Started:'
-  finishQuestText: 'Finished:'
-  switchTerrainText: Terrain switched
-  pickUpItemText: picked
-  dropItemText: dropped
+  npcActionText: <color=#FFFFFF> E </color>  Rozmawiaj
+  objectActionText: "<color=#FFFFFF> E </color>  U\u017Cyj"
+  terrainActionText: "<color=#FFFFFF> E </color>  Zamie\u0144"
+  itemActionText: "<color=#FFFFFF> E </color>  Podnie\u015B"
+  startQuestText: "Rozpocz\u0119to:"
+  finishQuestText: "Zako\u0144czono:"
+  switchTerrainText: Zmieniono teren
+  pickUpItemText: 'Podniesiono:'
+  dropItemText: 'Upuszczono:'
   duration: 2
   typingSpeed: 20
   advancemntFontSizeDifference: 5

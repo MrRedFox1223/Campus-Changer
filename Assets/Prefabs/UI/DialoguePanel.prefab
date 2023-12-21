@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
-  m_sharedMaterial: {fileID: 7757499410870158749, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+  m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -201,8 +201,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
-  m_sharedMaterial: {fileID: 7757499410870158749, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+  m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -437,7 +437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69, y: -110}
+  m_AnchoredPosition: {x: -65, y: -110}
   m_SizeDelta: {x: 230, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8193335341088492746
@@ -644,8 +644,8 @@ MonoBehaviour:
     suscipit est, eget cursus augue interdum nec. Proin non metus sed nibh efficitur
     tincidunt?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
-  m_sharedMaterial: {fileID: 7757499410870158749, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+  m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -747,7 +747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69, y: -50}
+  m_AnchoredPosition: {x: -65, y: -50}
   m_SizeDelta: {x: 230, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8193335341489313126
@@ -911,8 +911,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
-  m_sharedMaterial: {fileID: 7757499410870158749, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+  m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1045,8 +1045,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
-  m_sharedMaterial: {fileID: 7757499410870158749, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+  m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1410,8 +1410,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
-  m_sharedMaterial: {fileID: 7757499410870158749, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+  m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1905,8 +1905,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
-  m_sharedMaterial: {fileID: 7757499410870158749, guid: 226ffae41bd13a542800105f1ba7a640, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+  m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

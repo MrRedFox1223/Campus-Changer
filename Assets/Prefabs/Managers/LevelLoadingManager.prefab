@@ -225,6 +225,18 @@ PrefabInstance:
       propertyPath: m_FillAmount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 565254634729936692, guid: af859416826a6394bb36917d7308a951, type: 3}
+      propertyPath: m_text
+      value: "\u0141ADOWANIE..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 565254634729936692, guid: af859416826a6394bb36917d7308a951, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+    - target: {fileID: 565254634729936692, guid: af859416826a6394bb36917d7308a951, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 565254634903945754, guid: af859416826a6394bb36917d7308a951, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
