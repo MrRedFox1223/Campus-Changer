@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using System.Collections;
 using Unity.Services.CloudSave;
+using System;
 
 public class DialogueManager : MonoBehaviour, IDataPersistance
 {
@@ -248,7 +249,14 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
 
     public void MakeChoice (int choiceIndex)
     {
-        currentStory.ChooseChoiceIndex(choiceIndex);
+        try
+        {
+            currentStory.ChooseChoiceIndex(choiceIndex);
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
+        } 
     }
 
     public Ink.Runtime.Object GetVariableState(string variableName)

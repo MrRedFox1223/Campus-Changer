@@ -1,0 +1,48 @@
+INCLUDE Globals.ink
+
+Cześć! Jesteś graczem, prawda?
+
+    * Skąd wiesz?
+    * Ależ skąd, jestem studentem, jak ty.
+    
+    - Nie ma czego się wstydzić. Ja też jestem graczem w innej grze.
+    
+    * Duch miejsca powiedział, że chcesz w tym miejscu zrobić chodnik. 
+    
+    - Tak. Bardzo mi na tym zależy. 
+    
+Co tydzień przychodzę tu, gdy mam okienko. Brakuje mi miejsca, żeby usiąść. Dlatego pomyślałem, że dobrym rozwiązaniem jest chodnik - z niskimi krawężnikami, tak żeby mogły bez problemu wjechać na niego osoby poruszające się na wózkach i nie powybijany, bo nie raz mi się zdażyło potknać. Aaaa!! I oczywiście ławki by się przydały, żeby można było odpocząć. 
+-> MainArgumentNode
+
+== MainArgumentNode
+
+    + Dlaczego chcesz siedzieć właśnie tutaj?
+        -> Question_01
+    + Co będą mieć z tego inni?
+        -> Question_02
+    + Co z ludźmi, którzy chcą dojechać do swoich miejsc postojowych?
+        -> Question_03
+    + Dlaczego nie chcesz, żeby była tu jezdnia?
+        -> Question_04
+    + Nie mam więcej pytań.
+        -> END
+        
+== Question_01
+
+Tu mam wszędzie blisko! Poza tym, łatwo się z kimś umówię pod kominem, bo widać go z daleka. Idealny punkt orientacyjny. Mówisz, “widzimy się pod kominem” i już wszyscy wiedzą o co chodzi! 
+-> MainArgumentNode
+
+== Question_02
+
+Tędy przechodzi mnóstwo ludzi. Dobrze by było, żeby nawierzchnia chodnika była nie powybijana, a krawężniki nie stanowiły przeszkody dla osób z niepełnosprawnością albo dla osób starszych. Każdy może się tu z kimś umówić. Można by tu zorganizować jakieś fajne wydarzenie albo po prostu posiedzieć na słońcu, zamiast pod cieniem drzew.
+-> MainArgumentNode
+
+== Question_03
+
+Na oba parkingi pod płotem można dojechać od strony ulicy. Nie trzeba jechać przez kampus.
+-> MainArgumentNode
+
+== Question_04
+
+Chciałbym, żeby tu było cicho i spokojnie, i żeby można było porozmawiać siedząc na jednej z licznych ławek. 
+-> MainArgumentNode
