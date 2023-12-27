@@ -7,7 +7,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-UuuuuuUUuuuUuuu!
+UuuuuuUUuuuUuuu! #portrait:GeniusLoci
 
     * [Czemu na mnie „uuuuczysz”?]
     - Bo powiało grozą. To miejsce wygląda...
@@ -69,7 +69,7 @@ Skoro i tak jest tu brzydko, to nikt się nie obrazi, jeśli wylądują tu śmie
 
 == TimeForDecision
 
-Co robimy z tym miejscem?
+Co robimy z tym miejscem? #portrait:GeniusLoci
 
     + [Odświeżenie elewacji.]
     ~ 04_Decision = "elewacja"
@@ -99,5 +99,5 @@ Przywołaj mnie, gdy podejmniesz decyzję.
 
 == DecisionRevisit
 
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END

@@ -1,25 +1,29 @@
 INCLUDE Globals.ink
 
-Dzień dobry. Od razu uprzedzam, że mam w tej sprawie wyrobione zdanie.
+{01_bIsDecisionMade == true: -> DecisionRevisit}
+{01_bIsDecisionMade == false: -> BeginQuest}
 
-    * W jakiej sprawie?
+== BeginQuest
+Dzień dobry. Od razu uprzedzam, że mam w tej sprawie wyrobione zdanie. #portrait:PaniZAdministracji
+
+    * [W jakiej sprawie?]
     W sprawie samochodów oczywiście. Uważam, że powinny mieć priorytet.
     -> MainArgumentNode
-    * Jakie zdanie?
+    * [Jakie zdanie?]
     Uważam, że powinna tu zostać jezdnia.
     -> MainArgumentNode
     
 == MainArgumentNode
 
-    + Do czego potrzebujesz jezdni właśnie tutaj?
+    + [Do czego potrzebujesz jezdni właśnie tutaj?]
         -> Question_01
-    + Co będą mieć z tego inni użytkownicy kampusu?
+    + [Co będą mieć z tego inni użytkownicy kampusu?]
         -> Question_02
-    + Co z ludźmi, którzy chcą tu posiedzieć?
+    + [Co z ludźmi, którzy chcą tu posiedzieć?]
         -> Question_03
-    + Dlaczego nie chcesz, żeby tu był chodnik?
+    + [Dlaczego nie chcesz, żeby tu był chodnik?]
         -> Question_04
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
         -> END
         
 == Question_01
@@ -41,3 +45,7 @@ Zaraz obok jest skwerek z fontanną. Tam też można posiedzieć.
 
 Tu już jest chodnik. Jest jaki jest, ale przejść można bez wchodzenia pod koła samochodów.
 -> MainArgumentNode
+
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:PaniZAdministracji
+-> END

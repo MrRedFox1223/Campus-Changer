@@ -1,19 +1,28 @@
 INCLUDE Globals.ink
 
-Proszę nie słuchać pana doktora, stołówka będzie zdecydowanie lepsza!
+{06_bIsDecisionMade == true: -> DecisionRevisit}
+{06_bIsDecisionMade == false: -> BeginQuest}
+
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Student
+-> END
+
+== BeginQuest
+
+Proszę nie słuchać pana doktora, stołówka będzie zdecydowanie lepsza! #portrait:Student
 ->MainDiscussionNode
 
 == MainDiscussionNode
 
-    + Czemu właśnie stołówka?
+    + [Czemu właśnie stołówka?]
     -> Question_01
-    + Co jest nie tak z kawiarnią?
+    + [Co jest nie tak z kawiarnią?]
     -> Question_02
-    + Czy nie można zrobić stołówki w innym miejscu?
+    + [Czy nie można zrobić stołówki w innym miejscu?]
     -> Question_03
-    + Są też pomysły na food trucki, ogródki i takie tam.
+    + [Są też pomysły na food trucki, ogródki i takie tam.]
     -> Question_04
-    + Na razie nie mam pytań.
+    + [Na razie nie mam pytań.]
     -> END
 
 == Question_01

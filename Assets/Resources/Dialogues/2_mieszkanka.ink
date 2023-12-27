@@ -1,8 +1,17 @@
 INCLUDE Globals.ink
 
-Dzień dobry, w czym mogę pomóc?
+{02_bIsDecisionMade == true: -> DecisionRevisit}
+{02_bIsDecisionMade == false: -> BeginQuest}
 
-    * Czy to prawda, że mieszka pani tutaj na terenie kampusu?
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Mieszkanka
+-> END
+
+== BeginQuest
+
+Dzień dobry, w czym mogę pomóc? #portrait:Mieszkanka
+
+    * [Czy to prawda, że mieszka pani tutaj na terenie kampusu?]
     
     - Tak, i do tego pracuję tutaj. O..! W tym budynku. Okno mojego pokoju wychodzi na ten dziedziniec. Dlatego zależy mi na tym, żeby była tu zieleń.
     
@@ -11,17 +20,17 @@ Dzień dobry, w czym mogę pomóc?
     
 == MainArgumentNode
     
-    + Dlaczego wolałaby pani zachować zieleń?
+    + [Dlaczego wolałaby pani zachować zieleń?]
         -> Question_01
-    + Co będą z tego mieć inni użytkownicy tej przestrzeni?
+    + [Co będą z tego mieć inni użytkownicy tej przestrzeni?]
         -> Question_02
-    + Jakie jest pani zdanie o urządzeniu tu parkingu?
+    + [Jakie jest pani zdanie o urządzeniu tu parkingu?]
         -> Question_03
-    + Co sądzi pani o pomyśle kącika gastronomicznego?
+    + [Co sądzi pani o pomyśle kącika gastronomicznego?]
         -> Question_04
-    + Czy podoba się pani pomysł urządzenia tu galerii prac?
+    + [Czy podoba się pani pomysł urządzenia tu galerii prac?]
         -> Question_05
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
         -> END
     
 == Question_01

@@ -1,25 +1,34 @@
 INCLUDE Globals.ink
 
-Dzień dobry. Proszę nie śmiecić! 
+{03_bIsDecisionMade == true: -> DecisionRevisit}
+{03_bIsDecisionMade == false: -> BeginQuest}
 
-    + Ani mi się śni. Czy mogę zadać kilka pytań o bramę?
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Kierowca
+-> END
+
+== BeginQuest
+
+Dzień dobry. Proszę nie śmiecić! #portrait:Kierowca
+
+    + [Ani mi się śni. Czy mogę zadać kilka pytań o bramę?]
     
     - Proszę pytać. A najlepiej proszę ją zamknąć.
     
-    + Wygląda na już zamkniętą.
+    + [Wygląda na już zamkniętą.]
     
     - Błąd! Furtka jest otwarta. Ludzie wchodzą i wychodzą, wychodzą i wchodzą. 
     ->MainArgumentNode
     
 == MainArgumentNode
 
-    + Czemu to jest ważne, żeby wszystko pozamykać?
+    + [Czemu to jest ważne, żeby wszystko pozamykać?]
     -> Question_01
-    + Co na to powiedzą osoby, które chcą mieć dostęp do podwórza?
+    + [Co na to powiedzą osoby, które chcą mieć dostęp do podwórza?]
     -> Question_02
-    + A gdyby tak wszystko otworzyć?
+    + [A gdyby tak wszystko otworzyć?]
     -> Question_03
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
     -> END
     
 == Question_01

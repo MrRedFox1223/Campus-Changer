@@ -1,19 +1,28 @@
 INCLUDE Globals.ink
 
-Przejdźmy do rzeczy. Uważam, że tu powinna stanąć kawiarnia.
+{06_bIsDecisionMade == true: -> DecisionRevisit}
+{06_bIsDecisionMade == false: -> BeginQuest}
+
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Doktor
+-> END
+
+== BeginQuest
+
+Przejdźmy do rzeczy. Uważam, że tu powinna stanąć kawiarnia. #portrait:Doktor
 ->MainDiscussionNode
 
 == MainDiscussionNode
 
-    + Czemu właśnie kawiarnia?
+    + [Czemu właśnie kawiarnia?]
     -> Question_01
-    + Czemu właśnie w tym miejscu?
+    + [Czemu właśnie w tym miejscu?]
     -> Question_04
-    + Czy kawiarnia przyda się innym użytkownikom Kampusu?
+    + [Czy kawiarnia przyda się innym użytkownikom Kampusu?]
     -> Question_02
-    + A może lepiej stołówka?
+    + [A może lepiej stołówka?]
     -> Question_03
-    + Na razie nie mam pytań.
+    + [Na razie nie mam pytań.]
     -> END
     
 == Question_01

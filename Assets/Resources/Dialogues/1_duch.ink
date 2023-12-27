@@ -6,7 +6,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Witaj ponownie. Piękny komin, prawda?
+Witaj ponownie. Piękny komin, prawda? #portrait:GeniusLoci
 
     * [Taki trochę staromodny.]
     * [Dobry punkt orientacyjny, widać go z daleka.]
@@ -54,7 +54,7 @@ Drugą osobą jest pani pracująca w administracji, która dojeżdża do Gmachu 
 
 == TimeForDecision
 
-Jaka jest Twoja decyzja? Czy pozostawiamy ruch uliczny? A może zastępujemy jezdnię chodnikiem?
+Jaka jest Twoja decyzja? Czy pozostawiamy ruch uliczny? A może zastępujemy jezdnię chodnikiem? #portrait:GeniusLoci
 
     * [Jezdnia!]
         ~ 01_Decision = "jezdnia"
@@ -73,5 +73,5 @@ Musisz wiedzieć, że Twoja decyzja ma duży wpływ na otaczający nas kampus. P
     
 == DecisionRevisit
 
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END

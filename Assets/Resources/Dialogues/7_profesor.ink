@@ -1,26 +1,35 @@
 INCLUDE Globals.ink
 
-Dzień dobry.
+{07_bIsDecisionMade == true: -> DecisionRevisit}
+{07_bIsDecisionMade == false: -> BeginQuest}
 
-    + Dzień dobry. Ja w sprawie kordegardy.
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Profesor
+-> END
+
+== BeginQuest
+
+Dzień dobry. #portrait:Profesor
+
+    + [Dzień dobry. Ja w sprawie kordegardy.]
     
     - Świetnie się składa, bo ja mam pierwszorzędny pomysł na to miejsce!. Zrobimy tu... living lab!.
     
-    + Co to jest living lab?
+    + [Co to jest living lab?]
     
     - Tak w skrócie miejsce współpracy, w którym tworzy się innowacyjne rozwiązania! Diagnozuje i analizuje potrzeby po to, by ulepszać dobrostan społeczności poprzez realizację badań stosowanych z udziałem użytkowników i ko-kreację rozwiązań dla lepszej przyszłości. Dlatego warto, żeby był łatwy dostęp z ulicy.
     ->MainDiscussionNode
 == MainDiscussionNode
 
-    + Jakie będą pożytki z takiego miejsca?
+    + [Jakie będą pożytki z takiego miejsca?]
     -> Question_01
-    + Czy nie lepiej byłoby znaleźć większy lokal?
+    + [Czy nie lepiej byłoby znaleźć większy lokal?]
     -> Question_02
-    + A może po prostu miejsce spotkań, na przykład mała knajpka?
+    + [A może po prostu miejsce spotkań, na przykład mała knajpka?]
     -> Question_03
-    + Jest też pomysł, żeby udostępnić to miejsce strażnikom.
+    + [Jest też pomysł, żeby udostępnić to miejsce strażnikom.]
     -> Question_04
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
     -> END
 
 == Question_01

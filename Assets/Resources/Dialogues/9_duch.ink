@@ -7,7 +7,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Popatrz tylko na to industrialne podwórze.
+Popatrz tylko na to industrialne podwórze. #portrait:GeniusLoci
 
     * [Wygląda jakby obok była fabryka.]
 Jesteśmy między Wydziałem Mechaniki, Energetyki i Lotnictwa a Wydziałem Elektrycznym. Industrialny klimat tu pasuje. 
@@ -68,7 +68,7 @@ Wróć do mnie, gdy skończysz rozmowy.
     
 == TimeForDecision
 
-Krótka piłka: food trucki tak czy food trucki nie?
+Krótka piłka: food trucki tak czy food trucki nie? #portrait:GeniusLoci
 
     + [Tak]
     ~09_Decision = "food truck"
@@ -85,6 +85,6 @@ Krótka piłka: food trucki tak czy food trucki nie?
  -> END
     
 == DecisionRevisit
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END
 

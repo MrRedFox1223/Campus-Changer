@@ -1,25 +1,34 @@
 INCLUDE Globals.ink
 
-Cześć, co słychać?
+{02_bIsDecisionMade == true: -> DecisionRevisit}
+{02_bIsDecisionMade == false: -> BeginQuest}
 
-    * Ano słychać! Słychać, że podobno chcesz tu urządzić gastro.
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:StudentZErasmusa
+-> END
+
+== BeginQuest
+
+Cześć, co słychać? #portrait:StudentZErasmusa
+
+    * [Ano słychać! Słychać, że podobno chcesz tu urządzić gastro.]
     
     - Nie inaczej. Przydałoby się wtrząchnąć coś między wykładami, a ja jeszcze dobrze nie znam okolicy. Wiesz, nie za drogie jedzenie, ale smaczne i fajnie podane. 
     -> MainArgumentNode
     
 == MainArgumentNode
 
-    + Dlaczego chcesz jeść właśnie tutaj?
+    + [Dlaczego chcesz jeść właśnie tutaj?]
         -> Question_01
-    + Co będą z tego będą mieć inne osoby korzystające z tej przestrzeni?
+    + [Co będą z tego będą mieć inne osoby korzystające z tej przestrzeni?]
         -> Question_02
-    + Co powiesz na parking?
+    + [Co powiesz na parking?]
         -> Question_03
-    + A może po prostu zostawić zieleń?
+    + [A może po prostu zostawić zieleń?]
         -> Question_04
-    + Jest pomysł, żeby tu zrobić galerię plenerową.
+    + [Jest pomysł, żeby tu zrobić galerię plenerową.]
         -> Question_05
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
         -> END
     
     == Question_01

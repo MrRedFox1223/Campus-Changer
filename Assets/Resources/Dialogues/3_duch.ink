@@ -6,7 +6,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Cześć! Wiesz co to za budynek?
+Cześć! Wiesz co to za budynek? #portrait:GeniusLoci
 
     + [To jest Gmach Chemii.]
         Brawo! 
@@ -63,7 +63,7 @@ Przywołaj mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
 
 == TimeForDecision
 
-Jaki jest Twój werdykt?
+Jaki jest Twój werdykt? #portrait:GeniusLoci
 
     + [Otwórzmy bramę. A najlepiej rozmontujmy.]
     ~ 03_Decision = "otworzyć"
@@ -83,6 +83,6 @@ Dziękuję! Świetnie sobie poradziłeś! Tymczasem jednak czekają na nas inne 
 
 == DecisionRevisit
 
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END
 

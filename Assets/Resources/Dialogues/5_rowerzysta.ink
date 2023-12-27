@@ -1,16 +1,26 @@
 INCLUDE Globals.ink
 
-Dzień dobry. Jestem pomocnikiem Ducha i planuję wybudowanie tutaj sceny. Sceny plenerowej naturalnie! 
+{05_bIsDecisionMade == true: -> DecisionRevisit}
+{05_bIsDecisionMade == false: -> BeginQuest}
+
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Rowerzysta
+-> END
+
+== BeginQuest
+
+Dzień dobry. Jestem pomocnikiem Ducha i planuję wybudowanie tutaj sceny. Sceny plenerowej naturalnie! #portrait:Rowerzysta
 -> MainDiscussionNode
+
 == MainDiscussionNode
 
-    + Do czego miałaby posłużyć ta scena?
+    + [Do czego miałaby posłużyć ta scena?]
     -> Question_01
-    + Czy to nie będzie powodowało zbyt dużego hałasu?
+    + [Czy to nie będzie powodowało zbyt dużego hałasu?]
     -> Question_02
-    + Dlaczego akurat tutaj?
+    + [Dlaczego akurat tutaj?]
     -> Question_03
-    + Na razie nie mam więcej pytań.
+    + [Na razie nie mam więcej pytań.]
     -> END
     
 == Question_01

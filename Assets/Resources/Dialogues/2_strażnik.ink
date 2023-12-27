@@ -1,25 +1,33 @@
 INCLUDE Globals.ink
 
-Dzień dobry, czy mogę w czymś pomóc
-    * Dziękuję, wszystko w porządku. Jest pan strażnikiem?
+{02_bIsDecisionMade == true: -> DecisionRevisit}
+{02_bIsDecisionMade == false: -> BeginQuest}
+
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Strażnik
+-> END
+
+== BeginQuest
+
+Dzień dobry, czy mogę w czymś pomóc? #portrait:Strażnik
+    * [Dziękuję, wszystko w porządku. Jest pan strażnikiem?]
     - Tak.
-    * Powiedziano mi, że chciałby pan urządzić tu parking.
-    
+    * [Powiedziano mi, że chciałby pan urządzić tu parking.]
     - Tak.
     -> MainArgumentNode
     
 == MainArgumentNode
-    + Dlaczego parking powinien być właśnie tutaj?
+    + [Dlaczego parking powinien być właśnie tutaj?]
         -> Question_01
-    + Co będą z tego mieć inni?
+    + [Co będą z tego mieć inni?]
         -> Question_02
-    + Pani mieszkająca na terenie kampusu proponuje pozostawić tu zieleń.
+    + [Pani mieszkająca na terenie kampusu proponuje pozostawić tu zieleń.]
         -> Question_03
-    + Student, który niedawno przyjechał tu na wymianę chciałby tu urządzić małą gastronomię.
+    + [Student, który niedawno przyjechał tu na wymianę chciałby tu urządzić małą gastronomię.]
         -> Question_04
-    + Zdaniem młodego doktora można tu zrobić galerię prac.
+    + [Zdaniem młodego doktora można tu zrobić galerię prac.]
         -> Question_05
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
         -> END
         
 == Question_01

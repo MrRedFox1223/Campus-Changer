@@ -1,21 +1,30 @@
 INCLUDE Globals.ink
 
-Ehem, Ehem… W czym mogę pomóc?
+{01_bIsDecisionMade == true: -> DecisionRevisit}
+{01_bIsDecisionMade == false: -> BeginQuest}
 
-    + Chcę zapytać o food trucki.
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Strażnik
+-> END
+
+== BeginQuest
+
+Ehem, Ehem… W czym mogę pomóc? #portrait:Strażnik
+
+    + [Chcę zapytać o food trucki.]
     
     - Ach, ten pomysł. Same kłopoty.
     -> MainDiscussionNode
     
 == MainDiscussionNode
 
-    + Czemu to jest zły pomysł?
+    + [Czemu to jest zły pomysł?]
     -> Question_01
-    + Czy nie warto byłoby ożywić to miejsce?
+    + [Czy nie warto byłoby ożywić to miejsce?]
     -> Question_02
-    + Co można zrobić zamiast?
+    + [Co można zrobić zamiast?]
     -> Question_03
-    + Dziękuję, nie mam więcej pytań.
+    + [Dziękuję, nie mam więcej pytań.]
     -> END
 
 == Question_01

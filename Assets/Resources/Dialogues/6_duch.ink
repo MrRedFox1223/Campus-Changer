@@ -7,7 +7,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Co myślisz o tym miejscu?
+Co myślisz o tym miejscu? #portrait:GeniusLoci
 
     + [Podoba mi się.]
     A mi się nie podoba. -> StoryStep_01
@@ -50,7 +50,7 @@ Najlepiej jeśli porozmawiasz z ludźmi wokół. To zajmie tylko parę chwil.
 
 == TimeForDecision
 
-Jaka jest Twoja decyzja w sprawie kawiarni?
+Jaka jest Twoja decyzja w sprawie kawiarni? #portrait:GeniusLoci
     
     + [Tak, zróbmy kawiarnię]
     ~ 06_Decision = "kawiarnia"
@@ -70,6 +70,6 @@ Jaka jest Twoja decyzja w sprawie kawiarni?
 Świetnie! Mamy to! Idziemy dalej! -> END
 
 == DecisionRevisit
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END
 

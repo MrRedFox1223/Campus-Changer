@@ -7,7 +7,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Jesteśmy na dziedzińcu pomiędzy Gmachem Mechaniki a gmachem Wydziału Instalacji Budowlanych.
+Jesteśmy na dziedzińcu pomiędzy Gmachem Mechaniki a gmachem Wydziału Instalacji Budowlanych. #portrait:GeniusLoci
 
     + [Idealne miejsce na ogród.] -> InitialMindMadeUp
     + [Idealne miejsce na galerię plenerową.] -> InitialMindMadeUp
@@ -42,7 +42,7 @@ Przywołaj mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
 
 == TimeForDecision
 
-Jaka jest Twoja decyzja? Mamy kilka możliwości: zieleń, gastronomia, parking i galeria.
+Jaka jest Twoja decyzja? Mamy kilka możliwości: zieleń, gastronomia, parking i galeria. #portrait:GeniusLoci
 
     + [Zostawmy zieleń.]
     ~ 02_Decision = "zieleń"
@@ -64,5 +64,5 @@ Dziękuję, że tak szybko podjąłeś swoją decyzję! Pożegnajmy się z tym d
 
 == DecisionRevisit
 
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END

@@ -1,21 +1,29 @@
 INCLUDE Globals.ink
 
-Dzień dobry. Słyszałam, że chcesz porozmawiać o tej całej kawiarni.
+{06_bIsDecisionMade == true: -> DecisionRevisit}
+{06_bIsDecisionMade == false: -> BeginQuest}
 
-    + To prawda.
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:StarszaPani
+-> END
+
+== BeginQuest
+Dzień dobry. Słyszałam, że chcesz porozmawiać o tej całej kawiarni. #portrait:StarszaPani
+
+    + [To prawda.]
     
 Nie podoba mi się ten pomysł. Ale za to chciałabym, zeby ktoś tu wreszcie porządnie posprzątał!
 -> MainDiscussionNode
 
 == MainDiscussionNode
 
-    + Co jest nie tak z kawiarnią lub stołówką?
+    + [Co jest nie tak z kawiarnią lub stołówką?]
     -> Question_01
-    + Co ma Pani na myśli, mówiąc o sprzątaniu?
+    + [Co ma Pani na myśli, mówiąc o sprzątaniu?]
     -> Question_02
-    + Czy obecnie istniejące rozwiązanie nie jest dobre dla uczelni?
+    + [Czy obecnie istniejące rozwiązanie nie jest dobre dla uczelni?]
     -> Question_03
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
     -> END
     
 == Question_01

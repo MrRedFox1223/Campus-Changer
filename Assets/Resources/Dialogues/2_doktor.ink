@@ -1,25 +1,35 @@
 INCLUDE Globals.ink
 
-Czy możemy porozmawiać chwilę o przyszłości tego dziedzińca?
+{02_bIsDecisionMade == true: -> DecisionRevisit}
+{02_bIsDecisionMade == false: -> BeginQuest}
 
-    + Ja właśnie w tej sprawie.
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Doktor
+-> END
+
+== BeginQuest
+
+Czy możemy porozmawiać chwilę o przyszłości tego dziedzińca? #portrait:Doktor
+
+    + [Ja właśnie w tej sprawie.]
     
     - Proszę sobie wyobrazić! Interaktywna ekspozycja na świeżym powietrzu. Każdy może podejść i zobaczyć na własne oczy czym się tu zajmujemy! Wszystko podane w przystępnej formie, bez żargonu.
+    
     -> MainArgumentNode
     
 == MainArgumentNode
 
-    + Dlaczego galeria powinna być właśnie tutaj?
+    + [Dlaczego galeria powinna być właśnie tutaj?]
         -> Question_01
-    + Co będą z tego mieć inni użytkownicy kampusu?
+    + [Co będą z tego mieć inni użytkownicy kampusu?]
         -> Question_02
-    + Jest pomysł, żeby zamiast galerii zrobić tu parking.
+    + [Jest pomysł, żeby zamiast galerii zrobić tu parking.]
         -> Question_03
-    + Powstała propozycja, żeby urządzić tu kącik gastronomiczny.
+    + [Powstała propozycja, żeby urządzić tu kącik gastronomiczny.]
         -> Question_04
-    + Można też zostawić zieleń.
+    + [Można też zostawić zieleń.]
         -> Question_05
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
         -> END
     
 == Question_01
@@ -27,7 +37,8 @@ To miejsce jest doskonale położone! Z jednej strony zaciszne, a z drugiej praw
     ->MainArgumentNode
     
 == Question_02
-W galerii mogłyby się znaleźć prace ludzi z różnych wydziałów popularyzujące ich badania i udział w projektach. Galeria plenerowa byłaby stałym elementem przestrzeni kampusu PW i może z czasem stałaby się popularnym miejscem. Każdy przechodząc tędy mógłby na nie rzucić okiem.
+W galerii mogłyby się znaleźć prace ludzi z różnych wydziałów popularyzujące ich badania i udział w projektach. 
+Galeria plenerowa byłaby stałym elementem przestrzeni kampusu PW i może z czasem stałaby się popularnym miejscem. Każdy przechodząc tędy mógłby na nie rzucić okiem.
     ->MainArgumentNode
 
 == Question_03

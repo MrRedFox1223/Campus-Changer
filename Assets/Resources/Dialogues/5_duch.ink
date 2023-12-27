@@ -7,7 +7,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Tym razem mam dla ciebie coś większego.
+Tym razem mam dla ciebie coś większego. #portrait:GeniusLoci
 
     * [Czy to będzie wymagało biegania po Kampusie?]
     Tylko trochę. ->StoryStep_01
@@ -74,7 +74,7 @@ Przez pasaż rozumiem ciąg komunikacyjny biegnący pomiedzy pomnikiem Golskiego
 -> MainDecisionNode
 
 == TimeForDecision
-W porządku! Jesteś gotów, jak rozumiem. Zatem podejmij decyzję.
+W porządku! Jesteś gotów, jak rozumiem. Zatem podejmij decyzję. #portrait:GeniusLoci
 
     + [Zróbmy nowy wystrój fontanny.]
     ~ 05_Decision = "fontanna"
@@ -93,5 +93,5 @@ W porządku! Jesteś gotów, jak rozumiem. Zatem podejmij decyzję.
 Dziękuję! Podejmujesz swoje decyzje niezwykle sprawnie! Dzięki Tobie Kampus ma szansę szybko się  zmienić. ->END
 
 == DecisionRevisit
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END

@@ -7,7 +7,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Jesteśmy przy zachodniej bramie Kampusu. Jak widzisz, jest tu dużo miejsca.
+Jesteśmy przy zachodniej bramie Kampusu. Jak widzisz, jest tu dużo miejsca. #portrait:GeniusLoci
 
     + [Trawniki...]
     ->StoryStep_01
@@ -52,7 +52,7 @@ Przywołaj mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
 
 == TimeForDecision
 
-Co robimy z tym miejscem?
+Co robimy z tym miejscem? #portrait:GeniusLoci
 
     + [Dodajemy miejsca parkingowe kosztem trawników.]
     ~ 08_Decision = "więcej parkingu"
@@ -73,5 +73,5 @@ Co robimy z tym miejscem?
 Doskonale! Kolejna decyzja za Tobą. Idźmy jednak dalej. Do zobaczenia niebawem! -> END
 
 == DecisionRevisit
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END

@@ -1,12 +1,21 @@
 INCLUDE Globals.ink
 
-Dzień dobry!
+{07_bIsDecisionMade == true: -> DecisionRevisit}
+{07_bIsDecisionMade == false: -> BeginQuest}
 
-    + Dzień dobry. Ja w sprawie kordegardy.
+== DecisionRevisit
+Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:PaniZAdministracji
+-> END
+
+== BeginQuest
+
+Dzień dobry! #portrait:PaniZAdministracji
+
+    + [Dzień dobry. Ja w sprawie kordegardy.]
     
     - Stróżówki.
     
-    + Słucham?
+    + [Słucham?]
     
     - Kordegarda to rodzaj stróżówki. Powinna tu być siedziba Straży Akademickiej.
     
@@ -15,15 +24,15 @@ Dzień dobry!
     
 == MainDiscussionNode
 
-    + W czym pomoże, że strażnicy będą tu mieć swoje miejsce?
+    + [W czym pomoże, że strażnicy będą tu mieć swoje miejsce?]
     -> Question_01
-    +Czy kordegarda pomieści tyle osób? 
+    + [Czy kordegarda pomieści tyle osób? ]
     -> Question_02
-    + A może zamiast tego zrobić dostępną dla wszystkich knajpkę?
+    + [A może zamiast tego zrobić dostępną dla wszystkich knajpkę?]
     -> Question_03
-    + Jest też pomysł, żeby zrobić tu living lab.
+    + [Jest też pomysł, żeby zrobić tu living lab.]
     -> Question_04
-    + Nie mam więcej pytań.
+    + [Nie mam więcej pytań.]
     -> END
 
 == Question_01

@@ -6,7 +6,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Witamy w zapomnianym zakątku Kampusu!
+Witamy w zapomnianym zakątku Kampusu! #portrait:GeniusLoci
 
     + [Ale tu jest brama, dużo ludzi tędy przechodzi...]
     
@@ -53,7 +53,7 @@ Wróć do mnie, gdy wszystkiego się dowiesz.
 
 == TimeForDecision
 
-Jaka jest twoja decyzja w sprawie kordegardy?
+Jaka jest twoja decyzja w sprawie kordegardy? #portrait:GeniusLoci
 
     + [Knajpka.]
     ~ 07_Decision = "knajpka"
@@ -73,5 +73,5 @@ Jaka jest twoja decyzja w sprawie kordegardy?
 Dziękuję za pomoc! Przed Tobą jeszcze kilka spraw do rozwikłania. ->END
    
 == DecisionRevisit
-Dzięki, że zająłeś się tym miejscem!
+Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci
 -> END
