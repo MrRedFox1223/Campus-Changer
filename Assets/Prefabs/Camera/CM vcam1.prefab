@@ -58,7 +58,7 @@ MonoBehaviour:
     FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FarClipPlane: 200
     Dutch: 0
     LensShift: {x: 0, y: 0}
     Iso: 200
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSens: 0.6
   verticalSens: 0.6
-  clampAngleUp: 90
-  clampAngleDown: -90
+  clampAngleUp: 89
+  clampAngleDown: -89
 --- !u!114 &2971197045794504056
 MonoBehaviour:
   m_ObjectHideFlags: 0
