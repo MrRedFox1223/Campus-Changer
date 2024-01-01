@@ -54,12 +54,16 @@ Jaka jest Twoja decyzja w sprawie kawiarni? #portrait:GeniusLoci
     
     + [Tak, zróbmy kawiarnię]
     ~ 06_Decision = "kawiarnia"
+    ~ SwitchTerrain(1)
     + [Zamiast kawiarni zróbmy stołówkę.]
     ~ 06_Decision = "stołówka"
+    ~ SwitchTerrain(2)
     + [Nic nie budujmy, poza schludnym pomieszczeniem na śmietniki.]
     ~ 06_Decision = "altana"
+    ~ SwitchTerrain(3)
     + [Zostawmy wszystko, jak jest.]
     ~ 06_Decision = "bez zmian"
+    ~ SwitchTerrain(0)
     + [Jeszcze nie wiem.]
     -> END
     

@@ -7,9 +7,7 @@ CONST FINISHED = 4
 CONST DECLINED = 5
 
 // External functions
-EXTERNAL StartQuest(marker)
-EXTERNAL FinishQuest(marker)
-EXTERNAL IsQuestFinished(marker)
+EXTERNAL SwitchTerrain(marker)
 
 // Variables
 VAR 01_DecisionInProgress = false

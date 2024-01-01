@@ -57,12 +57,16 @@ Jaka jest twoja decyzja w sprawie kordegardy? #portrait:GeniusLoci
 
     + [Knajpka.]
     ~ 07_Decision = "knajpka"
+    ~ SwitchTerrain(1)
     + [Living lab.]
     ~ 07_Decision = "living lab"
+    ~ SwitchTerrain(2)
     + [Stróżówka.]
     ~ 07_Decision = "stróżówka"
+    ~ SwitchTerrain(3)
     + [Żaden z tych pomysłów nie jest dobry, zostawmy jak jest.]
     ~ 07_Decision = "nic"
+    ~ SwitchTerrain(0)
     + [Jeszcze nie wiem.]
     -> END
     

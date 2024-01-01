@@ -56,14 +56,19 @@ Co robimy z tym miejscem? #portrait:GeniusLoci
 
     + [Dodajemy miejsca parkingowe kosztem trawników.]
     ~ 08_Decision = "więcej parkingu"
+    ~ SwitchTerrain(1)
     + [Zostawiamy wszystko jak jest.]
     ~ 08_Decision = "bez zmian"
+    ~ SwitchTerrain(0)
     + [Przenosimy miejsca parkingowe bliżej bramy.]
     ~ 08_Decision = "przeprowadzka"
+    ~ SwitchTerrain(2)
     + [Usuwamy połowę miejsc parkingowych, która jest dalej od bramy.]
     ~ 08_Decision = "mniej parkingu"
+    ~ SwitchTerrain(3)
     + [Usuwamy wszystkie miejsca parkingowe i zastępujemy je zielenią.]
     ~ 08_Decision = "bez parkingu"
+    ~ SwitchTerrain(4)
     
 - A więc niech tak się stanie.
 

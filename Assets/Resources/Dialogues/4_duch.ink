@@ -73,12 +73,16 @@ Co robimy z tym miejscem? #portrait:GeniusLoci
 
     + [Odświeżenie elewacji.]
     ~ 04_Decision = "elewacja"
+    ~ SwitchTerrain(1)
     + [Zieloną przestrzeń.]
     ~ 04_Decision = "zieleń"
+    ~ SwitchTerrain(2)
     + [Ogród o nieformalnym charakterze.]
     ~ 04_Decision = "ogród"
+    ~ SwitchTerrain(3)
     + [Zaplecze gospodarcze.]
     ~ 04_Decision = "zaplecze"
+    ~ SwitchTerrain(4)
     + [Możesz mi opowiedzieć jak wygląda każdy pomysł?]
         Oczywiście!
         -> MainDebateNode

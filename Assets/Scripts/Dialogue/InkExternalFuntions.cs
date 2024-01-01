@@ -19,6 +19,11 @@ public class InkExternalFuntions
             if (NPC.GetComponent<QuestPoint>().CheckQuestState().Equals(QuestState.CAN_FINISH))
                 story.variablesState[marker] = (int)QuestState.CAN_FINISH;
         });
+
+        story.BindExternalFunction("SwitchTerrain", (int marker) => {
+            if (NPC.GetComponent<SwitchTerrainPower>() != null)
+                NPC.GetComponent<SwitchTerrainPower>().SwitchTerrain(marker);
+        });
     }
 
     public void Unbind(Story story)
@@ -26,5 +31,6 @@ public class InkExternalFuntions
         story.UnbindExternalFunction("StartQuest");
         story.UnbindExternalFunction("FinishQuest");
         story.UnbindExternalFunction("IsQuestFinished");
+        story.UnbindExternalFunction("SwitchTerrain");
     }
 }

@@ -46,12 +46,16 @@ Jaka jest Twoja decyzja? Mamy kilka możliwości: zieleń, gastronomia, parking 
 
     + [Zostawmy zieleń.]
     ~ 02_Decision = "zieleń"
+    ~ SwitchTerrain(1)
     + [Zróbmy zakątek z gastronomią.]
     ~ 02_Decision = "gastronomia"
+    ~ SwitchTerrain(2)
     + [Zróbmy parking.]
     ~ 02_Decision = "parking"
+    ~ SwitchTerrain(3)
     + [Urządźmy galerię.]
     ~ 02_Decision = "galeria"
+    ~ SwitchTerrain(4)
     + [Jeszcze nie wiem.]
     ->END
     

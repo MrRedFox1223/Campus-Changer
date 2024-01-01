@@ -67,10 +67,13 @@ Jaki jest Twój werdykt? #portrait:GeniusLoci
 
     + [Otwórzmy bramę. A najlepiej rozmontujmy.]
     ~ 03_Decision = "otworzyć"
+    ~ SwitchTerrain(1)
     + [Zostawmy zamkniętą bramę i otwartą furtkę.]
     ~ 03_Decision = "furtka"
+    ~ SwitchTerrain(2)
     + [Zamknijmy wszystko!]
     ~ 03_Decision = "zamknąć"
+    ~ SwitchTerrain(3)
     + [Jeszcze nie wiem.]
     -> END
 

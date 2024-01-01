@@ -58,8 +58,10 @@ Jaka jest Twoja decyzja? Czy pozostawiamy ruch uliczny? A może zastępujemy jez
 
     * [Jezdnia!]
         ~ 01_Decision = "jezdnia"
+        ~ SwitchTerrain(1)
     * [Chodnik!]
         ~ 01_Decision = "chodnik"
+        ~ SwitchTerrain(2)
     * [Jeszcze nie wiem.]
         -> END
     

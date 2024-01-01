@@ -72,9 +72,11 @@ Krótka piłka: food trucki tak czy food trucki nie? #portrait:GeniusLoci
 
     + [Tak]
     ~09_Decision = "food truck"
+    ~ SwitchTerrain(1)
    Stawiamy food trucki!
     + [Nie]
     ~09_Decision = "zaplecze"
+    ~ SwitchTerrain(0)
     Czyli wszystko zostaje po staremu.
     + [Nie wiem]
     Popytaj ludzi wokół, może oni pomogą Ci wybrać.
