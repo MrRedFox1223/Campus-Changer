@@ -44,22 +44,25 @@ Przywołaj mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
 
 Jaka jest Twoja decyzja? Mamy kilka możliwości: zieleń, gastronomia, parking i galeria. #portrait:GeniusLoci
 
+VAR marker = 0
+
     + [Zostawmy zieleń.]
     ~ 02_Decision = "zieleń"
-    ~ SwitchTerrain(1)
+    ~ marker = 1
     + [Zróbmy zakątek z gastronomią.]
     ~ 02_Decision = "gastronomia"
-    ~ SwitchTerrain(2)
+    ~ marker = 2
     + [Zróbmy parking.]
     ~ 02_Decision = "parking"
-    ~ SwitchTerrain(3)
+    ~ marker = 3
     + [Urządźmy galerię.]
     ~ 02_Decision = "galeria"
-    ~ SwitchTerrain(4)
+    ~ marker = 4
     + [Jeszcze nie wiem.]
     ->END
     
 - A więc niech tak się stanie.
+~ SwitchTerrain(marker)
 
 ~ 02_DecisionInProgress = false
 ~ 02_bIsDecisionMade = true
