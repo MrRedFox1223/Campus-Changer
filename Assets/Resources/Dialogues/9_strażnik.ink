@@ -1,7 +1,7 @@
 INCLUDE Globals.ink
 
-{01_bIsDecisionMade == true: -> DecisionRevisit}
-{01_bIsDecisionMade == false: -> BeginQuest}
+{09_bIsDecisionMade == true: -> DecisionRevisit}
+{09_bIsDecisionMade == false: -> BeginQuest}
 
 == DecisionRevisit
 Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Strażnik
