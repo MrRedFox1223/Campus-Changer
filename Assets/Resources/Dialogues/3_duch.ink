@@ -65,15 +65,17 @@ Przywołaj mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
 
 Jaki jest Twój werdykt? #portrait:GeniusLoci
 
+VAR marker = 0
+
     + [Otwórzmy bramę. A najlepiej rozmontujmy.]
     ~ 03_Decision = "otworzyć"
-    ~ SwitchTerrain(1)
+    ~ marker = 1
     + [Zostawmy zamkniętą bramę i otwartą furtkę.]
     ~ 03_Decision = "furtka"
-    ~ SwitchTerrain(2)
+    ~ marker = 2
     + [Zamknijmy wszystko!]
     ~ 03_Decision = "zamknąć"
-    ~ SwitchTerrain(3)
+    ~ marker = 3
     + [Jeszcze nie wiem.]
     -> END
 
@@ -81,6 +83,7 @@ Jaki jest Twój werdykt? #portrait:GeniusLoci
 
 ~ 03_DecisionInProgress = false
 ~ 03_bIsDecisionMade = true
+~ SwitchTerrain(marker)
 
 Dziękuję! Świetnie sobie poradziłeś! Tymczasem jednak czekają na nas inne sprawy. Zatem ruszamy! -> END
 

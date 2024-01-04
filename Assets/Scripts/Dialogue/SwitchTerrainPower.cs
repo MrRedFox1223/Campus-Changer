@@ -12,10 +12,14 @@ public class SwitchTerrainPower : MonoBehaviour
     [Header("References")]
     [SerializeField] private CanvasGroup fadeCanvasGroup;
     [SerializeField] private GameObject switchableObject;
+    [SerializeField] private DialogueManager dialogueManager;
+
+    private float typingSpeedBackup;
 
     private void Awake()
     {
         fadeCanvasGroup = GameObject.Find("DialogueFade").GetComponent<CanvasGroup>();
+        dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
     }
 
     public async void SwitchTerrain(int marker)
@@ -28,6 +32,8 @@ public class SwitchTerrainPower : MonoBehaviour
 
     private async Task FadeOut()
     {
+        dialogueManager.pauseCalled = true;
+
         while (fadeCanvasGroup.alpha < 1)
         {
             fadeCanvasGroup.alpha += fadeFactor;
@@ -52,5 +58,7 @@ public class SwitchTerrainPower : MonoBehaviour
             fadeCanvasGroup.alpha -= fadeFactor;
             await Task.Yield();
         }
+
+        dialogueManager.pauseCalled = false;
     }
 }

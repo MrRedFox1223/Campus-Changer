@@ -55,24 +55,27 @@ Wróć do mnie, gdy wszystkiego się dowiesz.
 
 Jaka jest twoja decyzja w sprawie kordegardy? #portrait:GeniusLoci
 
+VAR marker = 0
+
     + [Knajpka.]
     ~ 07_Decision = "knajpka"
-    ~ SwitchTerrain(1)
+    ~ marker = 1
     + [Living lab.]
     ~ 07_Decision = "living lab"
-    ~ SwitchTerrain(2)
+    ~ marker = 2
     + [Stróżówka.]
     ~ 07_Decision = "stróżówka"
-    ~ SwitchTerrain(3)
+    ~ marker = 3
     + [Żaden z tych pomysłów nie jest dobry, zostawmy jak jest.]
     ~ 07_Decision = "nic"
-    ~ SwitchTerrain(0)
+    ~ marker = 0
     + [Jeszcze nie wiem.]
     -> END
     
 - A więc niech tak się stanie.
 ~ 07_DecisionInProgress = false
 ~ 07_bIsDecisionMade = true
+~ SwitchTerrain(marker)
 
 Dziękuję za pomoc! Przed Tobą jeszcze kilka spraw do rozwikłania. ->END
    

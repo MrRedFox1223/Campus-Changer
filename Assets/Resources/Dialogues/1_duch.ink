@@ -56,12 +56,14 @@ Drugą osobą jest pani pracująca w administracji, która dojeżdża do Gmachu 
 
 Jaka jest Twoja decyzja? Czy pozostawiamy ruch uliczny? A może zastępujemy jezdnię chodnikiem? #portrait:GeniusLoci
 
+VAR marker = 0
+
     * [Jezdnia!]
         ~ 01_Decision = "jezdnia"
-        ~ SwitchTerrain(1)
+        ~ marker = 1
     * [Chodnik!]
         ~ 01_Decision = "chodnik"
-        ~ SwitchTerrain(2)
+        ~ marker = 2
     * [Jeszcze nie wiem.]
         -> END
     
@@ -69,8 +71,11 @@ Jaka jest Twoja decyzja? Czy pozostawiamy ruch uliczny? A może zastępujemy jez
 
 ~ 01_DecisionInProgress = false
 ~ 01_bIsDecisionMade = true
+~ SwitchTerrain(marker)
 
-Musisz wiedzieć, że Twoja decyzja ma duży wpływ na otaczający nas kampus. Powodzenia! -> END
+Musisz wiedzieć, że Twoja decyzja ma duży wpływ na otaczający nas kampus. Powodzenia! 
+
+-> END
 
     
 == DecisionRevisit

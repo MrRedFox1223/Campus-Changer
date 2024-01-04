@@ -62,12 +62,14 @@ VAR marker = 0
     ->END
     
 - A więc niech tak się stanie.
-~ SwitchTerrain(marker)
 
 ~ 02_DecisionInProgress = false
 ~ 02_bIsDecisionMade = true
+~ SwitchTerrain(marker)
 
-Dziękuję, że tak szybko podjąłeś swoją decyzję! Pożegnajmy się z tym dziedzińcem i ruszajmy dalej.  -> END
+Dziękuję, że tak szybko podjąłeś swoją decyzję! Pożegnajmy się z tym dziedzińcem i ruszajmy dalej.  
+
+-> END
 
 == DecisionRevisit
 

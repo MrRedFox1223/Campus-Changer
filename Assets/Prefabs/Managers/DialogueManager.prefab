@@ -44,15 +44,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typingSpeed: 0.02
+  pauseTime: 1.5
   loadGlobalsJSON: {fileID: 4900000, guid: 7a2627a5161ee8b42b7e14ed6726f517, type: 3}
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
-  displayNameText: {fileID: 0}
   portraitAnimator: {fileID: 0}
   choices:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  continueIcon: {fileID: 0}
   crosshair: {fileID: 0}
   actionText: {fileID: 0}
+  interactPressed: 0
+  pauseCalled: 0

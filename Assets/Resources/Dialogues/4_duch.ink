@@ -71,18 +71,20 @@ Skoro i tak jest tu brzydko, to nikt się nie obrazi, jeśli wylądują tu śmie
 
 Co robimy z tym miejscem? #portrait:GeniusLoci
 
+VAR marker = 0
+
     + [Odświeżenie elewacji.]
     ~ 04_Decision = "elewacja"
-    ~ SwitchTerrain(1)
+    ~ marker = 1
     + [Zieloną przestrzeń.]
     ~ 04_Decision = "zieleń"
-    ~ SwitchTerrain(2)
+    ~ marker = 2
     + [Ogród o nieformalnym charakterze.]
     ~ 04_Decision = "ogród"
-    ~ SwitchTerrain(3)
+    ~ marker = 3
     + [Zaplecze gospodarcze.]
     ~ 04_Decision = "zaplecze"
-    ~ SwitchTerrain(4)
+    ~ marker = 4
     + [Możesz mi opowiedzieć jak wygląda każdy pomysł?]
         Oczywiście!
         -> MainDebateNode
@@ -93,6 +95,7 @@ Co robimy z tym miejscem? #portrait:GeniusLoci
 
 ~ 04_DecisionInProgress = false
 ~ 04_bIsDecisionMade = true
+~ SwitchTerrain(marker)
 
 Dziękuję. Twoja decyzja jest dla bardzo ważna. Muszę przyznać, że doskonale sobie radzisz. Brawo! Chodźmy dalej!  -> END
 

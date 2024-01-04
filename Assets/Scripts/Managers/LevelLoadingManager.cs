@@ -35,14 +35,16 @@ public class LevelLoadingManager : MonoBehaviour
         scene.allowSceneActivation = false;
 
         loadingScreen.SetActive(true);
+        Debug.Log("Fire");
 
         do
             target = scene.progress;
         while (scene.progress < 0.9f);
 
+        scene.allowSceneActivation = true;
+
         await Task.Delay(1000);
 
-        scene.allowSceneActivation = true;
         loadingScreen.SetActive(false);
     }
 

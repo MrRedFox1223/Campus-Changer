@@ -11,21 +11,25 @@ Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Student
 
 Cześć! Jesteś graczem, prawda? #portrait:Student
 
-    * [Skąd wiesz?]
-    * [Ależ skąd, jestem studentem, jak ty.]
+    + [Skąd wiesz?]
+        ->FirstEncounter
+    + [Ależ skąd, jestem studentem, jak ty.]
+        ->FirstEncounter
     
-    - Nie ma czego się wstydzić. Ja też jestem graczem w innej grze.
+== Explanation
+    + [Duch miejsca powiedział, że chcesz w tym miejscu zrobić chodnik.]
     
-    * [Duch miejsca powiedział, że chcesz w tym miejscu zrobić chodnik.] 
-    
-    - Tak. Bardzo mi na tym zależy. 
-    
+Tak. Bardzo mi na tym zależy. 
 Co tydzień przychodzę tu, gdy mam okienko. Brakuje mi miejsca, żeby usiąść. Dlatego pomyślałem, że dobrym rozwiązaniem jest chodnik. 
 Taki z niskimi krawężnikami, tak żeby mogły bez problemu wjechać na niego osoby poruszające się na wózkach i nie powybijany, bo nie raz mi się zdażyło potknać.
 
 Aaaa!! I oczywiście ławki by się przydały, żeby można było odpocząć. 
 
 -> MainArgumentNode
+
+== FirstEncounter
+Nie ma czego się wstydzić. Ja też jestem graczem w innej grze.
+    ->Explanation
 
 == MainArgumentNode
 

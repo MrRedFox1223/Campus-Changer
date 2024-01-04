@@ -18,7 +18,7 @@ Dzień dobry. Jestem pomocniczką Ducha Miejsca. Razem z moimi merdającymi kole
     -> Question_01
     + [W czym to jest lepsze od obecnego układu?]
     -> Question_04
-    + Na razie nie mam więcej pytań.
+    + [Na razie nie mam więcej pytań.]
     -> END
     
 == Question_01

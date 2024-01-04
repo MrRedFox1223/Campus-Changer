@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
 {
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.02f;
+    public float pauseTime = 2f;
 
     [Header("Globals JSON File")]
     [SerializeField] private TextAsset loadGlobalsJSON;
@@ -28,13 +29,14 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     [SerializeField] private TextMeshProUGUI actionText;
 
     public bool interactPressed = false;
+    public bool pauseCalled = false;
     public bool dialogueIsPlaying { get; private set; }
 
     private Story currentStory;
     private static DialogueManager instance;
     private TextMeshProUGUI[] choicesText;
-    private Animator layoutAnimator;
     private bool canContinueToNextLine = true;
+    private Animator layoutAnimator;
     private Coroutine displayLineCoroutnie;
     private DialogueVariables dialogueVariables;
     private InkExternalFuntions inkExternalFuntions;
@@ -168,7 +170,10 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
 
         HideChoices();
 
-        foreach(char letter in line.ToCharArray())
+        if (pauseCalled)
+            yield return new WaitForSeconds(pauseTime);
+
+        foreach (char letter in line.ToCharArray())
         {
             if (interactPressed)
             {
@@ -178,7 +183,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
             }
 
             dialogueText.maxVisibleCharacters++;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSecondsRealtime(typingSpeed);
         }
 
         // Display choices, if any, for this dialogue line

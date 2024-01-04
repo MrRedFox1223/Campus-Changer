@@ -76,15 +76,17 @@ Przez pasaż rozumiem ciąg komunikacyjny biegnący pomiedzy pomnikiem Golskiego
 == TimeForDecision
 W porządku! Jesteś gotów, jak rozumiem. Zatem podejmij decyzję. #portrait:GeniusLoci
 
+VAR marker = 0
+
     + [Zróbmy nowy wystrój fontanny.]
     ~ 05_Decision = "fontanna"
-    ~ SwitchTerrain(1)
+    ~ marker = 1
     + [Zbudujmy scenę.]
     ~ 05_Decision = "scena"
-    ~ SwitchTerrain(2)
+    ~ marker = 2
     + [Urządźmy pasaż.]
     ~ 05_Decision = "pasaż"
-    ~ SwitchTerrain(3)
+    ~ marker = 3
     + [Jeszcze nie wiem, co zrobić.]
     -> END
     
@@ -92,6 +94,7 @@ W porządku! Jesteś gotów, jak rozumiem. Zatem podejmij decyzję. #portrait:Ge
 
 ~ 05_DecisionInProgress = false
 ~ 05_bIsDecisionMade = true
+~ SwitchTerrain(marker)
 
 Dziękuję! Podejmujesz swoje decyzje niezwykle sprawnie! Dzięki Tobie Kampus ma szansę szybko się  zmienić. ->END
 

@@ -70,20 +70,28 @@ Wróć do mnie, gdy skończysz rozmowy.
 
 Krótka piłka: food trucki tak czy food trucki nie? #portrait:GeniusLoci
 
+VAR marker = 0
+
     + [Tak]
     ~09_Decision = "food truck"
-    ~ SwitchTerrain(1)
+    ~ marker = 1
    Stawiamy food trucki!
+   
     + [Nie]
     ~09_Decision = "zaplecze"
-    ~ SwitchTerrain(0)
+    ~ marker = 0
     Czyli wszystko zostaje po staremu.
+    
     + [Nie wiem]
     Popytaj ludzi wokół, może oni pomogą Ci wybrać.
     -> InitialSendoff
+    
  - Fantastycznie! Kolejne zadanie rozwiązane. Trzymaj się!
+ 
  ~09_DecisionInProgress = false
  ~09_bIsDecisionMade = true
+ ~ SwitchTerrain(marker)
+ 
  -> END
     
 == DecisionRevisit

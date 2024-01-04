@@ -37,6 +37,3 @@ VAR 08_Decision = ""
 VAR 09_DecisionInProgress = false
 VAR 09_bIsDecisionMade = false
 VAR 09_Decision = ""
-
-// Quests markers
-VAR checkObelisksQuest = CAN_START

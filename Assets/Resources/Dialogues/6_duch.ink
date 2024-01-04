@@ -52,18 +52,20 @@ Najlepiej jeśli porozmawiasz z ludźmi wokół. To zajmie tylko parę chwil.
 
 Jaka jest Twoja decyzja w sprawie kawiarni? #portrait:GeniusLoci
     
+VAR marker = 0
+    
     + [Tak, zróbmy kawiarnię]
     ~ 06_Decision = "kawiarnia"
-    ~ SwitchTerrain(1)
+    ~ marker = 1
     + [Zamiast kawiarni zróbmy stołówkę.]
     ~ 06_Decision = "stołówka"
-    ~ SwitchTerrain(2)
+    ~ marker = 2
     + [Nic nie budujmy, poza schludnym pomieszczeniem na śmietniki.]
     ~ 06_Decision = "altana"
-    ~ SwitchTerrain(3)
+    ~ marker = 3
     + [Zostawmy wszystko, jak jest.]
     ~ 06_Decision = "bez zmian"
-    ~ SwitchTerrain(0)
+    ~ marker = 0
     + [Jeszcze nie wiem.]
     -> END
     
@@ -71,6 +73,8 @@ Jaka jest Twoja decyzja w sprawie kawiarni? #portrait:GeniusLoci
 
 ~ 06_DecisionInProgress = false
 ~ 06_bIsDecisionMade = true
+~ SwitchTerrain(marker)
+
 Świetnie! Mamy to! Idziemy dalej! -> END
 
 == DecisionRevisit

@@ -209,6 +209,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 565254633785899650, guid: af859416826a6394bb36917d7308a951, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
     - target: {fileID: 565254633943405490, guid: af859416826a6394bb36917d7308a951, type: 3}
       propertyPath: m_Color.b
       value: 0.40784314
@@ -234,8 +238,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
     - target: {fileID: 565254634729936692, guid: af859416826a6394bb36917d7308a951, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
+    - target: {fileID: 565254634729936692, guid: af859416826a6394bb36917d7308a951, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 565254634729936693, guid: af859416826a6394bb36917d7308a951, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 565254634903945754, guid: af859416826a6394bb36917d7308a951, type: 3}
       propertyPath: m_Pivot.x
