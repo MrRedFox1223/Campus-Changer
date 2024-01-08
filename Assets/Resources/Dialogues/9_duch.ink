@@ -17,8 +17,9 @@ Najwyraźniej inne osoby miały podobne skojarzenie, ponieważ pojawił się pod
     
 == StoryStep_01
 
-Otóż można by tu zaprosić food trucki.
+Otóż można by tu „zaprosić” food trucki.
 -> FirstQuestionLoop
+
 
 == FirstQuestionLoop
 
@@ -35,8 +36,8 @@ Otóż można by tu zaprosić food trucki.
     
 == Question_01
 
-Ciężarówka z jedzeniem. Mini-restauracja na kółkach. Niektórzy by powiedzieli, że mobilny fast food. Aktualnie może serwować naprawdę niesamowite jedzenie. 
-Zajmuje przy tym mało miejsca i do tego każdego dnia może być gdzie indziej, więc codziennie jest inny wybór potraw z całego świata.
+Ciężarówka z jedzeniem. Mini-restauracja na kółkach. Niektórzy by powiedzieli, że mobilny fast food. Aktualnie może serwować naprawdę niesamowite jedzenie z różnych zakątków świata. 
+Aaa! I zajmuje przy tym mało miejsca!
 -> FirstQuestionLoop
 
 == Question_02
@@ -86,12 +87,13 @@ VAR marker = 0
     Popytaj ludzi wokół, może oni pomogą Ci wybrać.
     -> InitialSendoff
     
- - Fantastycznie! Kolejne zadanie rozwiązane. Trzymaj się!
+ - A więc niech tak się stanie.
  
  ~09_DecisionInProgress = false
  ~09_bIsDecisionMade = true
  ~ SwitchTerrain(marker)
  
+ - Fantastycznie! Kolejne zadanie rozwiązane. Trzymaj się!
  -> END
     
 == DecisionRevisit

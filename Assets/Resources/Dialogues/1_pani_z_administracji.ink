@@ -28,7 +28,7 @@ Dzień dobry. Od razu uprzedzam, że mam w tej sprawie wyrobione zdanie. #portra
         
 == Question_01
 
-Dojeżdżam do pracy autem i parkuję niedaleko. Ta jezdnia zapewnia mi wygodny dostęp do miejsca parkingowego. Nie muszę bezsensu kluczyć i tracić czasu na objeżdżanie.
+Dojeżdżam do pracy autem i parkuję niedaleko. Ta jezdnia zapewnia mi wygodny dostęp do miejsca parkingowego. Nie muszę bez sensu kluczyć i tracić czasu na objeżdżanie.
 -> MainArgumentNode
 
 == Question_02

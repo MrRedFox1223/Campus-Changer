@@ -6,7 +6,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Jesteśmy przy zachodniej bramie Kampusu. Jak widzisz, jest tu dużo miejsca. #portrait:GeniusLoci
+Jesteśmy przy zachodniej bramie kampusu. Jak widzisz, jest tu dużo miejsca. #portrait:GeniusLoci
 
     + [Trawniki...]
     ->StoryStep_01
@@ -17,7 +17,7 @@ Jesteśmy przy zachodniej bramie Kampusu. Jak widzisz, jest tu dużo miejsca. #p
 
 == StoryStep_01
 
-Wszystko po trochu. Decyzja dotyczy parkingów. Pytanie na dzisiaj: czy dodać miejsca parkingowe, czy usunąć, czy może zostawić tak jak są?
+Wszystko po trochu. Decyzja dotyczy parkingów. Pytanie na dzisiaj: czy dodać miejsca parkingowe, usunąć je, a może zostawić tak jak są?
 
     + [Dodać!]
     ->InitialMindMadeUp
@@ -30,7 +30,7 @@ Wszystko po trochu. Decyzja dotyczy parkingów. Pytanie na dzisiaj: czy dodać m
 
 == InitialMindMadeUp
 
-Można tak zrobić, ale to jest przedmiotem burzliwej debaty. Część osób mówi, że trzeba wyrzucić samochody z Kampusu. Inne uważają, że trzeba im zrobić więcej miejsca.
+Można tak zrobić, ale to jest przedmiotem burzliwej debaty. Część osób mówi, że trzeba wyrzucić samochody z kampusu. Inne uważają, że trzeba im zrobić więcej miejsca.
 
     + [Ja też mam na ten temat mocne zdanie!]
     ~ 08_DecisionInProgress = true
@@ -40,7 +40,7 @@ Można tak zrobić, ale to jest przedmiotem burzliwej debaty. Część osób mó
 
 == InitialUndecided
 
-Porozmawiaj ze studentką, jeśli chcesz dowiedzieć się, czemu samochody powinny zniknąć, i z panią z dziekanatu, żeby się dowiedzieć, czemu należy zrobić im więcej miejsca. Obie stoją przy pomniku. 
+Porozmawiaj ze studentem, jeśli chcesz dowiedzieć się, czemu samochody powinny zniknąć i z panią z dziekanatu, żeby się dowiedzieć, czemu należy zrobić im więcej miejsca. Oboje stoją przy pomniku. 
 ->InitialSendoff
 
 == InitialSendoff

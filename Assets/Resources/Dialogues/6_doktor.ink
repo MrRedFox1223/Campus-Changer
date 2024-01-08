@@ -27,7 +27,7 @@ Przejdźmy do rzeczy. Uważam, że tu powinna stanąć kawiarnia. #portrait:Dokt
     
 == Question_01
 
-Bo takiego miejsca jeszcze tu nie ma. Mogłoby powstać miejsce, gdzie można się spotkać i porozmawiać w akademickim klimacie. Dobra kawa. Dobre ciastko.. I do tego bezprzewodowy internet i nieco miejsca do co-workingu.
+Bo takiego miejsca jeszcze tu nie ma. Mogłoby powstać miejsce, gdzie można się spotkać i porozmawiać w „akademickim” klimacie. Dobra kawa. Dobre ciastko... I do tego bezprzewodowy internat i nieco miejsca do co-workingu.
 
 -> MainDiscussionNode
 
@@ -45,5 +45,5 @@ W okolicy jest już dużo miejsc, gdzie można coś zjeść. Brakuje miejsca, gd
 
 == Question_04
 
-Tu jest wolna przestrzeń, a jednocześnie jesteśmy w samym centrum Kampusu PW. Każdemu byłoby blisko.
+Tu jest wolna przestrzeń, a jednocześnie jesteśmy w samym centrum kampusu PW. Każdemu byłoby blisko.
 -> MainDiscussionNode

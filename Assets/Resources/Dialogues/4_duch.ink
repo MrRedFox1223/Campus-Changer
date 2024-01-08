@@ -29,8 +29,8 @@ Ale do rzeczy. Tym razem nie będziemy rozmawiać z innymi osobami. Tym razem ws
 == StoryStep_02
 
 Jak widzisz, na razie nic tu nie ma, poza dwoma budynkami, które stoją blisko siebie, a jeden z nich wygląda na opuszczony. Ale są aż cztery pomysły na to miejsce.
-    
-Oto cztery pomysły. Pierwszy: odświeżyć elewację i zostawić resztę tak, jak jest. Drugi: wprowadzić zieleń. Trzeci: urządzić miejsce pełne zieleni służący odpoczynkowi między zajęciami. Czwarty: urządzić zaplecze, takie trochę gospodarcze.
+	
+Oto cztery pomysły. Pierwszy: odświeżyć elewację i zostawić resztę tak, jak jest. Drugi: wprowadzić zieleń. Trzeci: urządzić miejsce pełne zieleni służące odpoczynkowi między zajęciami. Czwarty: urządzić zaplecze, takie trochę gospodarcze.
     ->MainDebateNode
     
 ==MainDebateNode
@@ -59,7 +59,7 @@ Co powiesz na nieco zieleni? Drzewa, krzewy. A może też kwietnik? Cieszyły by
 ->MainDebateNode
 
 == Option_03
-Wyobraź to sobie! Zdzieramy nawierzchnię i robimy trawnik. Sadzimy drzewa i krzewy, a może robimy jakąś przestrzeń do gier zespołowych. W końcu, tam też można się uczyć pracy w zespole :) Kilka leżaków, a może też hamaków. Taka nieformalna przestrzeń do odpoczynku w trakcie przerw między zajęciami. 
+Wyobraź to sobie! Zdzieramy nawierzchnię i robimy trawnik. Sadzimy drzewa i krzewy, a może robimy jakąś przestrzeń do gier zespołowych. W końcu, tam też można się uczyć pracy w zespole :) Kilka leżaków, a może też hamaków. Taka nieformalna przestrzeń do odpoczynku w trakcie przerw między zajęciami.
 ->MainDebateNode
 
 

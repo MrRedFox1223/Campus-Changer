@@ -45,14 +45,14 @@ Spróbujmy może najpierw posłuchać, co inni mają do powiedzenia. Nie interes
         ~ 03_DecisionInProgress = true
         Zatem nie zwlekajmy. -> TimeForDecision
     + [No może faktycznie.]
-        Doskonale, nie mogę się doczekać, żeby się tym podzielić. 
+        Doskonale, nie mogę się doczekać, żeby się tym podzielić.
         -> InitialUndecided
 
 
 == InitialUndecided
 
-Nieopodal bramy znajdziesz panią poruszającą się na wózku, która chciałaby bramę całkiem otworzyć, i świeżo upieczoną mamę mieszkającą na przeciwko kampusu, która chciałaby zostawić otwartą furtkę. 
-Obok stoi jeden z pracowników Politechniki, który chciałby, żeby wszystko pozamykać.
+Nieopodal bramy znajdziesz panią poruszającą się na wózku, która chciałaby bramę całkiem otworzyć, i świeżo upieczoną mamę mieszkającą na przeciwko kampusu, która chciałaby zostawić otwartą furtkę.
+Obok stoi jeden z pracowników politechniki, który chciałby, żeby wszystko pozamykać.
 
     ->InitialSendoff
 

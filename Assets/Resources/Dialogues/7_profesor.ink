@@ -17,7 +17,7 @@ Dzień dobry. #portrait:Profesor
     
     + [Co to jest living lab?]
     
-    - Tak w skrócie miejsce współpracy, w którym tworzy się innowacyjne rozwiązania! Diagnozuje i analizuje potrzeby po to, by ulepszać dobrostan społeczności poprzez realizację badań stosowanych z udziałem użytkowników i ko-kreację rozwiązań dla lepszej przyszłości. Dlatego warto, żeby był łatwy dostęp z ulicy.
+    - To w uproszczeniu miejsce współpracy, w którym tworzy się innowacyjne rozwiązania. Diagnozuje i analizuje się potrzeby po to, by ulepszać dobrostan społeczności poprzez realizację badań stosowanych z udziałem użytkowników i ko-kreację rozwiązań dla lepszej przyszłości. Dlatego ważne, by był dostępny dla ludzi, których dany problem dotyczy. 
     ->MainDiscussionNode
 == MainDiscussionNode
 
@@ -45,5 +45,5 @@ Nie jestem pewien, czy to zgodne z przepisami.
 -> MainDiscussionNode
 
 == Question_04
-Myślę, że strażnicy czuliby się tutaj, jakby ktoś kazał im pilnować bramy.
+Myślę, że strażnicy czuliby się tutaj tak, jakby ktoś kazał im pilnować bramy.
 -> MainDiscussionNode

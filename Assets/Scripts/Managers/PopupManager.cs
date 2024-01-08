@@ -26,8 +26,8 @@ public class PopupManager : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private TextMeshProUGUI actionText;
+    [SerializeField] private GameObject actionFrame;
     [SerializeField] private TextMeshProUGUI questText;
-    [SerializeField] private TextMeshProUGUI infoText;
 
     public static PopupManager instance { get; private set; }
 
@@ -39,8 +39,8 @@ public class PopupManager : MonoBehaviour
         instance = this;
 
         actionText = GameObject.Find("ActionText").GetComponent<TextMeshProUGUI>();
+        actionFrame = GameObject.Find("ActionFrame");
         questText = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
-        infoText = GameObject.Find("InfoText").GetComponent<TextMeshProUGUI>();
     }
 
     private void OnEnable()
@@ -70,18 +70,29 @@ public class PopupManager : MonoBehaviour
                 if (!DialogueManager.GetInstance().dialogueIsPlaying)
                 {
                     actionText.text = npcActionText;
+                    actionFrame.SetActive(true);
                 }
                 else
+                {
                     actionText.text = "";
+                    actionFrame.SetActive(false);
+                }
                 break;
             case Tags.OBJECT_TAG:
-                actionText.text = objectActionText;
+                {
+                    actionText.text = objectActionText;
+                    actionFrame.SetActive(true);
+                }
                 break;
             case Tags.TERRAIN_TAG:
-                actionText.text = terrainActionText;
+                {
+                    actionText.text = terrainActionText;
+                    actionFrame.SetActive(true);
+                }
                 break;
             case null:
                 actionText.text = "";
+                actionFrame.SetActive(false);
                 break;
         }
     }

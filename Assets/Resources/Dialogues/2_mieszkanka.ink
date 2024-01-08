@@ -13,7 +13,7 @@ Dzień dobry, w czym mogę pomóc? #portrait:Mieszkanka
 
     * [Czy to prawda, że mieszka pani tutaj na terenie kampusu?]
     
-    - Tak, i do tego pracuję tutaj. O..! W tym budynku. Okno mojego pokoju wychodzi na ten dziedziniec. Dlatego zależy mi na tym, żeby była tu zieleń.
+    - Tak i do tego pracuję tutaj. O..! W tym budynku. Okno mojego pokoju wychodzi na ten dziedziniec. Dlatego zależy mi na tym, żeby była tu zieleń.
     
     -> MainArgumentNode
     

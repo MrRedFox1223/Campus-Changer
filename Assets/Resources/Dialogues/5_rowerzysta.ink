@@ -25,7 +25,7 @@ Dzień dobry. Jestem pomocnikiem Ducha i planuję wybudowanie tutaj sceny. Sceny
     
 == Question_01
 
-Do najróżniejszych wystąpień. Można urządzić tu na przykład mały koncert, wystąpienie publiczne, stand’up albo hmm… konkurs. Tak na prawdę jest mnóstwo sposobności do wykorzystania sceny, która aż się prosi, aby tu powstała. 
+Do najróżniejszych wystąpień. Można urządzić tu na przykład mały koncert, wystąpienie publiczne, stand’up albo hmm… konkurs. Tak naprawdę jest mnóstwo sposobności do wykorzystania sceny, która aż się prosi, aby tu powstała.
 ->MainDiscussionNode
 
 == Question_02

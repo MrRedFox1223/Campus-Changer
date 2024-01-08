@@ -28,7 +28,7 @@ Nie podoba mi się ten pomysł. Ale za to chciałabym, żeby ktoś tu wreszcie p
     -> END
     
 == Question_01
-To jest nie tak, że ja tu mieszkam. Ten budynek obok nas jest budynkiem mieszkalnym. Chciałabym mieć ciszę i spokój po południu, a w takich miejscach zawsze się hałasuje.
+Ten budynek obok nas jest budynkiem mieszkalnym. Ale to jest nie tak, że ja tu mieszkam i dlatego nie chcę kawiarni. Chciałabym natomiast mieć ciszę i spokój po południu, a w takich miejscach zawsze się hałasuje.
 ->MainDiscussionNode
 
 == Question_02

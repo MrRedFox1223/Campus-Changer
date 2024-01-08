@@ -1,26 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6987654131863741954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Laboratory.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../Program Files/FMOD/Projects/audio-system-Pw-game/Build/Desktop/Laboratory.bank
-  Name: Laboratory
-  StudioPath: bank:/Laboratory
-  lastModified: 638285677652842125
-  FileSizes:
-  - Name: Desktop
-    Value: 1509024
-  Exists: 1
---- !u!114 &-4659348724541522442
+--- !u!114 &-6073843450714716345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,24 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Wind
+  m_Name: event:/Ambience/City/City
   m_EditorClassIdentifier: 
-  Path: event:/Ambience/Wind
+  Path: event:/Ambience/City/City
   Guid:
-    Data1: 1116274782
-    Data2: 1109060331
-    Data3: 2113325744
-    Data4: 1039543258
+    Data1: 299015697
+    Data2: 1149240217
+    Data3: -1124771194
+    Data4: 1160336979
   Banks:
   - {fileID: -1328963548012125714}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 972984588393955068}
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 12000
+  Length: 662592
 --- !u!114 &-4594904213063613076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,12 +42,36 @@ MonoBehaviour:
   Path: ../../../Program Files/FMOD/Projects/audio-system-Pw-game/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638285647061343612
+  lastModified: 638403504803623565
   FileSizes:
   - Name: Desktop
-    Value: 39520
+    Value: 542624
   Exists: 1
---- !u!114 &-1990891048645359989
+--- !u!114 &-1938091510939335712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main menu/ambience_intencity
+  m_EditorClassIdentifier: 
+  Name: ambience_intencity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 740929980
+    data2: 207381615
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1617079052855085027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,23 +81,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Items/ItemIdle
+  m_Name: event:/Ambience/Main menu
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Items/ItemIdle
+  Path: event:/Ambience/Main menu
   Guid:
-    Data1: -2099116197
-    Data2: 1137592871
-    Data3: -616710990
-    Data4: 2118816281
+    Data1: 1780319812
+    Data2: 1261196243
+    Data3: -423841128
+    Data4: 1225288810
   Banks:
-  - {fileID: -4594904213063613076}
+  - {fileID: -1328963548012125714}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -1938091510939335712}
   MinDistance: 1
   MaxDistance: 20
-  Length: 1536
+  Length: 10000
+--- !u!114 &-1341174810941478432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../Program Files/FMOD/Projects/audio-system-Pw-game/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638403552390282151
+  FileSizes:
+  - Name: Desktop
+    Value: 1263456
+  Exists: 1
 --- !u!114 &-1328963548012125714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,38 +134,11 @@ MonoBehaviour:
   Path: ../../../Program Files/FMOD/Projects/audio-system-Pw-game/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638285677652413911
+  lastModified: 638403552389783578
   FileSizes:
   - Name: Desktop
-    Value: 149856
+    Value: 6556000
   Exists: 1
---- !u!114 &-14332092616689508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Items/ItemCollected
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Items/ItemCollected
-  Guid:
-    Data1: -1816605812
-    Data2: 1206070178
-    Data3: 1884729761
-    Data4: 1791960834
-  Banks:
-  - {fileID: -4594904213063613076}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,72 +156,20 @@ MonoBehaviour:
   - {fileID: 2196414956334121993}
   - {fileID: -4594904213063613076}
   - {fileID: -1328963548012125714}
-  - {fileID: -6987654131863741954}
+  - {fileID: -1341174810941478432}
   EditorEvents:
-  - {fileID: -1990891048645359989}
-  - {fileID: -14332092616689508}
-  - {fileID: 8049976949660327521}
-  - {fileID: -4659348724541522442}
-  - {fileID: 651001435085936147}
+  - {fileID: -6073843450714716345}
+  - {fileID: -1617079052855085027}
+  - {fileID: 7826947957692332978}
+  - {fileID: 7049138941354491310}
+  - {fileID: 4957622057653393294}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2196414956334121993}
   StringsBanks:
   - {fileID: 9194649817001974061}
-  cacheTime: 638285677652842125
+  cacheTime: 638403552390282151
   cacheVersion: 131605
---- !u!114 &651001435085936147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/LaboratoryMusic
-  m_EditorClassIdentifier: 
-  Path: event:/Music/LaboratoryMusic
-  Guid:
-    Data1: -27471350
-    Data2: 1124016049
-    Data3: -1405048417
-    Data4: -856328283
-  Banks:
-  - {fileID: -6987654131863741954}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7541646457641086459}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &972984588393955068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wind/ambience_intencity
-  m_EditorClassIdentifier: 
-  Name: ambience_intencity
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 740929980
-    data2: 207381615
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &2196414956334121993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,12 +185,67 @@ MonoBehaviour:
   Path: ../../../Program Files/FMOD/Projects/audio-system-Pw-game/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638285647061004959
+  lastModified: 638403552389903578
   FileSizes:
   - Name: Desktop
-    Value: 1486
+    Value: 1120
   Exists: 1
---- !u!114 &7541646457641086459
+--- !u!114 &4957622057653393294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/CampusMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/CampusMusic
+  Guid:
+    Data1: 454773008
+    Data2: 1199509280
+    Data3: 1153321139
+    Data4: -21152036
+  Banks:
+  - {fileID: -1341174810941478432}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7661972482501714426}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7049138941354491310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/PlayerFootsteps_Concrete
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/PlayerFootsteps_Concrete
+  Guid:
+    Data1: 2037063102
+    Data2: 1118854645
+    Data3: 1066020268
+    Data4: 573309670
+  Banks:
+  - {fileID: -4594904213063613076}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 59951
+--- !u!114 &7661972482501714426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/LaboratoryMusic/area
+  m_Name: parameter:/CampusMusic/area
   m_EditorClassIdentifier: 
   Name: area
   StudioPath: 
@@ -271,7 +271,7 @@ MonoBehaviour:
   - MainArea
   - SpecialArea
   Exists: 1
---- !u!114 &8049976949660327521
+--- !u!114 &7826947957692332978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,23 +281,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/PlayerFootsteps
+  m_Name: event:/Ambience/Campus/Wind+Birds
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/PlayerFootsteps
+  Path: event:/Ambience/Campus/Wind+Birds
   Guid:
-    Data1: 2037063102
-    Data2: 1118854645
-    Data3: 1066020268
-    Data4: 573309670
+    Data1: 1116274782
+    Data2: 1109060331
+    Data3: 2113325744
+    Data4: 1039543258
   Banks:
-  - {fileID: -4594904213063613076}
-  IsStream: 0
-  Is3D: 1
+  - {fileID: -1328963548012125714}
+  IsStream: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 600
+  Length: 32000
 --- !u!114 &9194649817001974061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,8 +313,8 @@ MonoBehaviour:
   Path: ../../../Program Files/FMOD/Projects/audio-system-Pw-game/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638285647061034915
+  lastModified: 638403552389923532
   FileSizes:
   - Name: Desktop
-    Value: 1334
+    Value: 1314
   Exists: 1

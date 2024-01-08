@@ -20,9 +20,8 @@ Cześć! Jesteś graczem, prawda? #portrait:Student
     + [Duch miejsca powiedział, że chcesz w tym miejscu zrobić chodnik.]
 	
 Tak. Bardzo mi na tym zależy.
-Co tydzień przychodzę tu, gdy mam okienko. Brakuje mi miejsca, żeby usiąść. Dlatego pomyślałem, że dobrym rozwiązaniem jest chodnik.
-Taki z niskimi krawężnikami, tak żeby mogły bez problemu wjechać na niego osoby poruszające się na wózkach i nie powybijany, bo nie raz zdarzyło mi się potknać.
-
+Co tydzień przychodzę tu, gdy mam okienko. Brakuje mi miejsca, żeby usiąść. Pomyślałem, że dobrym rozwiązaniem jest chodnik.
+Taki z niskimi krawężnikami, żeby mogły bez problemu wjechać na niego osoby, które poruszają się na wózkach i nie powybijany, bo nie raz zdarzyło mi się potknąć. 
 
 Aaaa!! I oczywiście ławki by się przydały, żeby można było odpocząć. 
 
@@ -52,8 +51,9 @@ Tu mam wszędzie blisko! Poza tym, łatwo się z kimś umówię pod kominem, bo 
 
 == Question_02
 
-Tędy przechodzi mnóstwo ludzi. Dobrze by było, żeby nawierzchnia chodnika była nie powybijana, a krawężniki nie stanowiły przeszkody dla osób z niepełnosprawnością albo dla osób starszych. 
-Każdy może się tu z kimś umówić. Można by tu zorganizować jakieś fajne wydarzenie albo po prostu posiedzieć na słońcu, zamiast pod cieniem drzew.
+Tędy przechodzi mnóstwo ludzi. Dobrze by było, żeby nawierzchnia chodnika była nie powybijana, a krawężniki nie stanowiły przeszkody dla osób z niepełnosprawnością albo dla osób starszych.
+Każdy może się tu z kimś umówić. Można by tu zorganizować jakieś fajne wydarzenie albo po prostu posiedzieć na słońcu, zamiast w cieniu drzew.
+
 -> MainArgumentNode
 
 == Question_03

@@ -8,24 +8,25 @@ INCLUDE Globals.ink
 == BeginQuest
 
 Tym razem mam dla ciebie coś większego. #portrait:GeniusLoci
-
-    * [Czy to będzie wymagało biegania po Kampusie?]
-    Tylko trochę. ->StoryStep_01
-    * [Czy to będzie wymagało rozstrzygania dylematów moralnych?]
-    Dylematów - tak. Moralnych - nie. ->StoryStep_01
-    * [Czy to będzie wymagało zaliczenia testów zręcznościowych?]
-    Ani trochę! ->StoryStep_01
-
+ 
+	* [Czy to będzie wymagało biegania po kampusie?]
+	Tylko trochę. ->StoryStep_01
+	* [Czy to będzie wymagało rozstrzygania dylematów moralnych?]
+	Dylematów - tak. Moralnych - nie. ->StoryStep_01
+	* [Czy to będzie wymagało zaliczenia testów zręcznościowych?]
+	Ani trochę! ->StoryStep_01
+ 
 == StoryStep_01
-
-Chodzi o to, że mamy trzy ciekawe projekty, ale budżet mamy tylko na jeden i musimy wybrać. Wszystkie trzy dotyczą centralnej części Kampusu PW. 
-
-Pierwszy projekt dotyczy fontanny, przy której właśnie stoimy. Zabytkowa fontanna znajduje się w samym środku Kampusu stanowiąc doskonały punkt orientacyjny. 
-
-W ciągu dnia przesiaduje tu sporo ludzi. To też kawał historii tego miejsca. Można odnaleźć ją na przedwojennych fotografiach. 
-
-Pozostałe dwa projekty dotyczą sceny plenerowej oraz jednego z kilku głównych ciągów komunikacyjnych na terenie Kampusu Politechniki. 
+ 
+Chodzi o to, że mamy trzy ciekawe projekty, ale budżet mamy tylko na jeden i musimy wybrać. Wszystkie trzy dotyczą centralnej części kampusu PW.
+ 
+Pierwszy projekt dotyczy fontanny, przy której właśnie stoimy. Zabytkowa fontanna znajduje się w samym środku kampusu stanowiąc doskonały punkt orientacyjny.
+ 
+W ciągu dnia przesiaduje tu sporo ludzi. To też kawał historii tego miejsca. Można odnaleźć ją na przedwojennych fotografiach.
+ 
+Pozostałe dwa projekty dotyczą sceny plenerowej oraz jednego z kilku głównych ciągów komunikacyjnych na terenie kampusu Politechniki.
     -> MainDecisionNode
+
 
 == MainDecisionNode
 
@@ -48,20 +49,18 @@ Między drzewami rozwieszamy girlandy z lampkami, żeby wieczorem miejsce to mog
 ->MainDecisionNode
 
 == Option_02
-
-Projekt sceny plenerowej czy też letniej przewiduje, że na terenie kampusu mogłyby regularnie odbywać się wydarzenia wymagające nagłośnienienia. I niekoniecznie muszą to być koncerty. 
+ 
+Projekt sceny plenerowej, czy też letniej przewiduje, że na terenie kampusu mogłyby regularnie odbywać się wydarzenia wymagające nagłośnienia. I niekoniecznie muszą to być koncerty.
     
-O więcej szczegółów zapytaj mojego pomocnika. Znak rozpoznawczy - rower. Znajdziesz go tam, gdzie ma powstać scena. 
-
+O więcej szczegółów zapytaj mojego pomocnika. Znak rozpoznawczy – rower. Znajdziesz go tam, gdzie ma powstać scena.
+ 
 Odwróć się w stronę Gmachu Fizyki i omiń go, mając go po swojej lewej. Miejsce na scenę jest tuż za rogiem.
-->MainDecisionNode
 
 == Option_03
  
 Z pasażem jest równie ciekawie, jeśli nie bardziej. Jednak to sam musisz ocenić! Pasażem nazywam trasę biegnącą od pomnika Golskiego do bramy od strony ulicy Koszykowej, tuż obok Gmachu Chemii, MiNI i Transportu.
  
 Chodzi o to, żeby zmienić ten ciąg komunikacyjny w jedną z dwóch głównych osi Kampusu Centralnego ułatwiający poruszanie się po nim. O szczegóły zapytaj moich pomocników, którzy stoją tuż nieopodal.
-
 
 Jak ich rozpoznasz? Dwóch z nich merda ogonami.
 
@@ -97,7 +96,7 @@ VAR marker = 0
 ~ 05_bIsDecisionMade = true
 ~ SwitchTerrain(marker)
 
-Dziękuję! Podejmujesz swoje decyzje niezwykle sprawnie! Dzięki Tobie Kampus ma szansę szybko się  zmienić. ->END
+Dziękuję! Podejmujesz swoje decyzje niezwykle sprawnie! Dzięki Tobie kampus ma szansę szybko się zmienić. ->END
 
 == DecisionRevisit
 Dziękuję, że zająłeś się tym miejscem! #portrait:GeniusLoci

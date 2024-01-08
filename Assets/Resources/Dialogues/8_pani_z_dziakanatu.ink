@@ -18,7 +18,7 @@ W czym mogę pomóc? #portrait:PaniZAdministracji
     
 == MainDiscussionNode
 
-    + [W jaki sposób większy parking ulepszy politechniczny Kampus?]
+    + [W jaki sposób większy parking ulepszy politechniczny kampus?]
     -> Question_01
     +[ A co z ekologią i miejskimi korkami?]
     -> Question_02
@@ -38,5 +38,6 @@ To nie są problemy Politechniki. Państwo powinno promować samochody elektrycz
 
 == Question_03
 
-Nie znoszę transportu zbiorowego! Tylko samochodem mogę tak naprawdę dojechać tam, gdzie chcę i kiedy chcę!
+Nie znoszę transportu zbiorowego! Tylko samochodem mogę dojechać tam, gdzie chcę i kiedy chcę!
 -> MainDiscussionNode
+

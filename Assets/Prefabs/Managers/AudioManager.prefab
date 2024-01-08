@@ -49,28 +49,28 @@ MonoBehaviour:
       Data2: 1109060331
       Data3: 2113325744
       Data4: 1039543258
-    Path: event:/Ambience/Wind
+    Path: event:/Ambience/Campus/Wind+Birds
   <music>k__BackingField:
     Guid:
-      Data1: -27471350
-      Data2: 1124016049
-      Data3: -1405048417
-      Data4: -856328283
-    Path: event:/Music/LaboratoryMusic
+      Data1: 454773008
+      Data2: 1199509280
+      Data3: 1153321139
+      Data4: -21152036
+    Path: event:/Music/CampusMusic
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: 2037063102
       Data2: 1118854645
       Data3: 1066020268
       Data4: 573309670
-    Path: event:/SFX/Player/PlayerFootsteps
+    Path: event:/SFX/Player/PlayerFootsteps_Concrete
   <itemIdle>k__BackingField:
     Guid:
-      Data1: -2099116197
-      Data2: 1137592871
-      Data3: -616710990
-      Data4: 2118816281
-    Path: event:/SFX/Items/ItemIdle
+      Data1: 299015697
+      Data2: 1149240217
+      Data3: -1124771194
+      Data4: 1160336979
+    Path: event:/Ambience/City/City
 --- !u!1 &297333355489302636
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   defaultAmbienceParametersValues:
   - 0.3
   defaultMusic: 0
-  masterVolume: 0.8
-  musicVolume: 0
+  masterVolume: 0.5
+  musicVolume: 0.5
   ambienceVolume: 0.3
   sfxVolume: 1

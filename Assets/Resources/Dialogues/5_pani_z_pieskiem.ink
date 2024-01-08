@@ -22,10 +22,11 @@ Dzień dobry. Jestem pomocniczką Ducha Miejsca. Razem z moimi merdającymi kole
     -> END
     
 == Question_01
-Po pierwsze: na całej długości, zamiast jezdni, równy chodnik z niskimi krawężnikami wykonany z przyjaznego naturze materiału. Samochody będą mogły tu wjechać w drodze wyjątku. 
-Po drugie: na każdym rozwidleniu ładne drogowskazy do poszczególnych budynków. 
-Po trzecie: ławki, śmietniki, rowerowe parkingi. 
-Po czwarte: nowe oświetlenie. To doskonałe miejsce, aby móc poeksperymentować z rozwiązaniami z pogranicza IoT czy urban labs mających na celu polepszenie życia mieszkańców miast.
+Po pierwsze: na całej długości, zamiast jezdni, równy chodnik z niskimi krawężnikami wykonany z przyjaznego naturze materiału. Samochody będą mogły tu wjechać w drodze wyjątku.
+Po drugie: chodnik powinien zostać wykonany z przyjaznego naturze materiału. Nie wiem, czy wiesz, że beton i asfalt to jedne z największych zagrożeń dla psów mieszkających w mieście. Letnie upały nagrzewają chodniki nawet do 70 stopni Celsjusza. Pomyśl tylko co dzieje się z psimi łapkami. 
+Po trzecie: na każdym rozwidleniu ładne drogowskazy do poszczególnych budynków.
+Po czwarte: ławki, śmietniki, rowerowe parkingi.
+Po piąte: nowe oświetlenie. To doskonałe miejsce, aby móc poeksperymentować z rozwiązaniami z pogranicza IoT czy urban labs mających na celu polepszenie życia mieszkańców miast.
 
     + [Czy to kolejna zmiana uderzająca w samochody?]
     -> Question_02
@@ -40,8 +41,9 @@ Nawet jeśli chcemy zostawić miejsca parkingowe, to warto, żeby akurat tutaj b
 
 == Question_03
 
-Wszystkim! Bardzo duża część użytkowników Kampusu porusza się po tej trasie lub po jej znacznym odcinku. Tymczasem w Kampusie nie ma spójnego oznakowania. 
+Wszystkim! Bardzo duża część użytkowników kampusu porusza się po tej trasie lub po jej znacznym odcinku. Tymczasem w kampusie nie ma spójnego oznakowania.
 Jeśli nie wiesz, który to Gmach Chemii, to tak szybko do niego nie trafisz.
+
 ->MainDiscussionNode
 
 == Question_04

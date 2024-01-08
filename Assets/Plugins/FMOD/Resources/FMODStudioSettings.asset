@@ -64,14 +64,14 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
-  - c88d16e5272a4e241b0ef0ac2e53b73d
   - fd7c55dab0fce234b8c25f6ffca523c1
-  - 2c5177b11d81d824dbb064f9ac8527da
-  - e7a046c753c3c3d4aacc91f6597f310d
-  - 52eb9df5db46521439908db3a29a1bbb
-  - b7716510a1f36934c87976f3a81dbf3d
   - 0f8eb3f400726694eb47beb1a9f94ce8
+  - 52eb9df5db46521439908db3a29a1bbb
+  - e7a046c753c3c3d4aacc91f6597f310d
+  - 2c5177b11d81d824dbb064f9ac8527da
+  - b7716510a1f36934c87976f3a81dbf3d
   - 46fbfdf3fc43db0458918377fd40293e
+  - c88d16e5272a4e241b0ef0ac2e53b73d
   - 2fea114e74ecf3c4f920e1d5cc1c4c40
   codecChannels:
     Value: []
@@ -519,7 +519,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambience
-  - Laboratory
+  - Music
   - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
@@ -536,16 +536,16 @@ MonoBehaviour:
   HideSetupWizard: 1
   LastEventReferenceScanVersion: 131605
   Platforms:
-  - {fileID: 210548175180204344}
   - {fileID: -8801193721415399925}
-  - {fileID: 3949782447464404427}
   - {fileID: -7409076944088801558}
-  - {fileID: -2416396391849605207}
-  - {fileID: -2461211749987668275}
-  - {fileID: -4852270430915165835}
-  - {fileID: -2338099320561483058}
   - {fileID: -4892060312952367309}
+  - {fileID: -4852270430915165835}
+  - {fileID: -2461211749987668275}
+  - {fileID: -2416396391849605207}
+  - {fileID: -2338099320561483058}
+  - {fileID: 210548175180204344}
   - {fileID: 2967784441959004989}
+  - {fileID: 3949782447464404427}
   - {fileID: 5169387691057678448}
   MigratedPlatforms: 0c000000150000000b0000000a00000009000000120000000800000005000000060000000200000001000000
 --- !u!114 &210548175180204344

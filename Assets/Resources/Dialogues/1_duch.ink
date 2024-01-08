@@ -13,9 +13,9 @@ Witaj ponownie. Piękny komin, prawda? #portrait:GeniusLoci
  
     - To prawda!
     
-To miejsce jest ważne dla politechnicznego Kampusu. Przechodzi tędy mnóstwo ludzi.
+To miejsce jest ważne dla politechnicznego kampusu. Przechodzi tędy mnóstwo ludzi.
 Dlatego zastanawiamy się, jak je zagospodarować.
-Jak widzisz, teraz jest tu ulica, po której jeżdżą samochody. 
+Jak widzisz, teraz jest tu ulica, po której jeżdżą samochody.
 Konkurencyjna koncepcja mówi, żeby oddać to miejsce pieszym.
 
     * [Co?! Mowy nie ma! Zostawić jak jest!]
@@ -39,9 +39,9 @@ Kiedy do nich podejdziesz, przedstawią Ci swoje argumenty.
  
 == InitialUndecided
 
-Cieszę się, że masz otwartą głowę. W Kampusie musimy pomieścić się wszyscy!
-W takim razie poproszę Cię o porozmawianie ze Studentem, który tu przychodzi co wtorek na dwugodzinne okienko.
-Drugą osobą jest pani pracująca w administracji, która dojeżdża do Gmachu Głównego samochodem.
+Cieszę się, że masz otwartą głowę. W kampusie musimy pomieścić się wszyscy!
+W takim razie poproszę Cię o porozmawianie ze studentem, który tu przychodzi co wtorek na dwugodzinne okienko.
+Drugą osobą jest pani pracująca w administracji, która prawie codziennie dojeżdża do Gmachu Głównego samochodem.
 
     * [Jasne, porozmawiam z nimi.]
         ->InitialSendoff

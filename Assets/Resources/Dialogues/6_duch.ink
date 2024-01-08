@@ -8,22 +8,22 @@ INCLUDE Globals.ink
 == BeginQuest
 
 Co myślisz o tym miejscu? #portrait:GeniusLoci
-
-    + [Podoba mi się.]
-    A mi się nie podoba. -> StoryStep_01
-    + [Nie podoba mi się.]
-    Mi też. -> StoryStep_01
-    + [Nie mam zdania.]
-    Mi się nie podoba. -> StoryStep_01
+ 
+	+ [Podoba mi się.]
+	A mi się nie podoba. -> StoryStep_01
+	+ [Nie podoba mi się.]
+	Mnie też. -> StoryStep_01
+	+ [Nie mam zdania.]
+	Mnie się nie podoba. -> StoryStep_01
 
 == StoryStep_01
 
 Te ścieżki pomiędzy trawnikami są za wąskie. Trawniki są ogrodzone i niedostępne. A do tego pośrodku stoją te paskudne śmietniki.
-
-    + [Gdzieś trzeba przecież wynosić śmieci.]
-    Ale nie muszą leżeć na wierzchu! -> StoryStep_02
-    + [Śmietniki można by stąd zabrać.]
-    No właśnie! -> StoryStep_02
+ 
+	+ [Gdzieś trzeba przecież wynosić śmieci.]
+	Ale nie muszą leżeć na wierzchu! -> StoryStep_02
+	+ [Śmietniki można by stąd zabrać.]
+	No właśnie! -> StoryStep_02
 
     
 == StoryStep_02
@@ -41,13 +41,14 @@ Tymczasem jest na to miejsce zupełnie nowy pomysł. Powstała propozycja, żeby
     
 == InitialMindMadeUp
 
-Najlepiej jeśli porozmawiasz z ludźmi wokół. To zajmie tylko parę chwil.
-    + [Nie, dziękuję, mam już swoje zdanie.]
-    ~ 06_DecisionInProgress = true
-    W porządku. ->TimeForDecision
+Najlepiej, jeśli porozmawiasz z ludźmi wokół. To zajmie tylko parę chwil.
+	+ [Nie, dziękuję, mam już swoje zdanie.]
+	~ 06_DecisionInProgress = true
+	W porządku. ->TimeForDecision
     + [Dobrze, porozmawiam.]
-    ~ 06_DecisionInProgress = true
-    -> END
+	~ 06_DecisionInProgress = true
+	-> END
+
 
 == TimeForDecision
 

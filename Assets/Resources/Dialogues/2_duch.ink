@@ -21,7 +21,6 @@ Jesteśmy na dziedzińcu pomiędzy Gmachem Mechaniki a gmachem Wydziału Instala
 Nie wszyscy się z tym zgadzają.
 Dlatego proszę, porozmawiaj z nimi. Kiedy do nich podejdziesz opowiedzą Ci jak wyobrażają sobie tę część Kampusu Centralnego i przedstawią swoje argumenty.
 
-
     * [Nie interesują mnie ich argumenty. Znam to miejsce i już wszystko wiem.]
         ~ 02_DecisionInProgress = true
         W porządku. -> TimeForDecision

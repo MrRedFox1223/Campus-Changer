@@ -6,7 +6,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Witamy w zapomnianym zakątku Kampusu! #portrait:GeniusLoci
+Witamy w zapomnianym zakątku kampusu! #portrait:GeniusLoci
 
     + [Ale tu jest brama, dużo ludzi tędy przechodzi...]
     
@@ -39,7 +39,7 @@ To jeden ze zgłoszonych pomysłów. Ale są też inne. Możesz się dowiedzieć
 
 == InitialUndecided
 
-Profesor marzy o living labie. Pani pracująca w pobliskim dziekanacie wymyśliła, że można tu urządzić siedzibę straży akademickiej. Ale za to strażnik proponuje małą knajpkę.
+Profesor marzy o living labie. Pani pracująca w pobliskim dziekanacie wymyśliła, że można tu urządzić siedzibę straży akademickiej, zaś strażnik proponuje małą knajpkę.
 
     * [Porozmawiam z nimi.]
     ->InitialSendoff

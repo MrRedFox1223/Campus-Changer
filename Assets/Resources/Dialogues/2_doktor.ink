@@ -43,11 +43,11 @@ Galeria plenerowa byłaby stałym elementem przestrzeni kampusu PW i może z cza
     ->MainArgumentNode
 
 == Question_03
-Powinniśmy odejść od ruchu samochodowego na terenie Kampusu. Jeśli parkingi, to na jego obrzeżach.
+Powinniśmy odejść od ruchu samochodowego na terenie kampusu. Jeśli parkingi, to na jego obrzeżach.
     ->MainArgumentNode
 
 == Question_04
-Taka galeria plenerowa powinna znajdować się bliżej centrum Kampusu, w bezpośrednim sąsiedztwie ciągów pieszych. Tu jesteśmy na uboczu.
+Taka galeria plenerowa powinna znajdować się bliżej centrum kampusu, w bezpośrednim sąsiedztwie ciągów pieszych. Tu jesteśmy na uboczu.
     ->MainArgumentNode
 
 == Question_05

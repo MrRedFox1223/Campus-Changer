@@ -40,7 +40,7 @@ Proszę spojrzeć. Tu jest cicho, bezpiecznie i nikt się nie kręci. Idealna pr
 
 == Question_02
 
-Jeśli usuniemy bramę, zaczną tu za moment parkować samochody. Wystarczy, że w każdym innym miejscu muszę mieć oczy naokoło głowy.
+Jeśli usuniemy bramę, zaczną tu za moment parkować samochody. Wystarczy, że w każdym innym miejscu muszę mieć oczy dookoła głowy.
 ->MainArgumentNode
 
 == Question_03
