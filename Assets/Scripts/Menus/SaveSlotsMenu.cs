@@ -13,6 +13,10 @@ public class SaveSlotsMenu : Menu, IDataPersistance
     [Header("Confirmation Popup Menu")]
     [SerializeField] private ConfirmationPopupMenu confirmationPopupMenu;
 
+    [Header("Text configuration")]
+    [SerializeField] private string overrideText = "NADPISAÆ AKTUALNY ZAPIS?";
+    [SerializeField] private string clearText = "JESTEŒ PEWNY, ¯E CHCESZ USUN¥Æ TEN ZAPIS?";
+
     private SaveSlot[] saveSlots;
 
     private bool isLoadingGame = false;
@@ -39,7 +43,7 @@ public class SaveSlotsMenu : Menu, IDataPersistance
         else if (saveSlot.hasData)
         {
             confirmationPopupMenu.ActivateMenu(
-                "NADPISAÆ AKTUALNY ZAPIS?",
+                overrideText,
                 () =>
                 {
                     DataPersistanceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
@@ -69,7 +73,7 @@ public class SaveSlotsMenu : Menu, IDataPersistance
         if (isLoadingGame)
             GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene(saveSlotSceneIndex);
         else
-            GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.LABORATORY);
+            GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.TUTORIAL);
 
         Time.timeScale = 1f;
         Cursor.visible = false;
@@ -82,7 +86,7 @@ public class SaveSlotsMenu : Menu, IDataPersistance
         DisableMenuButtons();
 
         confirmationPopupMenu.ActivateMenu(
-                "JESTEŒ PEWNY, ¯E CHCESZ USUN¥Æ TEN ZAPIS?",
+                clearText,
                 () =>
                 {
                     DataPersistanceManager.instance.DeleteProfileData(saveSlot.GetProfileId());

@@ -43,7 +43,6 @@ public class SaveSlot : MonoBehaviour
             noDataContent.SetActive(false);
             hasDataContent.SetActive(true);
             clearButton.gameObject.SetActive(true);
-            // TODO: Set current location names when they will be ready to test
             currentLocationText.text = locationName;
         }
     }
