@@ -33,8 +33,9 @@ Dzień dobry! #portrait:PaniNaWózku
     
 == Question_01
 
-Można temu zaradzić, jeśli zamontujemy barierki albo poprostu powiesimy tabliczkę “zakaz parkowania”.  Wiesz, taką barierkę można łatwo postawić lub położyć, zależnie od potrzeb.
+Można temu zaradzić, jeśli zamontujemy barierki albo po prostu powiesimy tabliczkę “zakaz parkowania”.  Wiesz, taką barierkę można łatwo postawić lub położyć, zależnie od potrzeb.
 -> MainArgumentNode
+
 
 == Question_02
 
@@ -45,5 +46,6 @@ Możemy dodatkowo na ścianie namalować mural, o ile konserwator zabytków będ
 
 == Question_03
 
-Bardzo często są. Jednak uważam, że trzeba poprawiać dostępność tam, gdzie się da, a nie czekać na święte nigdy, aż wszystko inne będzie poprawione… albo… no coż, nie będzie.
+Bardzo często są. Jednak uważam, że trzeba poprawiać dostępność tam, gdzie się da, a nie czekać na święte nigdy, aż wszystko inne będzie poprawione… albo… no cóż, nie będzie.
 -> MainArgumentNode
+

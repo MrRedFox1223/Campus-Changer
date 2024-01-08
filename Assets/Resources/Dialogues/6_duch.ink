@@ -14,16 +14,17 @@ Co myślisz o tym miejscu? #portrait:GeniusLoci
     + [Nie podoba mi się.]
     Mi też. -> StoryStep_01
     + [Nie mam zdania.]
-    Mi się nie podobda. -> StoryStep_01
+    Mi się nie podoba. -> StoryStep_01
 
 == StoryStep_01
 
 Te ścieżki pomiędzy trawnikami są za wąskie. Trawniki są ogrodzone i niedostępne. A do tego pośrodku stoją te paskudne śmietniki.
 
-    + [Gdzieś trzeba przeież wynosić śmieci.]
+    + [Gdzieś trzeba przecież wynosić śmieci.]
     Ale nie muszą leżeć na wierzchu! -> StoryStep_02
     + [Śmietniki można by stąd zabrać.]
     No właśnie! -> StoryStep_02
+
     
 == StoryStep_02
 

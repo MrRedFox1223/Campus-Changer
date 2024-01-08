@@ -38,5 +38,5 @@ Jesteśmy w centrum miasta! Mamy autobusy! Tramwaje! Metro! Można wsiąść na 
 A im więcej osób korzysta z komunikacji, tym łatwiej przekonać władze miasta, by wprowadziło nowe możliwości.
 -> MainDiscussionNode
 == Question_03
-Nie mam złudzeń, że parkingi znikną z Kampusu całkowicie. Zawsze będą parkingi dla gości. Pod budynkami lub w wyznacznych strefach pozostawić można miejsca postojowe dla osób niepełnosprwanych. 
+Nie mam złudzeń, że parkingi znikną z Kampusu całkowicie. Zawsze będą parkingi dla gości! Pod budynkami lub w wyznaczonych strefach można pozostawić miejsca postojowe dla osób niepełnosprawnych. 
 -> MainDiscussionNode

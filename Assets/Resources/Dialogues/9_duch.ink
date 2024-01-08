@@ -79,8 +79,8 @@ VAR marker = 0
    
     + [Nie]
     ~09_Decision = "zaplecze"
-    ~ marker = 0
-    Czyli wszystko zostaje po staremu.
+    ~ marker = 2
+    Czyli zostawiamy tu zaplecze.
     
     + [Nie wiem]
     Popytaj ludzi wokół, może oni pomogą Ci wybrać.

@@ -25,12 +25,13 @@ Dzień dobry, młody człowieku. #portrait:Mama
     -> Question_01
     + [Czy korzystanie z furtki nie jest wygodne?]
     -> Question_04
-    + [Czy nie byłob lepiej bez bramy?]
+    + [Czy nie byłoby lepiej bez bramy?]
     -> Question_02
     + [A może całkiem zamknąć?]
     -> Question_03
     + [Nie mam więcej pytań.]
     -> END
+
     
 == Question_01
 

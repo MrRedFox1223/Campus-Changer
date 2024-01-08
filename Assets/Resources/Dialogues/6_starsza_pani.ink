@@ -12,8 +12,9 @@ Dzień dobry. Słyszałam, że chcesz porozmawiać o tej całej kawiarni. #portr
 
     + [To prawda.]
     
-Nie podoba mi się ten pomysł. Ale za to chciałabym, zeby ktoś tu wreszcie porządnie posprzątał!
+Nie podoba mi się ten pomysł. Ale za to chciałabym, żeby ktoś tu wreszcie porządnie posprzątał!
 -> MainDiscussionNode
+
 
 == MainDiscussionNode
 

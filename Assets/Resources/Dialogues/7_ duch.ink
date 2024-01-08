@@ -39,7 +39,7 @@ To jeden ze zgłoszonych pomysłów. Ale są też inne. Możesz się dowiedzieć
 
 == InitialUndecided
 
-Profesor marzy o living labie. Pani pracujaca w pobliskim dziekanacie wymyśliła, że można tu urządzić siedzibę straży akademickiej. Ale za to strażnik proponuje małą knajpkę.
+Profesor marzy o living labie. Pani pracująca w pobliskim dziekanacie wymyśliła, że można tu urządzić siedzibę straży akademickiej. Ale za to strażnik proponuje małą knajpkę.
 
     * [Porozmawiam z nimi.]
     ->InitialSendoff

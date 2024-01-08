@@ -40,7 +40,7 @@ Można tak zrobić, ale to jest przedmiotem burzliwej debaty. Część osób mó
 
 == InitialUndecided
 
-Porozmawiaj ze studentem, jeśli chcesz dowiedzieć się, czemu samochody powinny zniknąć, i z panią z dziekanatu, żeby się dowiedzieć, czemu należy zrobić im więcej miejsca. Oboje stoją przy pomniku. 
+Porozmawiaj ze studentką, jeśli chcesz dowiedzieć się, czemu samochody powinny zniknąć, i z panią z dziekanatu, żeby się dowiedzieć, czemu należy zrobić im więcej miejsca. Obie stoją przy pomniku. 
 ->InitialSendoff
 
 == InitialSendoff
@@ -61,15 +61,9 @@ VAR marker = 0
     + [Zostawiamy wszystko jak jest.]
     ~ 08_Decision = "bez zmian"
     ~ marker = 0
-    + [Przenosimy miejsca parkingowe bliżej bramy.]
-    ~ 08_Decision = "przeprowadzka"
-    ~ marker = 2
-    + [Usuwamy połowę miejsc parkingowych, która jest dalej od bramy.]
-    ~ 08_Decision = "mniej parkingu"
-    ~ marker = 3
     + [Usuwamy wszystkie miejsca parkingowe i zastępujemy je zielenią.]
-    ~ 08_Decision = "bez parkingu"
-    ~ marker = 4
+    ~ 08_Decision = "zieleń"
+    ~ marker = 2
     
 - A więc niech tak się stanie.
 

@@ -33,8 +33,9 @@ Czy możemy porozmawiać chwilę o przyszłości tego dziedzińca? #portrait:Dok
         -> END
     
 == Question_01
-To miejsce jest doskonale położone! Z jednej strony zaciszne, a z drugiej prawie w samym środku intensywnie wykorzystywanej przestrzeni kampusu, która na co dzeń tętni życiem.
+To miejsce jest doskonale położone! Z jednej strony zaciszne, a z drugiej prawie w samym środku intensywnie wykorzystywanej przestrzeni kampusu, która na co dzień tętni życiem.
     ->MainArgumentNode
+
     
 == Question_02
 W galerii mogłyby się znaleźć prace ludzi z różnych wydziałów popularyzujące ich badania i udział w projektach. 

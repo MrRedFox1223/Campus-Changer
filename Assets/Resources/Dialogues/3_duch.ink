@@ -45,8 +45,9 @@ Spróbujmy może najpierw posłuchać, co inni mają do powiedzenia. Nie interes
         ~ 03_DecisionInProgress = true
         Zatem nie zwlekajmy. -> TimeForDecision
     + [No może faktycznie.]
-        Dokonale, nie mogę się doczekać, żeby się tym podzielić. 
+        Doskonale, nie mogę się doczekać, żeby się tym podzielić. 
         -> InitialUndecided
+
 
 == InitialUndecided
 

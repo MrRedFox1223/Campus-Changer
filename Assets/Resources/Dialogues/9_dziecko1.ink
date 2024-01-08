@@ -37,5 +37,5 @@ A tutaj właściwie nic się nie dzieje. Nic tu nie ma. Dlaczego więc, nie moż
 ->MainDiscussionNode
 
 == Question_03
-Oczywiście! Tu jest cicho, ale też ponuro. No poprostu wieje n u d ą! Wszyscy na tym zyskają, jeśli wreszcie będzie się tu coś działo. 
+Oczywiście! Tu jest cicho, ale też ponuro. No po prostu wieje n u d ą! Wszyscy na tym zyskają, jeśli wreszcie będzie się tu coś działo.
 ->MainDiscussionNode

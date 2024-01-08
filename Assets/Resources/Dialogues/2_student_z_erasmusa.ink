@@ -44,7 +44,7 @@ Cześć, co słychać? #portrait:StudentZErasmusa
     -> MainArgumentNode
     
     == Question_04
-Zieleń mi nie przeszkadza, ale potrzeba więcej miejsca, żeby położyć koc, ustawić leżaki. Drzewa mogą zostać. Można by też dostadzić coś i zrobić klomby. 
+Zieleń mi nie przeszkadza, ale potrzeba więcej miejsca, żeby położyć koc, ustawić leżaki. Drzewa mogą zostać. Można by też coś dosadzić i zrobić klomby. 
     -> MainArgumentNode
     
     == Question_05

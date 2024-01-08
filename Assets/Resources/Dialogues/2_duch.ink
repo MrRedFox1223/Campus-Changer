@@ -18,8 +18,9 @@ Jesteśmy na dziedzińcu pomiędzy Gmachem Mechaniki a gmachem Wydziału Instala
 
 == InitialMindMadeUp
     
-Nie wszyscysię z tym zgadzają.
+Nie wszyscy się z tym zgadzają.
 Dlatego proszę, porozmawiaj z nimi. Kiedy do nich podejdziesz opowiedzą Ci jak wyobrażają sobie tę część Kampusu Centralnego i przedstawią swoje argumenty.
+
 
     * [Nie interesują mnie ich argumenty. Znam to miejsce i już wszystko wiem.]
         ~ 02_DecisionInProgress = true
@@ -29,7 +30,7 @@ Dlatego proszę, porozmawiaj z nimi. Kiedy do nich podejdziesz opowiedzą Ci jak
 
 == InitialUndecided
 
-W takim razie przed Tobą kilka ciekawych rozmów. Student z wymiany zagranicznej chciałby zbudować tu niewielką przestrzeń z jedzenim. Taką knajpkę na świeżym powietrzu. Pani mieszkająca na terenie kampusu proponuje, aby znalazła się tu zieleń. Strażnik zaś mówi, że lepszy byłby parking. I jeszcze Pan doktor. Jemu marzy się galeria plenerowa.
+W takim razie przed Tobą kilka ciekawych rozmów. Student z wymiany zagranicznej chciałby zbudować tu niewielką przestrzeń z jedzeniem. Taką knajpkę na świeżym powietrzu. Pani mieszkająca na terenie kampusu proponuje, aby znalazła się tu zieleń. Strażnik zaś mówi, że lepszy byłby parking. I jeszcze Pan doktor. Jemu marzy się galeria plenerowa.
 
     * [W takim na mnie już pora.]
         -> InitialSendoff

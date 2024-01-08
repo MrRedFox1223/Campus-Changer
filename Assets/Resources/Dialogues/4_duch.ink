@@ -59,13 +59,15 @@ Co powiesz na nieco zieleni? Drzewa, krzewy. A może też kwietnik? Cieszyły by
 ->MainDebateNode
 
 == Option_03
-Wyobraź to sobie! Zdzieramy nawierzchnię i robimy trawnik. Sadzimy drzewa i krzewy, a może robimy jakąś przestrzeń do gier zespołowych. W końcu, tam też można się uczyć pracy pracy w zespole :) Kilka leżaków, a może też hamków. Taka nieformalna przestrzeń do odpoczynku w trakcie przerw między zajęciami. 
+Wyobraź to sobie! Zdzieramy nawierzchnię i robimy trawnik. Sadzimy drzewa i krzewy, a może robimy jakąś przestrzeń do gier zespołowych. W końcu, tam też można się uczyć pracy w zespole :) Kilka leżaków, a może też hamaków. Taka nieformalna przestrzeń do odpoczynku w trakcie przerw między zajęciami. 
 ->MainDebateNode
+
 
 == Option_04
 
-Skoro i tak jest tu brzydko, to nikt się nie obrazi, jeśli wylądują tu śmietniki i tym podobnie mało aktrakcyjnie wyglądające elementy przestrzeni. To miejsce już nie straci, a gdzie indziej będzie ładniej.
+Skoro i tak jest tu brzydko, to nikt się nie obrazi, jeśli wylądują tu śmietniki i tym podobnie mało atrakcyjnie wyglądające elementy przestrzeni. To miejsce już nie straci, a gdzie indziej będzie ładniej.
 ->MainDebateNode
+
 
 == TimeForDecision
 
@@ -99,10 +101,12 @@ VAR marker = 0
 
 Dziękuję. Twoja decyzja jest dla bardzo ważna. Muszę przyznać, że doskonale sobie radzisz. Brawo! Chodźmy dalej!  -> END
 
+
 ==InitialSendoff
-Przywołaj mnie, gdy podejmniesz decyzję.
+Przywołaj mnie, gdy podejmiesz decyzję.
 ~ 04_DecisionInProgress = true
 -> END
+
 
 == DecisionRevisit
 

@@ -57,10 +57,11 @@ Odwróć się w stronę Gmachu Fizyki i omiń go, mając go po swojej lewej. Mie
 ->MainDecisionNode
 
 == Option_03
-
+ 
 Z pasażem jest równie ciekawie, jeśli nie bardziej. Jednak to sam musisz ocenić! Pasażem nazywam trasę biegnącą od pomnika Golskiego do bramy od strony ulicy Koszykowej, tuż obok Gmachu Chemii, MiNI i Transportu.
+ 
+Chodzi o to, żeby zmienić ten ciąg komunikacyjny w jedną z dwóch głównych osi Kampusu Centralnego ułatwiający poruszanie się po nim. O szczegóły zapytaj moich pomocników, którzy stoją tuż nieopodal.
 
-Chodzi o to, żeby zmienić ten ciąg komunikacyjny w jedną z dwóch głównych osi Kampusu Centralnego ułatwiający poruszanie się po nim. O szczegóły zapytaj moich pomocników, którzy stoją tuż niopodal. 
 
 Jak ich rozpoznasz? Dwóch z nich merda ogonami.
 
@@ -68,8 +69,8 @@ Jak ich rozpoznasz? Dwóch z nich merda ogonami.
 
 == QuestRevisit
 Witaj ponownie! Dla przypomnienia: wybieramy między renowacją fontanny, postawieniem sceny muzycznej i ulepszeniami pasażu.
-
-Przez pasaż rozumiem ciąg komunikacyjny biegnący pomiedzy pomnikiem Golskiego a bramą od strony ulicy Koszykowej.
+ 
+Przez pasaż rozumiem ciąg komunikacyjny biegnący pomiędzy pomnikiem Golskiego a bramą od strony ulicy Koszykowej.
 
 -> MainDecisionNode
 

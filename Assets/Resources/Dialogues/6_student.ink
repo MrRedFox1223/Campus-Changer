@@ -42,5 +42,6 @@ Tak, po prostu idealna opcja zimą.
 
 == Question_04
 
- Ech! To są fanaberie! Ja bym chciał zjeść zdrowo, kulturalnie i w niskiej cenie. Okoliczne miejscówki raczej nie daja takich możliwości. 
+Ech! To są fanaberie! Ja bym chciał zjeść zdrowo, kulturalnie i w niskiej cenie. Okoliczne miejscówki raczej nie dają takich możliwości. 
 ->MainDiscussionNode
+

@@ -18,10 +18,11 @@ Cześć! Jesteś graczem, prawda? #portrait:Student
     
 == Explanation
     + [Duch miejsca powiedział, że chcesz w tym miejscu zrobić chodnik.]
-    
-Tak. Bardzo mi na tym zależy. 
-Co tydzień przychodzę tu, gdy mam okienko. Brakuje mi miejsca, żeby usiąść. Dlatego pomyślałem, że dobrym rozwiązaniem jest chodnik. 
-Taki z niskimi krawężnikami, tak żeby mogły bez problemu wjechać na niego osoby poruszające się na wózkach i nie powybijany, bo nie raz mi się zdażyło potknać.
+	
+Tak. Bardzo mi na tym zależy.
+Co tydzień przychodzę tu, gdy mam okienko. Brakuje mi miejsca, żeby usiąść. Dlatego pomyślałem, że dobrym rozwiązaniem jest chodnik.
+Taki z niskimi krawężnikami, tak żeby mogły bez problemu wjechać na niego osoby poruszające się na wózkach i nie powybijany, bo nie raz zdarzyło mi się potknać.
+
 
 Aaaa!! I oczywiście ławki by się przydały, żeby można było odpocząć. 
 
