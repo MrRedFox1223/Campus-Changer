@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 103540191, guid: 820b63f9917feda4e9b2ec90d023b21a, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 103540191, guid: 820b63f9917feda4e9b2ec90d023b21a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1398873975
+      objectReference: {fileID: 0}
+    - target: {fileID: 1741361699, guid: 820b63f9917feda4e9b2ec90d023b21a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7554825767833682691, guid: 820b63f9917feda4e9b2ec90d023b21a, type: 3}
       propertyPath: m_Name
       value: LevelLoadingManager

@@ -31,11 +31,10 @@ public class LevelLoadingManager : MonoBehaviour
         progressBar.fillAmount = 0;
         target = 0;
 
+        loadingScreen.SetActive(true);
+
         var scene = SceneManager.LoadSceneAsync(sceneIndex);
         scene.allowSceneActivation = false;
-
-        loadingScreen.SetActive(true);
-        Debug.Log("Fire");
 
         do
             target = scene.progress;
@@ -43,7 +42,7 @@ public class LevelLoadingManager : MonoBehaviour
 
         scene.allowSceneActivation = true;
 
-        await Task.Delay(1000);
+        await Task.Delay(4000);
 
         loadingScreen.SetActive(false);
     }
