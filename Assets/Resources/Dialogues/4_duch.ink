@@ -59,7 +59,9 @@ Co powiesz na nieco zieleni? Drzewa, krzewy. A może też kwietnik? Cieszyły by
 ->MainDebateNode
 
 == Option_03
-Wyobraź to sobie! Zdzieramy nawierzchnię i robimy trawnik. Sadzimy drzewa i krzewy, a może robimy jakąś przestrzeń do gier zespołowych. W końcu, tam też można się uczyć pracy w zespole :) Kilka leżaków, a może też hamaków. Taka nieformalna przestrzeń do odpoczynku w trakcie przerw między zajęciami.
+Wyobraź to sobie! Zdzieramy nawierzchnię i robimy trawnik. Sadzimy drzewa i krzewy, a może robimy jakąś przestrzeń do gier zespołowych. 
+W końcu, tam też można się uczyć pracy w zespole :) Kilka leżaków, a może też hamaków. 
+Taka nieformalna przestrzeń do odpoczynku w trakcie przerw między zajęciami.
 ->MainDebateNode
 
 

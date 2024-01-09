@@ -9,9 +9,11 @@ public class PauseMenu : Menu
 
     [Header("References")]
     [SerializeField] private GameObject actionText;
+    [SerializeField] private GameObject actionFrame;
     [SerializeField] private GameObject crosshair;
     [SerializeField] private Button firstButtonSelected;
-    
+
+    private Color32 actionFrameColor;
 
     public bool isActive { get; private set; }
     
@@ -20,7 +22,9 @@ public class PauseMenu : Menu
         isActive = false;
 
         actionText = GameObject.Find("ActionText");
+        actionFrame = GameObject.Find("ActionFrame");
         crosshair = GameObject.Find("Crosshair");
+        actionFrameColor = actionFrame.GetComponent<Image>().color;
 
         GameEventsManager.instance.inputEvents.onExitPressed += ExitPressed;
     }
@@ -53,6 +57,7 @@ public class PauseMenu : Menu
         firstButtonSelected.GetComponent<ButtonTextColorExtension>().OnMenuChange();
         Time.timeScale = 0f;
         actionText.SetActive(false);
+        actionFrame.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
         crosshair.SetActive(false);
         Cursor.visible = true;
         isActive = true;
@@ -65,6 +70,7 @@ public class PauseMenu : Menu
         Time.timeScale = 1f;
         isActive = false;
         actionText.SetActive(true);
+        actionFrame.GetComponent<Image>().color = actionFrameColor;
         crosshair.SetActive(true);
     }
 

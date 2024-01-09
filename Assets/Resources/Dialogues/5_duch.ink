@@ -1,6 +1,6 @@
 INCLUDE Globals.ink
 
-{05_DecisionInProgress == true: -> TimeForDecision}
+{05_DecisionInProgress == true: -> QuestRevisit}
 {05_bIsDecisionMade == true: -> DecisionRevisit}
 {05_bIsDecisionMade == false: -> BeginQuest}
 
@@ -30,6 +30,8 @@ Pozostałe dwa projekty dotyczą sceny plenerowej oraz jednego z kilku głównyc
 
 == MainDecisionNode
 
+    ~05_DecisionInProgress = true
+    
     + [Opowiedz mi więcej o projekcie fontanny.]
     -> Option_01
     + [Opowiedz mi o scenie plenerowej.]
@@ -39,7 +41,6 @@ Pozostałe dwa projekty dotyczą sceny plenerowej oraz jednego z kilku głównyc
     + [Na razie nie mam więcej pytań.]
     -> END
     + [Nie mam pytań, ale wiem, co zrobić.]
-    ~05_DecisionInProgress = true
     -> TimeForDecision
     
 == Option_01
@@ -52,9 +53,11 @@ Między drzewami rozwieszamy girlandy z lampkami, żeby wieczorem miejsce to mog
  
 Projekt sceny plenerowej, czy też letniej przewiduje, że na terenie kampusu mogłyby regularnie odbywać się wydarzenia wymagające nagłośnienia. I niekoniecznie muszą to być koncerty.
     
-O więcej szczegółów zapytaj mojego pomocnika. Znak rozpoznawczy – rower. Znajdziesz go tam, gdzie ma powstać scena.
+O więcej szczegółów zapytaj mojego pomocnika. Znak rozpoznawczy - rower. Znajdziesz go tam, gdzie ma powstać scena.
  
-Odwróć się w stronę Gmachu Fizyki i omiń go, mając go po swojej lewej. Miejsce na scenę jest tuż za rogiem.
+ Odwróć się w stronę Gmachu Fizyki i omiń go, mając go po swojej lewej. Miejsce na scenę jest tuż za rogiem.
+ 
+ ->MainDecisionNode
 
 == Option_03
  
@@ -67,14 +70,14 @@ Jak ich rozpoznasz? Dwóch z nich merda ogonami.
 -> MainDecisionNode
 
 == QuestRevisit
-Witaj ponownie! Dla przypomnienia: wybieramy między renowacją fontanny, postawieniem sceny muzycznej i ulepszeniami pasażu.
+Witaj ponownie! Dla przypomnienia: wybieramy między renowacją fontanny, postawieniem sceny muzycznej i ulepszeniami pasażu. #portrait:GeniusLoci
  
 Przez pasaż rozumiem ciąg komunikacyjny biegnący pomiędzy pomnikiem Golskiego a bramą od strony ulicy Koszykowej.
 
 -> MainDecisionNode
 
 == TimeForDecision
-W porządku! Jesteś gotów, jak rozumiem. Zatem podejmij decyzję. #portrait:GeniusLoci
+W porządku! Jesteś gotów, jak rozumiem. Zatem podejmij decyzję. 
 
 VAR marker = 0
 
@@ -87,6 +90,9 @@ VAR marker = 0
     + [Urządźmy pasaż.]
     ~ 05_Decision = "pasaż"
     ~ marker = 3
+    + [Możesz mi jeszcze opowiedzieć między czym wybieramy?]
+        Z przyjemnością! 
+        -> MainDecisionNode
     + [Jeszcze nie wiem, co zrobić.]
     -> END
     

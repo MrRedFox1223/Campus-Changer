@@ -23,7 +23,8 @@ Dzień dobry. Jestem pomocniczką Ducha Miejsca. Razem z moimi merdającymi kole
     
 == Question_01
 Po pierwsze: na całej długości, zamiast jezdni, równy chodnik z niskimi krawężnikami wykonany z przyjaznego naturze materiału. Samochody będą mogły tu wjechać w drodze wyjątku.
-Po drugie: chodnik powinien zostać wykonany z przyjaznego naturze materiału. Nie wiem, czy wiesz, że beton i asfalt to jedne z największych zagrożeń dla psów mieszkających w mieście. Letnie upały nagrzewają chodniki nawet do 70 stopni Celsjusza. Pomyśl tylko co dzieje się z psimi łapkami. 
+Po drugie: chodnik powinien zostać wykonany z przyjaznego naturze materiału. Nie wiem, czy wiesz, że beton i asfalt to jedne z największych zagrożeń dla psów mieszkających w mieście. 
+Letnie upały nagrzewają chodniki nawet do 70 stopni Celsjusza. Pomyśl tylko co dzieje się z psimi łapkami. 
 Po trzecie: na każdym rozwidleniu ładne drogowskazy do poszczególnych budynków.
 Po czwarte: ławki, śmietniki, rowerowe parkingi.
 Po piąte: nowe oświetlenie. To doskonałe miejsce, aby móc poeksperymentować z rozwiązaniami z pogranicza IoT czy urban labs mających na celu polepszenie życia mieszkańców miast.
