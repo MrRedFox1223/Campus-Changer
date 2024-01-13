@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     private Animator layoutAnimator;
     private Coroutine displayLineCoroutnie;
     private DialogueVariables dialogueVariables;
-    private InkExternalFuntions inkExternalFuntions;
+    private InkExternalFunctions inkExternalFunctions;
     
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout"; 
@@ -61,7 +61,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         portraitAnimator = GameObject.Find("PortraitImage").GetComponent<Animator>();
         layoutAnimator = dialoguePanel.GetComponent<Animator>();
         dialogueVariables = new DialogueVariables(loadGlobalsJSON);
-        inkExternalFuntions = new InkExternalFuntions();
+        inkExternalFunctions = new InkExternalFunctions();
         crosshair = GameObject.Find("Crosshair");
         actionText = GameObject.Find("ActionText").GetComponent<TextMeshProUGUI>();
     }
@@ -117,7 +117,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         actionText.text = "";
 
         dialogueVariables.StartListening(currentStory);
-        inkExternalFuntions.Bind(currentStory, NPC);
+        inkExternalFunctions.Bind(currentStory, NPC);
 
         // Reset tags
         portraitAnimator.Play("default");
@@ -127,7 +127,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     public void ExitDialogueMode()
     {
         dialogueVariables.StopListening(currentStory);
-        inkExternalFuntions.Unbind(currentStory);
+        inkExternalFunctions.Unbind(currentStory);
 
         crosshair.SetActive(true);
 

@@ -193,9 +193,5 @@ public class QuestManager : MonoBehaviour, IDataPersistance
 
             data.questDataJson.Add(quest.info.id, serializedData);
         }
-
-        var client = CloudSaveService.Instance.Data;
-        var cloudData = new Dictionary<string, object> { { data.saveID + "_Quest", data.questDataJson } };
-        client.ForceSaveAsync(cloudData);
     }
 }

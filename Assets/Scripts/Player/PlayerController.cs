@@ -27,15 +27,15 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void OnEnable()
     {
         GameEventsManager.instance.inputEvents.onMovePressed += MovePressed;
-        GameEventsManager.instance.playerEvents.onDisablePlayerMovement += DisablePlayerMovement;
-        GameEventsManager.instance.playerEvents.onEnablePlayerMovement += EnablePlayerMovement;
+        //GameEventsManager.instance.playerEvents.onDisablePlayerMovement += DisablePlayerMovement;
+        //GameEventsManager.instance.playerEvents.onEnablePlayerMovement += EnablePlayerMovement;
     }
 
     private void OnDisable()
     {
         GameEventsManager.instance.inputEvents.onMovePressed -= MovePressed;
-        GameEventsManager.instance.playerEvents.onDisablePlayerMovement -= DisablePlayerMovement;
-        GameEventsManager.instance.playerEvents.onEnablePlayerMovement -= EnablePlayerMovement;
+        //GameEventsManager.instance.playerEvents.onDisablePlayerMovement -= DisablePlayerMovement;
+        //GameEventsManager.instance.playerEvents.onEnablePlayerMovement -= EnablePlayerMovement;
     }
 
     private void Update()
@@ -94,21 +94,14 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
     public void LoadData(GameData data)
     {
-        this.transform.position = data.playerPos;
-        cameraTransform.localEulerAngles = data.cameraRotation;
-        Debug.Log(cameraTransform.localEulerAngles);
+        //Nothing to load
     }
 
     public void SaveData(GameData data)
     {
         data.currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        // TODO - Change for location names when ready
         data.locationName = SceneManager.GetActiveScene().name;
-
-        data.playerPos = this.transform.position;
-
-        data.cameraRotation = cameraTransform.eulerAngles;
     }
 
     private void PlaySound()

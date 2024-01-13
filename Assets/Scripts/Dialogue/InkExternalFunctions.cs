@@ -1,7 +1,7 @@
 using UnityEngine;
 using Ink.Runtime;
 
-public class InkExternalFuntions
+public class InkExternalFunctions
 {
     public void Bind(Story story, GameObject NPC)
     {

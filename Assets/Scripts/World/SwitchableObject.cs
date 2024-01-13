@@ -60,9 +60,5 @@ public class SwitchableObject : MonoBehaviour, ISwitchableTerrain, IDataPersista
             data.swichableTerrainsVaraints.Remove(id);
 
         data.swichableTerrainsVaraints.Add(id, activeVariantId);
-
-        var client = CloudSaveService.Instance.Data;
-        var cloudData = new Dictionary<string, object> { { data.saveID + "_SwitchableObject", data.swichableTerrainsVaraints } };
-        client.ForceSaveAsync(cloudData);
     }
 }
