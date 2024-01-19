@@ -24,6 +24,16 @@ public class InkExternalFunctions
             if (NPC.GetComponent<SwitchTerrainPower>() != null)
                 NPC.GetComponent<SwitchTerrainPower>().SwitchTerrain(marker);
         });
+
+        story.BindExternalFunction("ActivateGeniusLoci", () => {
+            if (NPC.GetComponent<ActivateGeniusLoci>() != null)
+                NPC.GetComponent<ActivateGeniusLoci>().Activate();
+        });
+
+        story.BindExternalFunction("SwitchScene", () => {
+            GameObject.Find("Popups").SetActive(false);
+            GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.CAMPUS);
+        });
     }
 
     public void Unbind(Story story)
@@ -32,5 +42,7 @@ public class InkExternalFunctions
         story.UnbindExternalFunction("FinishQuest");
         story.UnbindExternalFunction("IsQuestFinished");
         story.UnbindExternalFunction("SwitchTerrain");
+        story.UnbindExternalFunction("ActivateGeniusLoci");
+        story.UnbindExternalFunction("SwitchScene");
     }
 }

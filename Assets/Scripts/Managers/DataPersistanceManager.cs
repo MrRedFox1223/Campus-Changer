@@ -29,7 +29,7 @@ public class DataPersistanceManager : MonoBehaviour
 
     private void Awake()
     {
-        // Temporary FPS limit
+        //FPS limit for a sake of consistency
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
 
@@ -194,7 +194,6 @@ public class DataPersistanceManager : MonoBehaviour
             id += glyphs[Random.Range(0, glyphs.Length)];
         }
 
-        Debug.Log(id);
         return id;
     }
 }

@@ -111,6 +111,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     public void EnterDialogueMode(TextAsset inkJSON, GameObject NPC)
     {
         currentStory = new Story(inkJSON.text);
+        Debug.Log(currentStory);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         crosshair.SetActive(false);
@@ -165,7 +166,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
         // Set the text to the full line, but set visible characters to 0
         dialogueText.text = line;
         dialogueText.maxVisibleCharacters = 0;
-
         canContinueToNextLine = false;
 
         HideChoices();

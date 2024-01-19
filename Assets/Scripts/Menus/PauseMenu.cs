@@ -19,6 +19,7 @@ public class PauseMenu : Menu
     
     private void Start()
     {
+        Cursor.visible = false;
         isActive = false;
 
         actionText = GameObject.Find("ActionText");
@@ -59,14 +60,12 @@ public class PauseMenu : Menu
         actionText.SetActive(false);
         actionFrame.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
         crosshair.SetActive(false);
-        Cursor.visible = true;
         isActive = true;
     }
 
     public void OnResumeClicked()
     {
         this.DeactivateMenu();
-        Cursor.visible = false;
         Time.timeScale = 1f;
         isActive = false;
         actionText.SetActive(true);

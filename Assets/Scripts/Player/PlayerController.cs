@@ -27,15 +27,11 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void OnEnable()
     {
         GameEventsManager.instance.inputEvents.onMovePressed += MovePressed;
-        //GameEventsManager.instance.playerEvents.onDisablePlayerMovement += DisablePlayerMovement;
-        //GameEventsManager.instance.playerEvents.onEnablePlayerMovement += EnablePlayerMovement;
     }
 
     private void OnDisable()
     {
         GameEventsManager.instance.inputEvents.onMovePressed -= MovePressed;
-        //GameEventsManager.instance.playerEvents.onDisablePlayerMovement -= DisablePlayerMovement;
-        //GameEventsManager.instance.playerEvents.onEnablePlayerMovement -= EnablePlayerMovement;
     }
 
     private void Update()

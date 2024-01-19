@@ -6,18 +6,21 @@ public class MainMenu : Menu, IDataPersistance
     [Header("Menu Navigation")]
     [SerializeField] private SaveSlotsMenu saveSlotsMenu;
     [SerializeField] private SettingsMenu settingsMenu;
+    [SerializeField] private CreditsMenu creditsMenu;
 
     [Header("Menu Buttons")]
     [SerializeField] private Button newGameButton;
     [SerializeField] private Button continueGameButton;
     [SerializeField] private Button loadGameButton;
     [SerializeField] private Button settingsButton;
+    [SerializeField] private Button creditsButton;
     [SerializeField] private Button quitGameButton;
 
     private int continueSceneIndex = 0;
 
     public void Start()
     {
+        Cursor.visible = false;
         DisableButtonsDependingOnData();
         newGameButton.GetComponent<ButtonTextColorExtension>().OnMenuChange();
     }
@@ -52,7 +55,6 @@ public class MainMenu : Menu, IDataPersistance
         GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene(continueSceneIndex);
 
         Time.timeScale = 1f;
-        Cursor.visible = false;
 
         this.DeactivateMenu();
     }
@@ -60,6 +62,12 @@ public class MainMenu : Menu, IDataPersistance
     public void OnSettingsClicked()
     {
         settingsMenu.ActivateMenu();
+        this.DeactivateMenu();
+    }
+
+    public void OnCreditsClicked()
+    {
+        creditsMenu.ActivateMenu();
         this.DeactivateMenu();
     }
 

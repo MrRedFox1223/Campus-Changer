@@ -12,6 +12,7 @@ public class GameData
     public string locationName;
     public SerializableDictionary<string, int> swichableTerrainsVaraints;
     public SerializableDictionary<string, bool> interactableObjectsState;
+    public bool tutorialGeniusLoci;
     
     // Story data
     public string globalVariablesStoryJson;
@@ -26,6 +27,7 @@ public class GameData
         this.locationName = "";
         this.swichableTerrainsVaraints = new SerializableDictionary<string, int>();
         this.interactableObjectsState = new SerializableDictionary<string, bool>();
+        this.tutorialGeniusLoci = false;
 
         this.globalVariablesStoryJson = "";
 

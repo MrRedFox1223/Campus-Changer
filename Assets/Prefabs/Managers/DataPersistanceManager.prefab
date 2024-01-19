@@ -48,5 +48,5 @@ MonoBehaviour:
   overrideSelectedProfileId: 0
   testSelectedProfileId: test
   fileName: data.game
-  useEncryption: 0
+  useEncryption: 1
   autoSaveTimeSeconds: 180

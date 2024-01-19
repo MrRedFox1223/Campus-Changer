@@ -10,6 +10,22 @@ public class ButtonTextColorExtension : MonoBehaviour, ISelectHandler, IDeselect
     [SerializeField] private Image image;
     [SerializeField] private ColorBlock newColor;
 
+    private void Awake()
+    {
+        GameEventsManager.instance.inputEvents.onExitPressed += ExitPressed;
+    }
+
+    private void OnDestroy()
+    {
+        GameEventsManager.instance.inputEvents.onExitPressed -= ExitPressed;
+    }
+
+    private void ExitPressed()
+    {
+        if (GameObject.Find("PauseMenu") != null && !GameObject.Find("PauseMenu").GetComponent<PauseMenu>().isActive)
+            ChangeColor(newColor.normalColor);
+    }
+
     void ISelectHandler.OnSelect(BaseEventData eventData)
     {
         ChangeColor(newColor.selectedColor);

@@ -8,8 +8,15 @@ CONST DECLINED = 5
 
 // External functions
 EXTERNAL SwitchTerrain(marker)
+EXTERNAL ActivateGeniusLoci()
+EXTERNAL SwitchScene()
 
 // Variables
+VAR 00_PostInitialDialogue = false
+VAR 00_PostTutorial = false
+VAR 00_PostHowTo = false
+VAR 00_WhoAreYou = ""
+VAR 00_HowOften = ""
 VAR 01_DecisionInProgress = false
 VAR 01_bIsDecisionMade = false
 VAR 01_Decision = ""

@@ -63,7 +63,7 @@ public class FileDataHandler
                 // If program gets here, there is posibility that backup file is also corrupted
                 else
                     Debug.LogError("Error occured when trying to load file at path: " + fullPath + 
-                        "and backup did not work\n" + e);
+                        " and backup did not work\n" + e);
             }
         }
 
