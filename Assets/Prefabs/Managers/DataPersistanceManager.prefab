@@ -49,4 +49,4 @@ MonoBehaviour:
   testSelectedProfileId: test
   fileName: data.game
   useEncryption: 1
-  autoSaveTimeSeconds: 180
+  autoSaveTimeSeconds: 60

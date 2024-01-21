@@ -63,5 +63,8 @@ Spróbuj teraz obrócić się i porozmawiać z Twoim przewodnikiem.
 
 -> END
 
+==function ActivateGeniusLoci==
+~ return
+
 
 

@@ -101,6 +101,7 @@ VAR marker = 0
 ~ 05_DecisionInProgress = false
 ~ 05_bIsDecisionMade = true
 ~ SwitchTerrain(marker)
+~ AddToCompletedQuests()
 
 Dziękuję! Podejmujesz swoje decyzje niezwykle sprawnie! Dzięki Tobie kampus ma szansę szybko się zmienić. ->END
 

@@ -76,6 +76,7 @@ VAR marker = 0
 ~ 07_DecisionInProgress = false
 ~ 07_bIsDecisionMade = true
 ~ SwitchTerrain(marker)
+~ AddToCompletedQuests()
 
 Dziękuję za pomoc! Przed Tobą jeszcze kilka spraw do rozwikłania. ->END
    

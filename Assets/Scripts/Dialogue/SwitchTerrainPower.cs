@@ -14,8 +14,6 @@ public class SwitchTerrainPower : MonoBehaviour
     [SerializeField] private GameObject switchableObject;
     [SerializeField] private DialogueManager dialogueManager;
 
-    private float typingSpeedBackup;
-
     private void Awake()
     {
         fadeCanvasGroup = GameObject.Find("DialogueFade").GetComponent<CanvasGroup>();

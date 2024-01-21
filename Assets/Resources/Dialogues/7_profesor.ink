@@ -17,7 +17,9 @@ Dzień dobry. #portrait:Profesor
     
     + [Co to jest living lab?]
     
-    - To w uproszczeniu miejsce współpracy, w którym tworzy się innowacyjne rozwiązania. Diagnozuje i analizuje się potrzeby po to, by ulepszać dobrostan społeczności poprzez realizację badań stosowanych z udziałem użytkowników i ko-kreację rozwiązań dla lepszej przyszłości. Dlatego ważne, by był dostępny dla ludzi, których dany problem dotyczy. 
+    - To w uproszczeniu miejsce współpracy, w którym tworzy się innowacyjne rozwiązania. 
+    Diagnozuje i analizuje się potrzeby po to, by ulepszać dobrostan społeczności poprzez realizację badań stosowanych z udziałem użytkowników i ko-kreację rozwiązań dla lepszej przyszłości. 
+    Dlatego ważne, by był dostępny dla ludzi, których dany problem dotyczy. 
     ->MainDiscussionNode
 == MainDiscussionNode
 

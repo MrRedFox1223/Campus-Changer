@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Threading.Tasks;
+using System;
 
 public class PopupManager : MonoBehaviour
 {
@@ -9,6 +10,20 @@ public class PopupManager : MonoBehaviour
     [SerializeField] private string objectActionText;
     [SerializeField] private string terrainActionText;
     [SerializeField] private string itemActionText;
+
+    [Header("Save notification options")]
+    [SerializeField] private string savePopupText;
+    [Range(0, 0.1f)]
+    [SerializeField] private float saveFadeFactor = 0.05f;
+    [Range(0, 1)]
+    [SerializeField] private float saveFadePauseTime = 0.5f;
+
+    [Header("Complete notification options")]
+    [SerializeField] private string completePopupText;
+    [Range(0, 0.1f)]
+    [SerializeField] private float completeFadeFactor = 0.05f;
+    [Range(0, 8)]
+    [SerializeField] private float completeFadePauseTime = 5f;
 
     [Header("Quest notification options")]
     [SerializeField] private string startQuestText;
@@ -27,6 +42,10 @@ public class PopupManager : MonoBehaviour
     [Header("References")]
     [SerializeField] private TextMeshProUGUI actionText;
     [SerializeField] private GameObject actionFrame;
+    [SerializeField] private CanvasGroup saveCanvasGroup;
+    [SerializeField] private TextMeshProUGUI saveText;
+    [SerializeField] private CanvasGroup completeCanvasGroup;
+    [SerializeField] private TextMeshProUGUI completeText;
     [SerializeField] private TextMeshProUGUI questText;
 
     public static PopupManager instance { get; private set; }
@@ -40,7 +59,14 @@ public class PopupManager : MonoBehaviour
 
         actionText = GameObject.Find("ActionText").GetComponent<TextMeshProUGUI>();
         actionFrame = GameObject.Find("ActionFrame");
+        saveCanvasGroup = GameObject.Find("SavePopup").GetComponent<CanvasGroup>();
+        saveText = GameObject.Find("SaveText").GetComponent<TextMeshProUGUI>();
+        completeCanvasGroup = GameObject.Find("CompletePopup").GetComponent<CanvasGroup>();
+        completeText = GameObject.Find("CompleteText").GetComponent<TextMeshProUGUI>();
         questText = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
+
+        saveText.text = savePopupText;
+        completeText.text = completePopupText;
     }
 
     private void OnEnable()
@@ -95,6 +121,24 @@ public class PopupManager : MonoBehaviour
                 actionFrame.SetActive(false);
                 break;
         }
+    }
+
+    public async void ShowSaveNotification()
+    {
+        if (saveCanvasGroup != null)
+            await FadeInNotification(saveCanvasGroup, saveFadeFactor);
+        await PauseNotification(saveFadePauseTime, saveFadeFactor);
+        if (saveCanvasGroup != null)
+            await FadeOutNotification(saveCanvasGroup, saveFadeFactor);
+    }
+
+    public async void ShowCompleteNotification()
+    {
+        if (completeCanvasGroup != null)
+            await FadeInNotification(completeCanvasGroup, completeFadeFactor);
+        await PauseNotification(completeFadePauseTime + 2, completeFadeFactor);
+        if (completeCanvasGroup != null)
+            await FadeOutNotification(completeCanvasGroup, completeFadeFactor);
     }
 
     private async void StartQuestNotification(string id)
@@ -160,4 +204,57 @@ public class PopupManager : MonoBehaviour
             await Task.Delay(typingSpeed);
         }
     }
+
+    private async Task FadeInNotification(CanvasGroup canvasGroup, float fadeFactor)
+    {
+        try
+        {
+            while (canvasGroup.alpha < 1)
+            {
+                if (canvasGroup != null)
+                {
+                    canvasGroup.alpha += fadeFactor;
+                    await Task.Yield();
+                }
+                else
+                    break;
+            }
+        }
+        catch(Exception e)
+        {
+            Debug.Log(e);
+        }
+    }
+
+    private async Task PauseNotification(float fadePauseTime, float fadeFactor)
+    {
+        float t = 0;
+        while (t < fadePauseTime)
+        {
+            t += fadeFactor;
+            await Task.Yield();
+        }
+    }
+
+    private async Task FadeOutNotification(CanvasGroup canvasGroup, float fadeFactor)
+    {
+        try
+        {
+            while (canvasGroup.alpha > 0)
+            {
+                if (canvasGroup != null)
+                {
+                    canvasGroup.alpha -= fadeFactor;
+                    await Task.Yield();
+                }
+                else
+                    break;
+            }
+        }
+        catch(Exception e)
+        {
+            Debug.Log(e);
+        }
+        
+    } 
 }

@@ -111,7 +111,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistance
     public void EnterDialogueMode(TextAsset inkJSON, GameObject NPC)
     {
         currentStory = new Story(inkJSON.text);
-        Debug.Log(currentStory);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         crosshair.SetActive(false);

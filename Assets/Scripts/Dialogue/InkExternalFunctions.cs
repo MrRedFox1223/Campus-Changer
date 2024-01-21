@@ -34,6 +34,10 @@ public class InkExternalFunctions
             GameObject.Find("Popups").SetActive(false);
             GameObject.Find("LevelLoadingManager").GetComponent<LevelLoadingManager>().LoadScene((int)SceneIndexes.CAMPUS);
         });
+
+        story.BindExternalFunction("AddToCompletedQuests", () => {
+            GameObject.Find("Player").GetComponent<QuestToFinishCounter>().AddToCompletedQuests();
+        });
     }
 
     public void Unbind(Story story)
@@ -44,5 +48,6 @@ public class InkExternalFunctions
         story.UnbindExternalFunction("SwitchTerrain");
         story.UnbindExternalFunction("ActivateGeniusLoci");
         story.UnbindExternalFunction("SwitchScene");
+        story.UnbindExternalFunction("AddToCompletedQuests");
     }
 }

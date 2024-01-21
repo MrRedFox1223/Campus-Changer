@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7174244151914309490}
   - component: {fileID: 7174244151914309491}
   - component: {fileID: 7174244151914309500}
+  - component: {fileID: 3516550786992700690}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -66,6 +67,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3516550786992700690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174244151914309501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7515e1d93482b4b8e9b38762b326bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfQuests: 9
+  questsCompleted: 0
 --- !u!1 &7174244153469590753
 GameObject:
   m_ObjectHideFlags: 0

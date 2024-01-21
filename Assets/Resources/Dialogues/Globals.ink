@@ -10,6 +10,7 @@ CONST DECLINED = 5
 EXTERNAL SwitchTerrain(marker)
 EXTERNAL ActivateGeniusLoci()
 EXTERNAL SwitchScene()
+EXTERNAL AddToCompletedQuests()
 
 // Variables
 VAR 00_PostInitialDialogue = false

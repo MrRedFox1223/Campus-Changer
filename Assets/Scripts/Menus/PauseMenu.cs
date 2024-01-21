@@ -75,7 +75,7 @@ public class PauseMenu : Menu
 
     public void OnSaveGameClicked()
     {
-        Debug.Log("Game Saved");
+        PopupManager.instance.ShowSaveNotification();   
         DataPersistanceManager.instance.SaveGame();
     }
 

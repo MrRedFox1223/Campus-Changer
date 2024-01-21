@@ -85,6 +85,7 @@ VAR marker = 0
 ~ 03_DecisionInProgress = false
 ~ 03_bIsDecisionMade = true
 ~ SwitchTerrain(marker)
+~ AddToCompletedQuests()
 
 Dziękuję! Świetnie sobie poradziłeś! Tymczasem jednak czekają na nas inne sprawy. Zatem ruszamy! -> END
 

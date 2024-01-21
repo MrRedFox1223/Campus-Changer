@@ -47,6 +47,12 @@ MonoBehaviour:
   objectActionText: "<color=#FCFF78> E </color> <color=#FFFFFF>  U\u017Cyj </color>"
   terrainActionText: "<color=#FCFF78> E </color> <color=#FFFFFF>  Zamie\u0144 </color>"
   itemActionText: "<color=#FCFF78> E </color> <color=#FFFFFF>  Podnie\u015B </color>"
+  savePopupText: <color=#FCFF78>  Zapisywanie </color>
+  saveFadeFactor: 0.05
+  saveFadePauseTime: 1
+  completePopupText: "<color=#FCFF78>  Dzi\u0119kujemy za udzia\u0142 w badaniu </color>"
+  completeFadeFactor: 0.05
+  completeFadePauseTime: 5
   startQuestText: "Rozpocz\u0119to:"
   finishQuestText: "Zako\u0144czono:"
   switchTerrainText: Zmieniono teren
@@ -57,4 +63,8 @@ MonoBehaviour:
   advancemntFontSizeDifference: 5
   actionText: {fileID: 0}
   actionFrame: {fileID: 0}
+  saveCanvasGroup: {fileID: 0}
+  saveText: {fileID: 0}
+  completeCanvasGroup: {fileID: 0}
+  completeText: {fileID: 0}
   questText: {fileID: 0}

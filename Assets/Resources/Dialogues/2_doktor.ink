@@ -47,7 +47,7 @@ Powinniśmy odejść od ruchu samochodowego na terenie kampusu. Jeśli parkingi,
     ->MainArgumentNode
 
 == Question_04
-Taka galeria plenerowa powinna znajdować się bliżej centrum kampusu, w bezpośrednim sąsiedztwie ciągów pieszych. Tu jesteśmy na uboczu.
+Takie miejsce powinno znajdować się bliżej centrum kampusu, w bezpośrednim sąsiedztwie ciągów pieszych. Tu jesteśmy na uboczu.
     ->MainArgumentNode
 
 == Question_05

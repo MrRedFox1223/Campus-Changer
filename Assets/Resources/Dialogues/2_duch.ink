@@ -29,7 +29,8 @@ Dlatego proszę, porozmawiaj z nimi. Kiedy do nich podejdziesz opowiedzą Ci jak
 
 == InitialUndecided
 
-W takim razie przed Tobą kilka ciekawych rozmów. Student z wymiany zagranicznej chciałby zbudować tu niewielką przestrzeń z jedzeniem. Taką knajpkę na świeżym powietrzu. Pani mieszkająca na terenie kampusu proponuje, aby znalazła się tu zieleń. Strażnik zaś mówi, że lepszy byłby parking. I jeszcze Pan doktor. Jemu marzy się galeria plenerowa.
+W takim razie przed Tobą kilka ciekawych rozmów. Student z wymiany zagranicznej chciałby zbudować tu niewielką przestrzeń z jedzeniem. Taką knajpkę na świeżym powietrzu. 
+Pani mieszkająca na terenie kampusu proponuje, aby znalazła się tu zieleń. Strażnik zaś mówi, że lepszy byłby parking. I jeszcze Pan doktor. Jemu marzy się galeria plenerowa.
 
     * [W takim na mnie już pora.]
         -> InitialSendoff
@@ -66,6 +67,7 @@ VAR marker = 0
 ~ 02_DecisionInProgress = false
 ~ 02_bIsDecisionMade = true
 ~ SwitchTerrain(marker)
+~ AddToCompletedQuests()
 
 Dziękuję, że tak szybko podjąłeś swoją decyzję! Pożegnajmy się z tym dziedzińcem i ruszajmy dalej.  
 

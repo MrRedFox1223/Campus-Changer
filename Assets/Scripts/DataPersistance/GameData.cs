@@ -6,6 +6,7 @@ public class GameData
 
     // Player data
     public long lastUpdated;
+    public int questsCompleted;
 
     // World data
     public int currentSceneIndex;
@@ -23,6 +24,8 @@ public class GameData
     // The values in this constructor will be the default values the game starts with 
     public GameData()
     {
+        this.questsCompleted = 0;
+
         this.currentSceneIndex = 1;
         this.locationName = "";
         this.swichableTerrainsVaraints = new SerializableDictionary<string, int>();
