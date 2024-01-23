@@ -14,10 +14,10 @@ public class AudioManager : MonoBehaviour
     public MusicArea defaultMusic;
 
     [Header("Volume")]
-    [Range(0, 1)] public float masterVolume = 1;
-    [Range(0, 1)] public float musicVolume = 1;
-    [Range(0, 1)] public float ambienceVolume = 1;
-    [Range(0, 1)] public float sfxVolume = 1;
+    [Range(0, 1)] public float masterVolume = 0.5f;
+    [Range(0, 1)] public float musicVolume = 0.5f;
+    [Range(0, 1)] public float ambienceVolume = 0.5f;
+    [Range(0, 1)] public float sfxVolume = 0.5f;
 
     public static AudioManager instance { get; private set; }
     public EventInstance ambienceEventInstance;
@@ -53,10 +53,10 @@ public class AudioManager : MonoBehaviour
         ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
 
-        masterVolume = PlayerPrefs.GetFloat("masterVolume");
-        musicVolume = PlayerPrefs.GetFloat("musicVolume");
-        ambienceVolume = PlayerPrefs.GetFloat("ambienceVolume");
-        sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
+        masterVolume = PlayerPrefs.GetFloat("masterVolume", 0.5f);
+        musicVolume = PlayerPrefs.GetFloat("musicVolume", 0.5f);
+        ambienceVolume = PlayerPrefs.GetFloat("ambienceVolume", 0.5f);
+        sfxVolume = PlayerPrefs.GetFloat("sfxVolume", 0.5f);
     }
 
     private void Start()

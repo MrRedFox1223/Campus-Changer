@@ -18,6 +18,14 @@ public class PopupManager : MonoBehaviour
     [Range(0, 1)]
     [SerializeField] private float saveFadePauseTime = 0.5f;
 
+    [Header("Quests to go notification options")]
+    [SerializeField] private string questsToGoPopupText;
+    public string questsToGoNumber;
+    [Range(0, 0.1f)]
+    [SerializeField] private float questsToGoFadeFactor = 0.05f;
+    [Range(0, 8)]
+    [SerializeField] private float questsToGoFadePauseTime = 5f;
+
     [Header("Complete notification options")]
     [SerializeField] private string completePopupText;
     [Range(0, 0.1f)]
@@ -44,6 +52,8 @@ public class PopupManager : MonoBehaviour
     [SerializeField] private GameObject actionFrame;
     [SerializeField] private CanvasGroup saveCanvasGroup;
     [SerializeField] private TextMeshProUGUI saveText;
+    [SerializeField] private CanvasGroup questsToGoCanvasGroup;
+    [SerializeField] private TextMeshProUGUI questsToGoText;
     [SerializeField] private CanvasGroup completeCanvasGroup;
     [SerializeField] private TextMeshProUGUI completeText;
     [SerializeField] private TextMeshProUGUI questText;
@@ -61,6 +71,8 @@ public class PopupManager : MonoBehaviour
         actionFrame = GameObject.Find("ActionFrame");
         saveCanvasGroup = GameObject.Find("SavePopup").GetComponent<CanvasGroup>();
         saveText = GameObject.Find("SaveText").GetComponent<TextMeshProUGUI>();
+        questsToGoCanvasGroup = GameObject.Find("QuestsToGoPopup").GetComponent<CanvasGroup>();
+        questsToGoText = GameObject.Find("QuestsToGoText").GetComponent<TextMeshProUGUI>();
         completeCanvasGroup = GameObject.Find("CompletePopup").GetComponent<CanvasGroup>();
         completeText = GameObject.Find("CompleteText").GetComponent<TextMeshProUGUI>();
         questText = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
@@ -123,22 +135,29 @@ public class PopupManager : MonoBehaviour
         }
     }
 
+    private async Task ShowPopupNotification(CanvasGroup canvasGroup, float fadeFactor, float fadePauseTime)
+    {
+        if (canvasGroup != null)
+            await FadeInNotification(canvasGroup, fadeFactor);
+        await PauseNotification(fadePauseTime, fadeFactor);
+        if (canvasGroup != null)
+            await FadeOutNotification(canvasGroup, fadeFactor);
+    }
+
     public async void ShowSaveNotification()
     {
-        if (saveCanvasGroup != null)
-            await FadeInNotification(saveCanvasGroup, saveFadeFactor);
-        await PauseNotification(saveFadePauseTime, saveFadeFactor);
-        if (saveCanvasGroup != null)
-            await FadeOutNotification(saveCanvasGroup, saveFadeFactor);
+        await ShowPopupNotification(saveCanvasGroup, saveFadeFactor, saveFadePauseTime);
     }
 
     public async void ShowCompleteNotification()
     {
-        if (completeCanvasGroup != null)
-            await FadeInNotification(completeCanvasGroup, completeFadeFactor);
-        await PauseNotification(completeFadePauseTime + 2, completeFadeFactor);
-        if (completeCanvasGroup != null)
-            await FadeOutNotification(completeCanvasGroup, completeFadeFactor);
+        await ShowPopupNotification(completeCanvasGroup, completeFadeFactor, completeFadePauseTime);
+    }
+
+    public async void ShowQuestsToGoNotification()
+    {
+        questsToGoText.text = questsToGoPopupText + questsToGoNumber;
+        await ShowPopupNotification(questsToGoCanvasGroup, questsToGoFadeFactor, questsToGoFadePauseTime);
     }
 
     private async void StartQuestNotification(string id)

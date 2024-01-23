@@ -13,7 +13,13 @@ public class QuestToFinishCounter : MonoBehaviour, IDataPersistance
             DataPersistanceManager.instance.SaveGame();
         }
         else
+        {
             questsCompleted++;
+            int questsLeft = numberOfQuests - questsCompleted;
+            PopupManager.instance.questsToGoNumber = "<color=#FCFF78>" + questsLeft + "</color>";
+            PopupManager.instance.ShowQuestsToGoNotification();
+            
+        }   
     }
 
     public void LoadData(GameData data)
