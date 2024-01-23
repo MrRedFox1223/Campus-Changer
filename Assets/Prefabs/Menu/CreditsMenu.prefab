@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ASYSTENT PROJEKTANTKI GRAFICZNEJ
+  m_text: ASSISTANT GRAPHIC DESIGNER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DR IKER BENGOETXEA ARRUTI
+  m_text: DOCFA IKER BENGOETXEA ARRUTI
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: COFNIJ
+  m_text: BACK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "MGR URSZULA \nSCZEPANKOWASKA-BEDNAREK"
+  m_text: "M.SC. URSZULA \nSCZEPANKOWASKA-BEDNAREK"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PROJEKTANTKA NARRACJI
+  m_text: NARRATIVE DESIGNER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -887,7 +887,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "DR HAB. IN\u017B. ROBERT OLSZEWSKI \nPROF. UCZELNI"
+  m_text: 'ENGD HABIL. ROBERT OLSZEWSKI,
+
+    ASSOCIATE PROFESSOR'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -1210,7 +1212,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "TW\xD3RCY"
+  m_text: CREDITS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -1558,7 +1560,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PROGRAMISTA I PROJEKTANT GRY
+  m_text: 'GAME DESIGNER, GAME PROGRAMMER,
+
+    TECHNICAL DEVELOPER'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -1693,7 +1697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "PROJEKTANTKA GRAFICZNA \nI PROJEKTANTKA GRY"
+  m_text: "GAME ARTIST, \nLEAD GRAPHIC DESIGNER"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -1828,7 +1832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "KOORDYNATOR ROZWOJU \nKONCEPCJI GRY"
+  m_text: CONCEPT COORDINATOR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -1963,7 +1967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: KOORDYNATORKA PROJEKTU
+  m_text: PROJECT COORDINATOR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -2306,7 +2310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MGR ANNA SZALWA
+  m_text: M.A. ANNA SZALWA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -2515,7 +2519,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "DR IN\u017B. WENDLAND AGNIESZKA"
+  m_text: 'ENGD AGNIESZKA WENDLAND,
+
+    PROFESSOR''S ASSISTANT'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -2650,7 +2656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PROJEKTANT NARRACJI
+  m_text: NARRATIVE DESIGNER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}

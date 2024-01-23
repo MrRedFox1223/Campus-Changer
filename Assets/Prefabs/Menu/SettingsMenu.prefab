@@ -215,16 +215,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: COFNIJ
+  m_text: BACK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1476267932
@@ -318,7 +318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -680, y: 0}
+  m_AnchoredPosition: {x: -515, y: 0}
   m_SizeDelta: {x: 47.25, y: 70}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1476267935
@@ -935,7 +935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MELODIA
+  m_text: MUSIC
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AMBIENT
+  m_text: AMBIENCE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -1558,7 +1558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 101, y: 299.99997}
+  m_AnchoredPosition: {x: -49, y: 299.99997}
   m_SizeDelta: {x: 645.504, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6329743790351964300
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "USTAWIENIA D\u0179WI\u0118KU"
+  m_text: AUDIO SETTINGS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
   m_sharedMaterial: {fileID: -1854776237228951258, guid: a6d3d49df35322945b919e6f395d8d12, type: 2}
@@ -1834,8 +1834,12 @@ PrefabInstance:
       value: 0.2392157
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455062, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_Color.b
@@ -1850,8 +1854,16 @@ PrefabInstance:
       value: 0.8156863
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
@@ -1984,8 +1996,12 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455062, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_Color.b
@@ -2000,8 +2016,16 @@ PrefabInstance:
       value: 0.8156863
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
@@ -2145,8 +2169,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455062, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_Color.b
@@ -2161,8 +2189,16 @@ PrefabInstance:
       value: 0.8156863
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
@@ -2295,8 +2331,12 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672743455061, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672743455062, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_Color.b
@@ -2311,8 +2351,16 @@ PrefabInstance:
       value: 0.8156863
       objectReference: {fileID: 0}
     - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509593672861126438, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b51b34554a78cb478350cc8a7314966, type: 3}

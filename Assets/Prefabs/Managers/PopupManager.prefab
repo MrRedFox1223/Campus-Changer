@@ -43,25 +43,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c404f1422e2d94ba02cf887573602b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcActionText: <color=#FCFF78> E </color> <color=#FFFFFF> Rozmawiaj </color>
-  objectActionText: "<color=#FCFF78> E </color> <color=#FFFFFF>  U\u017Cyj </color>"
-  terrainActionText: "<color=#FCFF78> E </color> <color=#FFFFFF>  Zamie\u0144 </color>"
-  itemActionText: "<color=#FCFF78> E </color> <color=#FFFFFF>  Podnie\u015B </color>"
-  savePopupText: <color=#FCFF78>  Zapisywanie </color>
+  npcActionText: <color=#FCFF78> E </color> <color=#FFFFFF> Talk </color>
+  objectActionText: <color=#FCFF78> E </color> <color=#FFFFFF>  Use </color>
+  terrainActionText: <color=#FCFF78> E </color> <color=#FFFFFF>  Switch </color>
+  itemActionText: <color=#FCFF78> E </color> <color=#FFFFFF>  Pick up </color>
+  savePopupText: <color=#FCFF78> Saving </color>
   saveFadeFactor: 0.05
   saveFadePauseTime: 1
-  questsToGoPopupText: "<color=#FCFF78> Pozosta\u0142ych zada\u0144: </color>"
+  questsToGoPopupText: '<color=#FCFF78> Quests left: </color>'
   questsToGoNumber: 
   questsToGoFadeFactor: 0.05
   questsToGoFadePauseTime: 5
-  completePopupText: "<color=#FCFF78>  Dzi\u0119kujemy za udzia\u0142 w badaniu </color>"
+  completePopupText: <color=#FCFF78> Thank you for your participation </color>
   completeFadeFactor: 0.05
   completeFadePauseTime: 7
-  startQuestText: "Rozpocz\u0119to:"
-  finishQuestText: "Zako\u0144czono:"
-  switchTerrainText: Zmieniono teren
-  pickUpItemText: 'Podniesiono:'
-  dropItemText: 'Upuszczono:'
+  startQuestText: 'Started:'
+  finishQuestText: 'Finished:'
+  switchTerrainText: Terrain switched
+  pickUpItemText: 'Picked up:'
+  dropItemText: 'Dropped:'
   duration: 2
   typingSpeed: 20
   advancemntFontSizeDifference: 5
