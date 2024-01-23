@@ -28,11 +28,13 @@ Ahem, ahem… How can I help? #portrait:Strażnik
     -> END
 
 == Question_01
-Please, take a look at the other proposals in this game. They want to build eateries everywhere. Is this still a university or is it a shopping center? Sometimes things are good just as they are.
+Please, take a look at the other proposals in this game. They want to build eateries everywhere. Is this still a university or is it a shopping center? 
+Sometimes things are good just as they are.
 -> MainDiscussionNode
 
 == Question_02
-This is a parking area and so it should remain. It serves an important function. We can breathe some life into the buildings, but not into their backyards. And this space is exactly just that: a backyard!
+This is a parking area and so it should remain. It serves an important function. We can breathe some life into the buildings, but not into their backyards. 
+And this space is exactly just that: a backyard!
 -> MainDiscussionNode
 
 == Question_03

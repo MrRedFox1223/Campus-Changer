@@ -30,7 +30,8 @@ But let's go straight to the matter at hand. This time we won't be talking to ot
 
 As you may see, for now, there's nothing here except for two buildings close to each other, and one of them looks abandoned. But there are four ideas for what to do with this place.
     
-Here are the four ideas. First: refurbish the facade and leave the rest as is. Second: introduce greenery. Third: create a green space to relax between classes or activities. Fourth: set up some sort of a utility area.
+Here are the four ideas. First: refurbish the facade and leave the rest as is. Second: introduce greenery. 
+Third: create a green space to relax between classes or activities. Fourth: set up some sort of a utility area.
 
     ->MainDebateNode
     

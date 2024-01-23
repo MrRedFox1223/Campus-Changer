@@ -514,8 +514,8 @@ MonoBehaviour:
   mainMenu: {fileID: 0}
   backButton: {fileID: 2499815265430464512}
   confirmationPopupMenu: {fileID: 0}
-  overrideText: "NADPISA\u0106 AKTUALNY ZAPIS?"
-  clearText: "JESTE\u015A PEWNY, \u017BE CHCESZ USUN\u0104\u0106 TEN ZAPIS?"
+  overrideText: OVERWRITE THE CURRENT SAVE?
+  clearText: ARE YOU SURE YOU WANT TO DELETE THIS SAVE?
 --- !u!1 &2499815265025714781
 GameObject:
   m_ObjectHideFlags: 0

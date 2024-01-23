@@ -40,7 +40,8 @@ It's possible, but this is the subject of heated debate. Some people say that we
 
 == InitialUndecided
 
-If you want to find out why cars should disappear from Campus, talk to the Student. If you want to find out why there should be more space for cars, talk to the Lady from the dean's office. You'll find both of them standing next to the monument.
+If you want to find out why cars should disappear from Campus, talk to the Student. If you want to find out why there should be more space for cars, talk to the Lady from the dean's office. 
+You'll find both of them standing next to the monument.
  
 ->InitialSendoff
 

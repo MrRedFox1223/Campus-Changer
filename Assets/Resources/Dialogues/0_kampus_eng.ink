@@ -34,7 +34,8 @@ Here's our Campus! Are you familiar with this place? #portrait:GeniusLoci
     
 == how_to_play
 
-The gameplay is not complicated. All you need is to walk around the Central Campus of the Warsaw University of Technology, keeping an eye out for other people you might encounter along the way. If you see me, come over. I might have something important to share with you.
+The gameplay is not complicated. All you need is to walk around the Central Campus of the Warsaw University of Technology, keeping an eye out for other people you might encounter along the way. 
+If you see me, come over. I might have something important to share with you.
 
     + [Thanks.]
 

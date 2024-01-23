@@ -30,16 +30,19 @@ How may I help? #portrait:Hulajnoga
     
 == Question_01
 
-There are many advantages to lighter traffic: it's quieter and safer, and it reduces air pollution. Moreover, people are more likely to spend time outdoors, and new activities naturally emerge in the spaces people traverse.
+There are many advantages to lighter traffic: it's quieter and safer, and it reduces air pollution. 
+Moreover, people are more likely to spend time outdoors, and new activities naturally emerge in the spaces people traverse.
 
 -> MainDiscussionNode
     
 == Question_02
 
-We are in the city center! We have buses! Trams! The subway system! You can use a bike or a scooter! And the more people use public transport, the easier it is to convince the city authorities to introduce new options.
+We are in the city center! We have buses! Trams! The subway system! You can use a bike or a scooter! 
+And the more people use public transport, the easier it is to convince the city authorities to introduce new options.
 
 -> MainDiscussionNode
 
 == Question_03
-I am under no illusion that parking will entirely disappear from the Campus. There will always be parking for guests. There could be parking spaces for people with disabilities under the buildings or in designated areas.
+I am under no illusion that parking will entirely disappear from the Campus. There will always be parking for guests. 
+There could be parking spaces for people with disabilities under the buildings or in designated areas.
 -> MainDiscussionNode

@@ -18,7 +18,7 @@ Good morning! #portrait:DzieckoGirl
 
     + [Why do you like the idea so much?]
     -> Question_01
-    + [sn't it a shame to lose parking spots?]
+    + [Isn't it a shame to lose parking spots?]
     -> Question_02
     + [Should we revive little corners like these?]
     -> Question_03
@@ -27,7 +27,8 @@ Good morning! #portrait:DzieckoGirl
     
 == Question_01
 
-Imagine this: every day, different food from a food truck. It would be like a mini-gathering. That's the advantage over a cafeteria or a cafe. One day it's burgers, another day ramen, ice cream, or pizza. Lots of people. It could also open up the campus to local residents.
+Imagine this: every day, different food from a food truck. It would be like a mini-gathering. That's the advantage over a cafeteria or a cafe. 
+One day it's burgers, another day ramen, ice cream, or pizza. Lots of people. It could also open up the campus to local residents.
 
 ->MainDiscussionNode
 

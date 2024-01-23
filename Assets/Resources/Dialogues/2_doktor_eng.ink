@@ -50,5 +50,6 @@ This kind of place should be located closer to the center of the Campus, in the 
     ->MainArgumentNode
 
 == Question_05
-There is also space for green areas in other parts of the Campus. There's a large square right behind us. It's great to have some green spaces but it cannot displace other functions that a university campus must fulfill. 
+There is also space for green areas in other parts of the Campus. There's a large square right behind us. 
+It's great to have some green spaces but it cannot displace other functions that a university campus must fulfill. 
     ->MainArgumentNode

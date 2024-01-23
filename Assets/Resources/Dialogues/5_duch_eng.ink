@@ -60,7 +60,8 @@ Turn towards the Physics building and bypass it, keeping it to your left. The pl
 
 The alley is just as interesting, if not more. But you have to judge for yourself! 
 
-When I say an alley I mean the route from the 3rd Company of the "Golski" Battalion monument to the gate on the Koszykowa Street side, right next to the Chemistry, the Faculty of Mathematics and Information Science (MiNI), and the Transport buildings.
+When I say an alley I mean the route from the 3rd Company of the "Golski" Battalion monument to the gate on the Koszykowa Street side. 
+It's right next to the Chemistry, the Faculty of Mathematics and Information Science (MiNI), and the Transport buildings.
 
 The idea is to transform this traffic route into one of the two main axes of the Central Campus, so that it's easier to navigate the Campus. For details, ask my assistants, who are standing nearby.
 

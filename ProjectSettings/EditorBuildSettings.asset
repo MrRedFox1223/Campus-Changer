@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: cdc8591beeec9de42beb96163660613b
   - enabled: 1
-    path: Assets/Scenes/Samouczek.unity
+    path: Assets/Scenes/Tutorial.unity
     guid: 2c3227135faed8f4baf1935904c33e29
   - enabled: 1
-    path: Assets/Scenes/Kampus PW.unity
+    path: Assets/Scenes/WUT Campus.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   m_configObjects: {}

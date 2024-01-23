@@ -231,7 +231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 565254634729936692, guid: af859416826a6394bb36917d7308a951, type: 3}
       propertyPath: m_text
-      value: "\u0141ADOWANIE..."
+      value: LOADING...
       objectReference: {fileID: 0}
     - target: {fileID: 565254634729936692, guid: af859416826a6394bb36917d7308a951, type: 3}
       propertyPath: m_fontAsset

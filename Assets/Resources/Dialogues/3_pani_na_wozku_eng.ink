@@ -37,7 +37,8 @@ This could be remedied by installing barriers or just hanging a "no parking" sig
 -> MainArgumentNode
 
 == Question_02
-I think so, yes. It's a very "deep" gate. With a grate inside it, it gets really unpleasant. If we remove the grate, the space would seem more friendly and inviting, so that passersby might want to come further inside. 
+I think so, yes. It's a very "deep" gate. With a grate inside it, it gets really unpleasant. 
+If we remove the grate, the space would seem more friendly and inviting, so that passersby might want to come further inside. 
 If the conservator-restorer would be so inclined, we could also paint a mural on the wall to make this place more charming and modern. What do you think?
 -> MainArgumentNode
 

@@ -13,7 +13,8 @@ Welcome back! A beautiful chimney, isn't it? #portrait:GeniusLoci
  
     - That's true!
     
-This place is important for the University of Technology's Campus. Since a lot of people pass through here, we're considering its development. As you can see, now there's a road frequented by cars. The competing concept suggests dedicating this area exclusively to pedestrians.
+This place is important for the University of Technology's Campus. Since a lot of people pass through here, we're considering its development. 
+As you can see, now there's a road frequented by cars. The competing concept suggests dedicating this area exclusively to pedestrians.
 
 
     * [What?! No way! Leave it as is!]
@@ -35,7 +36,8 @@ Not everyone shares this view, so I'll ask you to talk to them. When you approac
  
 == InitialUndecided
 
-I'm glad you have an open mind. There's room for everyone on the Campus! In that case, please talk to the Student who comes here every Tuesday for a two-hour break between classes. The other person is a lady who works in administration and drives to the Main Building.
+I'm glad you have an open mind. There's room for everyone on the Campus! In that case, please talk to the Student who comes here every Tuesday for a two-hour break between classes. 
+The other person is a lady who works in administration and drives to the Main Building.
 
     * [Sure, I'll talk to them.]
         ->InitialSendoff

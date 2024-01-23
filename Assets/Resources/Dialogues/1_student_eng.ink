@@ -20,7 +20,8 @@ Hello! You are a player, right? #portrait:Student
     + [The Ghost dwelling in this place told me that you want to create a sidewalk here.]
     
 Yes. It means a lot to me. 
-I come here every week when I have a free period. I miss having a place to sit. That's why I thought a sidewalk would be a good solution. One with low curbs, so that people in wheelchairs could easily get onto it, and not an uneven one, because I've tripped over this one more than once. 
+I come here every week when I have a free period. I miss having a place to sit. That's why I thought a sidewalk would be a good solution. 
+One with low curbs, so that people in wheelchairs could easily get onto it, and not an uneven one, because I've tripped over this one more than once. 
 
 Ah! And, naturally, some benches would be great so that there would be a place to rest. 
 
@@ -49,7 +50,8 @@ Everything is close by for me here. Besides, it's easy to set up a meeting under
 -> MainArgumentNode
 
 == Question_02
-A lot of people pass through here. It would be great if the sidewalk wasn't uneven, and the curbs weren't an obstacle for people with disabilities or for the elderly. Anyone can set up a meeting here. It would be possible to organize some cool event in this place, or just sit enjoying the sunshine, instead of being in the shade of the trees. 
+A lot of people pass through here. It would be great if the sidewalk wasn't uneven, and the curbs weren't an obstacle for people with disabilities or for the elderly. 
+Anyone can set up a meeting here. It would be possible to organize some cool event in this place, or just sit enjoying the sunshine, instead of being in the shade of the trees. 
 
 -> MainArgumentNode
 

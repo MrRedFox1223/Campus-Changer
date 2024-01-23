@@ -23,13 +23,15 @@ Good morning. I'm the Ghost's assistant and I plan to build a stage here. An out
     -> END
     
 == Question_01
-For a variety of performances. For example, one could organize a small concert, a public speaking or a stand-up comedy event, or even, hmm… a competition. Truly, there are many opportunities to use a stage, which is just crying out to be built here.
+For a variety of performances. For example, one could organize a small concert, a public speaking or a stand-up comedy event, or even, hmm… a competition. 
+Truly, there are many opportunities to use a stage, which is just crying out to be built here.
 
 ->MainDiscussionNode
 
 == Question_02
 
-It's true that such events can be loud, but we are surrounded by business premises. It goes without saying that everything would happen outside of working hours, otherwise students and employees wouldn't be able to come.
+It's true that such events can be loud, but we are surrounded by business premises. 
+It goes without saying that everything would happen outside of working hours, otherwise students and employees wouldn't be able to come.
 
 ->MainDiscussionNode
 

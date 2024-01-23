@@ -41,7 +41,8 @@ Of course it would! Thanks to its incredible location, such a place would surely
 
 == Question_03
 
-There are already many places around here where you can eat. What's missing is a place where you can sit and talk over coffee or do some working, unless you like vending machine coffee and conversations in crowded corridors.
+There are already many places around here where you can eat. 
+What's missing is a place where you can sit and talk over coffee or do some working, unless you like vending machine coffee and conversations in crowded corridors.
 
 -> MainDiscussionNode
 
