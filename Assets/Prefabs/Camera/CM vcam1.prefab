@@ -88,8 +88,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f7cfbaf9bec4164b996dca3f1ef3795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSens: 0.6
-  verticalSens: 0.6
+  horizontalSens: 0.4
+  verticalSens: 0.4
   clampAngleUp: 89
   clampAngleDown: -89
 --- !u!114 &2971197045794504056
