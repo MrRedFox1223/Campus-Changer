@@ -98,6 +98,7 @@ public class PauseMenu : Menu
 
     public void OnQuitGameClicked()
     {
+        DataPersistanceManager.instance.SaveGame();
         Application.Quit();
     }
 

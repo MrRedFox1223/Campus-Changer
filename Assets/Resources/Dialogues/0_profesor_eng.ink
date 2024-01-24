@@ -15,13 +15,12 @@ I see you've met Genius Loci! Please don't fret about it, she does not haunt the
 == welcome 
 Hello there! Welcome to the interactive study prepared by the interdisciplinary project team of the Warsaw University of Technology. To continue our conversation, please press the 'E' key. #portrait:Profesor
 
-Shortly, we're going to embark on a tour of the Central Campus of the Warsaw University of Technology. As often happens, along the way, you'll encounter various people who will tell you about their issues, hoping for your help in finding solutions.
+Shortly, we're going to embark on a tour of the Central Campus of the Warsaw University of Technology. 
+As often happens, along the way, you'll encounter various people who will tell you about their issues, hoping for your help in finding solutions.
 
 Your input is crucial as it will help us make the Campus better for all of its users!
 
-In this game, most of the activities consist of choosing one of several possible responses to a question.
-    
-Please do not worry, we're not checking whether your answers are correct.
+In this game, most of the activities consist of choosing one of several possible responses to a question. Please do not worry, we're not checking whether your answers are correct.
 
 To navigate between responses, press the 'W,' 'A,' 'S,' or 'D' keys. You may choose whatever you want. Let's try that now:
 
