@@ -75,7 +75,7 @@ public class PauseMenu : Menu
 
     public void OnSaveGameClicked()
     {
-        PopupManager.instance.ShowSaveNotification();   
+        PopupManager.instance.ShowSaveNotification();
         DataPersistanceManager.instance.SaveGame();
     }
 
@@ -98,6 +98,7 @@ public class PauseMenu : Menu
 
     public void OnQuitGameClicked()
     {
+        DataPersistanceManager.instance.SaveGame();
         Application.Quit();
     }
 
