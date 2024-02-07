@@ -1010,7 +1010,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2930461919636504426, guid: 15ae17a0fabfb234bbbbeee13b6dd7ab, type: 3}
       propertyPath: m_text
-      value: "DR IN\u017B. WENDLAND AGNIESZKA ASYSTENTKA PROF."
+      value: "DR IN\u017B. WENDLAND AGNIESZKA"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017169637735283985, guid: 15ae17a0fabfb234bbbbeee13b6dd7ab, type: 3}
+      propertyPath: m_text
+      value: "MGR URSZULA \nSZCZEPANKOWSKA-BEDNAREK"
       objectReference: {fileID: 0}
     - target: {fileID: 5361847843352919798, guid: 15ae17a0fabfb234bbbbeee13b6dd7ab, type: 3}
       propertyPath: m_Pivot.x
@@ -1102,7 +1106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5361847843352919799, guid: 15ae17a0fabfb234bbbbeee13b6dd7ab, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5361847844133107933, guid: 15ae17a0fabfb234bbbbeee13b6dd7ab, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
