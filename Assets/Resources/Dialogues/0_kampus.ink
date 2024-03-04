@@ -34,7 +34,7 @@ Oto nasz Kampus! Czy znasz już to miejsce? #portrait:GeniusLoci
     
 == how_to_play
 
-Rozgrywka nie jest skomplikowana. Wystarczy że przejdziesz się po Kampusie Centralnym PW, rozglądając się za innymi osobami, które możesz napotkać na swojej drodze. 
+Rozgrywka nie jest skomplikowana. Wystarczy, że przejdziesz się po Kampusie Centralnym PW, rozglądając się za innymi osobami, które możesz napotkać na swojej drodze. 
 Jeśli mnie zobaczysz, podejdź. Mogę mieć coś ważnego do przekazania.
 
     + [Dzięki.]

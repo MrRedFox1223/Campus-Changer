@@ -11,7 +11,7 @@ Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:Hulajnoga
 
 W czym mogę pomóc? #portrait:Hulajnoga
 
-    + [Podobno masz mocne zdanie w sprawie parkingu w tym miejscu.]
+    + [Podobno masz wyrobione zdanie w sprawie parkingu w tym miejscu.]
     
     - Tak! Musimy skończyć z tym szaleństwem! Parking trzeba usunąć! Zamiast samochodów – zieleń i chodniki! Miasto jest dla ludzi, a nie dla samochodów! 
     
@@ -35,7 +35,7 @@ Mniejszy ruch samochodowy ma wiele zalet. Jest ciszej i bezpieczniej. W powietrz
     
 == Question_02
 Jesteśmy w centrum miasta! Mamy autobusy! Tramwaje! Metro! Można wsiąść na rower albo hulajnogę! 
-A im więcej osób korzysta z komunikacji, tym łatwiej przekonać władze miasta, by wprowadziło nowe możliwości.
+A im więcej osób korzysta z komunikacji, tym łatwiej przekonać władze miasta, by wprowadziły nowe możliwości.
 -> MainDiscussionNode
 
 == Question_03

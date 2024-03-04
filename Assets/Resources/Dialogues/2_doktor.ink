@@ -38,7 +38,7 @@ To miejsce jest doskonale położone! Z jednej strony zaciszne, a z drugiej praw
 
     
 == Question_02
-W galerii mogłyby się znaleźć prace ludzi z różnych wydziałów popularyzujące ich badania i udział w projektach. 
+W galerii mogłyby się znaleźć prace ludzi z różnych Wydziałów popularyzujące ich badania i udział w projektach. 
 Galeria plenerowa byłaby stałym elementem przestrzeni kampusu PW i może z czasem stałaby się popularnym miejscem. Każdy przechodząc tędy mógłby na nie rzucić okiem.
     ->MainArgumentNode
 

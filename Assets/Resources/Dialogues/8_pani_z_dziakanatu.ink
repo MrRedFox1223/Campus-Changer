@@ -18,7 +18,7 @@ W czym mogę pomóc? #portrait:PaniZAdministracji
     
 == MainDiscussionNode
 
-    + [W jaki sposób większy parking ulepszy politechniczny kampus?]
+    + [W jaki sposób większy parking ulepszy nasz kampus?]
     -> Question_01
     +[ A co z ekologią i miejskimi korkami?]
     -> Question_02

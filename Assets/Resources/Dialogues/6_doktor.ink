@@ -28,7 +28,7 @@ Przejdźmy do rzeczy. Uważam, że tu powinna stanąć kawiarnia. #portrait:Dokt
 == Question_01
 
 Bo takiego miejsca jeszcze tu nie ma. Mogłoby powstać miejsce, gdzie można się spotkać i porozmawiać w „akademickim” klimacie. 
-Dobra kawa. Dobre ciastko... I do tego bezprzewodowy internat i nieco miejsca do co-workingu.
+Dobra kawa. Dobre ciastko... I do tego bezprzewodowy Internet i nieco miejsca do co-workingu.
 
 -> MainDiscussionNode
 

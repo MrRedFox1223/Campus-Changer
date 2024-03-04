@@ -10,7 +10,7 @@ INCLUDE Globals.ink
 Popatrz tylko na to industrialne podwórze. #portrait:GeniusLoci
 
     * [Wygląda jakby obok była fabryka.]
-Jesteśmy między Wydziałem Mechaniki, Energetyki i Lotnictwa a Wydziałem Elektrycznym. Industrialny klimat tu pasuje. 
+Jesteśmy między Wydziałem Mechanicznym Energetyki i Lotnictwa, a Wydziałem Elektrycznym. Industrialny klimat tu pasuje. 
 Ale jest pomysł, żeby ta przestrzeń zyskała nową odsłonę. -> StoryStep_01
     * [Wygląda jakby za rogiem była burgerownia.]
 Najwyraźniej inne osoby miały podobne skojarzenie, ponieważ pojawił się podobny pomysł na zagospodarowanie tego miejsca. -> StoryStep_01
@@ -36,7 +36,7 @@ Otóż można by tu „zaprosić” food trucki.
     
 == Question_01
 
-Ciężarówka z jedzeniem. Mini-restauracja na kółkach. Niektórzy by powiedzieli, że mobilny fast food. Aktualnie może serwować naprawdę niesamowite jedzenie z różnych zakątków świata. 
+Ciężarówka z jedzeniem. Mini-restauracja na kółkach. Niektórzy by powiedzieli, że mobilny fast food. Teraz może serwować naprawdę niesamowite jedzenie z różnych zakątków świata. 
 Aaa! I zajmuje przy tym mało miejsca!
 -> FirstQuestionLoop
 
