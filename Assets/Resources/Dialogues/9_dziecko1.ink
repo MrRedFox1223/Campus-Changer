@@ -22,7 +22,7 @@ Dzień dobry! #portrait:DzieckoGirl
     -> Question_02
     + [Czy warto ożywiać takie zakamarki?]
     -> Question_03
-    + [Nie ma więcej pytań.]
+    + [Nie mam więcej pytań.]
     -> END
     
 == Question_01
@@ -33,7 +33,7 @@ Jednego dnia burgery, innego ramen, lody, pizza. Dużo ludzi. Może to otworzył
 
 == Question_02
 Raaaany! Pytanie, które możesz zadać praktycznie w każdym miejscu tego kampusu. Wszędzie są parkingi. Mnóstwo jest samochodów. W ciągu dnia trzeba bardzo uważać. 
-A tutaj właściwie nic się nie dzieje. Nic tu nie ma. Dlaczego więc, nie możemy tutaj mieć takiego super zagłębia z jedzeniem.
+A tutaj właściwie nic się nie dzieje. Nic tu nie ma. Dlaczego więc nie możemy tutaj mieć takiego super "zagłębia" z jedzeniem?
 ->MainDiscussionNode
 
 == Question_03

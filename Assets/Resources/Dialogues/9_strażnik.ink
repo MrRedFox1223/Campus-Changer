@@ -28,7 +28,7 @@ Ehem, Ehem… W czym mogę pomóc? #portrait:Strażnik
     -> END
 
 == Question_01
-Proszę spojrzeć na inne propozycje w tej grze. Wszędzie chcą budować gastronomię. Czy to jest uczelnia, czy centrum handlowe? Czasami rzeczy są dobrymi takimi, jakimi są.
+Proszę spojrzeć na inne propozycje w tej grze. Wszędzie chcą budować gastronomię. Czasami lepiej po prostu nic nie zmieniać. Lepsze jest wrogiem dobrego!
 -> MainDiscussionNode
 
 == Question_02
@@ -36,5 +36,5 @@ Tutaj jest parking i powinien być parking. To ważna funkcja. Możemy ożywiać
 -> MainDiscussionNode
 
 == Question_03
-Nie trzeba nic robić. To miejsce teraz robi wszystko, co powinno.
+Nie trzeba nic robić. To miejsce pełni te funkcje, które powinno.
 -> MainDiscussionNode

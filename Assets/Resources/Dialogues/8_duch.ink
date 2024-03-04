@@ -17,7 +17,7 @@ Jesteśmy przy zachodniej bramie kampusu. Jak widzisz, jest tu dużo miejsca. #p
 
 == StoryStep_01
 
-Wszystko po trochu. Decyzja dotyczy parkingów. Pytanie na dzisiaj: czy dodać miejsca parkingowe, usunąć je, a może zostawić tak jak są?
+Wszystkiego po trochu. Decyzja dotyczy parkingów. Pytanie na dzisiaj: czy dodać miejsca parkingowe, usunąć je, a może zostawić wszystko po staremu?
 
     + [Dodać!]
     ->InitialMindMadeUp
@@ -45,7 +45,7 @@ Porozmawiaj ze studentem, jeśli chcesz dowiedzieć się, czemu samochody powinn
 
 == InitialSendoff
 
-Przywołaj mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
+Wróć do mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
 ~ 08_DecisionInProgress = true
 -> END
 

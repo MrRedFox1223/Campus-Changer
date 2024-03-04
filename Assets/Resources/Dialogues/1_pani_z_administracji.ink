@@ -15,7 +15,7 @@ Dzień dobry. Od razu uprzedzam, że mam w tej sprawie wyrobione zdanie. #portra
     
 == MainArgumentNode
 
-    + [Do czego potrzebujesz jezdni właśnie tutaj?]
+    + [Dlaczego potrzebujesz jezdni właśnie tutaj?]
         -> Question_01
     + [Co będą mieć z tego inni użytkownicy kampusu?]
         -> Question_02

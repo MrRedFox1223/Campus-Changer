@@ -11,9 +11,9 @@ Obawiam się, że skończyły mi się kwestie dialogowe. #portrait:StudentZErasm
 
 Cześć, co słychać? #portrait:StudentZErasmusa
 
-    * [Ano słychać! Słychać, że podobno chcesz tu urządzić gastro.]
+    * [Podobno chcesz tu urządzić jakąś gastronomię.]
     
-    - Nie inaczej. Przydałoby się wtrząchnąć coś między wykładami, a ja jeszcze dobrze nie znam okolicy. Wiesz, nie za drogie jedzenie, ale smaczne i fajnie podane. 
+    - Nie inaczej. Przydałoby się coś zjeść między wykładami, a ja jeszcze dobrze nie znam okolicy. Wiesz, nie za drogie jedzenie, ale smaczne i fajnie podane. 
     -> MainArgumentNode
     
 == MainArgumentNode

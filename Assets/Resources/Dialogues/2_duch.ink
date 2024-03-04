@@ -7,7 +7,7 @@ INCLUDE Globals.ink
 
 == BeginQuest
 
-Jesteśmy na dziedzińcu pomiędzy Gmachem Mechaniki a gmachem Wydziału Instalacji Budowlanych. #portrait:GeniusLoci
+Jesteśmy na dziedzińcu pomiędzy gmachem Mechaniki a gmachem Wydziału Instalacji Budowlanych. #portrait:GeniusLoci
 
     + [Idealne miejsce na ogród.] -> InitialMindMadeUp
     + [Idealne miejsce na galerię plenerową.] -> InitialMindMadeUp
@@ -29,7 +29,7 @@ Dlatego proszę, porozmawiaj z nimi. Kiedy do nich podejdziesz opowiedzą Ci jak
 
 == InitialUndecided
 
-W takim razie przed Tobą kilka ciekawych rozmów. Student z wymiany zagranicznej chciałby zbudować tu niewielką przestrzeń z jedzeniem. Taką knajpkę na świeżym powietrzu. 
+W takim razie przed Tobą kilka ciekawych rozmów. Student z wymiany zagranicznej chciałby zbudować tu niewielką knajpkę na świeżym powietrzu. 
 Pani mieszkająca na terenie kampusu proponuje, aby znalazła się tu zieleń. Strażnik zaś mówi, że lepszy byłby parking. I jeszcze Pan doktor. Jemu marzy się galeria plenerowa.
 
     * [W takim na mnie już pora.]
@@ -37,7 +37,7 @@ Pani mieszkająca na terenie kampusu proponuje, aby znalazła się tu zieleń. S
 
 == InitialSendoff
 
-Przywołaj mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
+Wróć do mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
 ~ 02_DecisionInProgress = true
 -> END
 

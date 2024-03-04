@@ -51,14 +51,14 @@ Spróbujmy może najpierw posłuchać, co inni mają do powiedzenia. Nie interes
 
 == InitialUndecided
 
-Nieopodal bramy znajdziesz panią poruszającą się na wózku, która chciałaby bramę całkiem otworzyć, i świeżo upieczoną mamę mieszkającą na przeciwko kampusu, która chciałaby zostawić otwartą furtkę.
-Obok stoi jeden z pracowników politechniki, który chciałby, żeby wszystko pozamykać.
+Nieopodal bramy znajdziesz panią poruszającą się na wózku, która chciałaby bramę całkiem otworzyć i młodą mamę mieszkającą naprzeciwko kampusu, która chciałaby zostawić otwartą furtkę.
+Obok stoi jeden z pracowników Politechniki, który chciałby, żeby wszystko pozamykać.
 
     ->InitialSendoff
 
 == InitialSendoff
 
-Przywołaj mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
+Wróć do mnie, gdy skończysz rozmowy. Czekam na Twoją decyzję.
 ~ 03_DecisionInProgress = true
 -> END
 

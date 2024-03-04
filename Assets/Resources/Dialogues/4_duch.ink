@@ -55,7 +55,7 @@ To proste: ładny projekt, dużo farby i już, robi się przyjemniej. Poza tym w
 
 == Option_02
 
-Co powiesz na nieco zieleni? Drzewa, krzewy. A może też kwietnik? Cieszyły by oko. Samochody nie jeździłyby tędy. Wjeżdżałyby bramą od strony ulicy Koszykowej. 
+Co powiesz na nieco zieleni? Drzewa, krzewy. A może też kwietnik? Cokolwiek co cieszyłoby oko. Samochody nie jeździłyby tędy. Wjeżdżałyby bramą od strony ulicy Koszykowej. 
 ->MainDebateNode
 
 == Option_03
@@ -67,7 +67,7 @@ Taka nieformalna przestrzeń do odpoczynku w trakcie przerw między zajęciami.
 
 == Option_04
 
-Skoro i tak jest tu brzydko, to nikt się nie obrazi, jeśli wylądują tu śmietniki i tym podobnie mało atrakcyjnie wyglądające elementy przestrzeni. To miejsce już nie straci, a gdzie indziej będzie ładniej.
+Skoro i tak jest tu brzydko, to nikt się nie obrazi, jeśli wylądują tu śmietniki i tym podobne, mało atrakcyjnie wyglądające elementy przestrzeni. To miejsce już nie straci, a gdzie indziej będzie ładniej.
 ->MainDebateNode
 
 
@@ -89,7 +89,7 @@ VAR marker = 0
     + [Zaplecze gospodarcze.]
     ~ 04_Decision = "zaplecze"
     ~ marker = 4
-    + [Możesz mi opowiedzieć jak wygląda każdy pomysł?]
+    + [Możesz mi opowiedzieć, jak wygląda każdy pomysł?]
         Oczywiście!
         -> MainDebateNode
     + [Jeszcze nie wiem.]
@@ -106,7 +106,7 @@ Dziękuję. Twoja decyzja jest dla bardzo ważna. Muszę przyznać, że doskonal
 
 
 ==InitialSendoff
-Przywołaj mnie, gdy podejmiesz decyzję.
+Wróć do mnie, gdy podejmiesz decyzję.
 ~ 04_DecisionInProgress = true
 -> END
 

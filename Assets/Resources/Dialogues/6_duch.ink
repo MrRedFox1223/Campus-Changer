@@ -56,7 +56,7 @@ Jaka jest Twoja decyzja w sprawie kawiarni? #portrait:GeniusLoci
     
 VAR marker = 0
     
-    + [Tak, zróbmy kawiarnię]
+    + [Tak, zróbmy kawiarnię.]
     ~ 06_Decision = "kawiarnia"
     ~ marker = 1
     + [Zamiast kawiarni zróbmy stołówkę.]
