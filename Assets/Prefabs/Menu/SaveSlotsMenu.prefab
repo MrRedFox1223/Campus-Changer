@@ -1463,7 +1463,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 458834fe3693d5040a1e791b704486d1, type: 3}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_text
-      value: EMPTY
+      value: EMPTY SAVE
       objectReference: {fileID: 0}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_fontSize
@@ -2390,7 +2390,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 458834fe3693d5040a1e791b704486d1, type: 3}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_text
-      value: EMPTY
+      value: EMPTY SAVE
       objectReference: {fileID: 0}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_fontSize
@@ -2709,7 +2709,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 458834fe3693d5040a1e791b704486d1, type: 3}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_text
-      value: EMPTY
+      value: EMPTY SAVE
       objectReference: {fileID: 0}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_fontSize
@@ -3332,7 +3332,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 458834fe3693d5040a1e791b704486d1, type: 3}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_text
-      value: EMPTY
+      value: EMPTY SAVE
       objectReference: {fileID: 0}
     - target: {fileID: 87289733063260607, guid: cc4900afcc278714a87e00c3364f195f, type: 3}
       propertyPath: m_fontSize
