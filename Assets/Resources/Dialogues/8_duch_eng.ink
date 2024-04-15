@@ -65,15 +65,9 @@ VAR marker = 0
     + [We need to leave everything as it is.]
     ~ 08_Decision = "bez zmian"
     ~ marker = 0
-    + [We need to move parking spaces closer to the gate.]
-    ~ 08_Decision = "przeprowadzka"
-    ~ marker = 2
-    + [We need to remove half of the parking spaces that are further from the gate.]
-    ~ 08_Decision = "mniej parkingu"
-    ~ marker = 3
     + [We need to remove all the parking spaces and replace them with greenery.]
-    ~ 08_Decision = "bez parkingu"
-    ~ marker = 4
+    ~ 08_Decision = "zieleń"
+    ~ marker = 2
     
 - So be it!
 

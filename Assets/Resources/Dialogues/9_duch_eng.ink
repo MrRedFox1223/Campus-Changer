@@ -80,7 +80,7 @@ VAR marker = 0
    
     + [No!]
     ~09_Decision = "zaplecze"
-    ~ marker = 0
+    ~ marker = 2
     So everything stays as the same.
     
     + [I don't know.]
