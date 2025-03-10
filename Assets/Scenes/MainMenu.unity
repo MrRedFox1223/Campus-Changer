@@ -1266,10 +1266,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1258876649}
     m_Modifications:
+    - target: {fileID: 1003166841, guid: e7886bc3342ac64489aabc830e8300b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1003166841, guid: e7886bc3342ac64489aabc830e8300b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1861568194, guid: e7886bc3342ac64489aabc830e8300b1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1860277725}
+    - target: {fileID: 976315402149203899, guid: e7886bc3342ac64489aabc830e8300b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 190
+      objectReference: {fileID: 0}
     - target: {fileID: 5276279250800451025, guid: e7886bc3342ac64489aabc830e8300b1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
